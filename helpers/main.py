@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 # Load environment variables from .env file
 load_dotenv()
 
-def translate_articles_for_languages(subdomain, languages):
+def translate_articles_for_languages(subdomain, languages, email, api_token, time):
     """Creates individual JSON files to hold translations for all articles, for each language in the input dictionary.
     Each file is named using the convention: f'translated_articles_{target_language}.json'.
 
@@ -17,19 +17,27 @@ def translate_articles_for_languages(subdomain, languages):
                           with the format {language_code: language_name}."""
     
     #Creating instances of the downloader and translators
-    downloader = ZendeskDownloader(subdomain)
+    downloader = ZendeskDownloader(subdomain, email, api_token, time)
     article_translator = ArticleTranslator()
 
+     # Step 1: Choose if you want to download ALL articles, or just articles after a specified time, to get the 
+    # list of all article IDs to download
+
+    # OPTION 1: If you want to download all articles, uncomment code below, and comment out OPTION 2:
+    # article_ids = downloader.list_all_articles()
+
+    # OPTION 2: If you want to download articles written/updated after a certain time, uncomment code below, 
+    # and comment out OPTION 1:
+    article_ids = downloader.list_articles()
+
+
+    # Step 2: Download articles from Zendesk
+    handoff_articles = downloader.download_articles(article_ids)
+    
     #Iterating through dictionary
     for lang_code, lang_name in languages.items():
         # Define target language
         target_language = lang_code
-
-        # Step 1: Get the list of article IDs
-        article_ids = downloader.list_articles()
-
-        # Step 2: Download articles from Zendesk
-        handoff_articles = downloader.download_articles(article_ids)
 
         # Translate all articles
         translated_articles = article_translator.translate_articles(handoff_articles, target_language=target_language)
@@ -54,7 +62,7 @@ def upload_articles_for_all(email_address, api_token, subdomain, headers, auth, 
     
     article_uploader = ArticleUploader(email_address, api_token, subdomain, headers, auth)
     for lang_code, lang_name in target_language_list.items():
-        print("trying to upload: ", f'translated_articles_{lang_code}.json')
+        print("Attempting upload: ", f'translated_articles_{lang_code}.json')
         article_uploader.trans_upload(f'translated_articles_{lang_code}.json')    
 
 if __name__ == "__main__":
@@ -68,18 +76,14 @@ if __name__ == "__main__":
         # 'it': 'Italiano',
         # 'ja': '日本語',
         # 'ko': '한국어',
-        # 'no': 'Norsk',
+        'no': 'Norsk',
         # 'sv': 'svenska',
-        # 'zh-CN': '简体中文',
-        'zh-TW': '繁體中文'
+        # 'zh-cn': '简体中文',
+        # 'zh-tw': '繁體中文',
     }
 
     subdomain = 'studycat'
-    
-    # Translate articles for each language
-    translate_articles_for_languages(subdomain, languages)
-
-    # Define your email and API token
+     # Define your email and API token
     email_address = os.getenv("ZENDESK_EMAIL_ADDRESS")
     api_token = os.getenv("ZENDESK_API_TOKEN")
 
@@ -91,5 +95,12 @@ if __name__ == "__main__":
     # Combine email and API token for basic authentication
     auth = (f'{email_address}/token', api_token)
 
-    #Uploads the articles to the helpdesk
-    upload_articles_for_all(email_address, api_token, subdomain, headers, auth, languages)
+    # If choosing to download articles updated after a specific time, change this to the specified time
+    # You can find the time in the right format here: https://www.epochconverter.com/
+    time = 1719205200
+    
+    # Translate articles for each language
+    translate_articles_for_languages(subdomain, languages, email_address,  api_token, time)
+
+    # # #Uploads the articles to the helpdesk
+    # upload_articles_for_all(email_address, api_token, subdomain, headers, auth, languages)

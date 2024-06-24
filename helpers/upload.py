@@ -6,11 +6,8 @@ class ArticleUploader:
         self.email_address = email_address
         self.api_token = api_token
         self.zendesk_subdomain = zendesk_subdomain
-        self.headers = {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-        }
-        self.auth = (f'{email_address}/token', api_token)
+        self.headers = headers
+        self.auth = auth
 
     # Function to check if the translation exists
     def translation_exists(self, article_id, locale):
@@ -39,6 +36,7 @@ class ArticleUploader:
         try:
             with open(file_name, mode='r', encoding='utf-8') as f:
                 deliverable = json.load(f)
+            print("DELIVERABLE: ", deliverable)
         except FileNotFoundError:
             print(f'The file {file_name} was not found.')
             exit(1)
@@ -47,14 +45,17 @@ class ArticleUploader:
             exit(1)
 
         for locale in deliverable:
+            print("locale: ", deliverable[locale])
             print(f'\n- uploading {locale} translations')
             for article in deliverable[locale]:
                 article_id = article['id']
+                print("ID: ", article_id)
                 data = {
                     'translation': {
                         'locale': locale,
                         'title': article['title'],
-                        'body': article['body']
+                        'body': article['body'],
+                        'id': article['id']
                     }
                 }
                 self.add_translations(article_id, locale, data)
@@ -64,10 +65,15 @@ if __name__ == "__main__":
     email_address = 'integrations@study.cat'
     api_token = 'VvmZEY1KyID4YjDKKzZ4WDzChGkh1UdsNIIOgatm'
     zendesk_subdomain = 'studycat'
+    headers = {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        }
+    auth = (f'{email_address}/token', api_token)
 
-    # # uploader = ArticleUploader(email_address, api_token, zendesk_subdomain)
-    # # Specify the file containing translations
-    # file_name = 'translated_articles_sv.json'
-    # uploader.trans_upload(file_name)
+    uploader = ArticleUploader(email_address, api_token, zendesk_subdomain, headers, auth)
+    # Specify the file containing translations
+    file_name = 'translated_articles_sv.json'
+    uploader.trans_upload(file_name)
 
     
