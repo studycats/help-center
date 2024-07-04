@@ -6,8 +6,10 @@ import re
 class ArticleTranslator:
     def __init__(self):
         self.translator = Translator()
-        self.phrases = ['Learn English', 'Learn Spanish', 'Learn German', 'Learn Chinese', 'Learn French']
-        self.replacements = ['[EN]', '[ES]', '[DE]', '[ZH]', '[FR]']
+        
+        self.phrases = ['Learn English', 'Learn Spanish', 'Learn German', 'Learn Chinese', 'Learn French', 'Studycat']
+        self.replacements = ['[ENGL]','[ES]','[DTC]','[CH]', '[FRR]', '[STDCT]']
+
 
     def substitution(self, text, list_originals, list_replacements):
         """
@@ -24,7 +26,7 @@ class ArticleTranslator:
         for i in range(len(list_originals)):
             # Replace phrases, ignoring case
             replace = re.compile(re.escape(list_originals[i]), re.IGNORECASE)
-            text = replace.sub(list_replacements[i], text)
+            text = replace.sub(list_replacements[i], str(text))
         return text
     
     # NEW VERSION
@@ -42,24 +44,19 @@ class ArticleTranslator:
         if text.strip():  # Ensure the text is not empty
             # Substitute phrases with placeholders
             text = self.substitution(text, self.phrases, self.replacements)
+
             translated = self.translator.translate(text, dest=target_language)
+            translated_text = translated.text
+
             # Substitute placeholders back with original phrases
             translated_text = self.substitution(translated.text, self.replacements, self.phrases)
+            translated_text = translated_text.replace(".", ". ")
+            translated_text = translated_text.replace("!", "! ")
+            translated_text = translated_text.replace("?", "? ")
             return translated_text
         return text  # Return the original text if empty
     
-    # #Translating segments of text using the google translate API
-    # def translate_text(self, text, target_language):
-    #     try:
-    #         if text.strip():  # Ensure the text is not empty
-    #             translated = self.translator.translate(text, dest=target_language)
-    #             return translated.text
-    #         return text  # Return the original text if empty
-    #     except Exception as e:
-    #                 print(f"Issue here: {text}, Error: {e.with_traceback}")
-    #                 return text
-
-    #OLD
+   
     def translate_html(self, html_content, target_language):
         """
         Translates the text within an HTML content to the specified target language.
@@ -94,9 +91,15 @@ class ArticleTranslator:
 
         # Start translation from the body of the HTML content
         translated_soup = translate_element(soup)
+        translated_soup_string = str(translated_soup)
+        translated_soup_string = translated_soup_string.replace("<strong>", " <strong>")
+        translated_soup_string = translated_soup_string.replace("</strong>", "</strong> ")
+        translated_soup_string = translated_soup_string.replace("</strong> ,", "</strong>,")
+        translated_soup_string = translated_soup_string.replace("<a", " <a")
+        translated_soup_string = translated_soup_string.replace("</a>", " </a> ")
 
         # Return the translated HTML content as a string
-        return str(translated_soup)
+        return translated_soup_string
 
     def translate_article(self, article, target_language):
         try:
@@ -131,16 +134,16 @@ class ArticleTranslator:
 if __name__ == "__main__": 
     
     article_to_translate = {
-    "body": "<h1 id=\"h_01J14B1TR93ZA0PMP07GX842GH\"><a href=\"https://studycat.com/product/fun-german/\" target=\"_self\">Learn German</a></h1>\n<p>From colours to food, animals to parts of the body, Learn German is designed to give your children an excellent base in the German language while having fun.</p>\n<p>\u00a0</p>\n<table class=\"wysiwyg-text-align-center\" style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 15px; height: 179px; width: 520px;\">\n<tbody>\n<tr>\n<td class=\"wysiwyg-text-align-left\" style=\"width: 250px;\">\n<h3 id=\"h_01J14B1TR99N8CD8MVASM4X33S\" class=\"wysiwyg-text-align-center\">\n<strong>Limited Version<br></strong><span class=\"wysiwyg-font-size-medium\">(Free)</span>\n</h3>\n</td>\n<td class=\"wysiwyg-text-align-left\" style=\"width: 247px;\">\n<h3 id=\"h_01J14B1TR9YSJ3QP3XF77ZDGBB\" class=\"wysiwyg-text-align-center\">Unlimited Version<br><span class=\"wysiwyg-font-size-medium\">(Paid - Subscription)</span>\n</h3>\n</td>\n</tr>\n<tr>\n<td class=\"wysiwyg-text-align-left\" style=\"width: 250px;\">\n<ul>\n<li><span data-sheets-userformat='{\"2\":4482,\"4\":{\"1\":2,\"2\":16773836},\"10\":1,\"11\":4,\"15\":\"\\\"Courier New\\\"\"}' data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;\u2022 @free_lesson_count themed courses\\n\\n\u2022 @free_activity_count lessons\\n\\n\u2022 @free_song_count songs\\n\\n\u2022 Learn @free_vocab_total_count words &amp; phrases\\n\\nUpgrade to Unlimited\\nThe first 30 days are free. You won't be charged until the trial is over. Cancel anytime within the free trial period and pay nothing!&quot;}\">2 themed courses</span></li>\n<li><span data-sheets-userformat='{\"2\":4482,\"4\":{\"1\":2,\"2\":16773836},\"10\":1,\"11\":4,\"15\":\"\\\"Courier New\\\"\"}' data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;\u2022 @free_lesson_count themed courses\\n\\n\u2022 @free_activity_count lessons\\n\\n\u2022 @free_song_count songs\\n\\n\u2022 Learn @free_vocab_total_count words &amp; phrases\\n\\nUpgrade to Unlimited\\nThe first 30 days are free. You won't be charged until the trial is over. Cancel anytime within the free trial period and pay nothing!&quot;}\">13 lessons</span></li>\n<li><span data-sheets-userformat='{\"2\":4482,\"4\":{\"1\":2,\"2\":16773836},\"10\":1,\"11\":4,\"15\":\"\\\"Courier New\\\"\"}' data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;\u2022 @free_lesson_count themed courses\\n\\n\u2022 @free_activity_count lessons\\n\\n\u2022 @free_song_count songs\\n\\n\u2022 Learn @free_vocab_total_count words &amp; phrases\\n\\nUpgrade to Unlimited\\nThe first 30 days are free. You won't be charged until the trial is over. Cancel anytime within the free trial period and pay nothing!&quot;}\">30 words &amp; phrases</span></li>\n</ul>\n</td>\n<td class=\"wysiwyg-text-align-left\" style=\"width: 247px;\">\n<ul>\n<li><span data-sheets-userformat='{\"2\":4482,\"4\":{\"1\":2,\"2\":16773836},\"10\":1,\"11\":4,\"15\":\"\\\"Courier New\\\"\"}' data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;\u2022 @free_lesson_count themed courses\\n\\n\u2022 @free_activity_count lessons\\n\\n\u2022 @free_song_count songs\\n\\n\u2022 Learn @free_vocab_total_count words &amp; phrases\\n\\nUpgrade to Unlimited\\nThe first 30 days are free. You won't be charged until the trial is over. Cancel anytime within the free trial period and pay nothing!&quot;}\">10 themed courses</span></li>\n<li><span data-sheets-userformat='{\"2\":4482,\"4\":{\"1\":2,\"2\":16773836},\"10\":1,\"11\":4,\"15\":\"\\\"Courier New\\\"\"}' data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;\u2022 @free_lesson_count themed courses\\n\\n\u2022 @free_activity_count lessons\\n\\n\u2022 @free_song_count songs\\n\\n\u2022 Learn @free_vocab_total_count words &amp; phrases\\n\\nUpgrade to Unlimited\\nThe first 30 days are free. You won't be charged until the trial is over. Cancel anytime within the free trial period and pay nothing!&quot;}\">60 lessons</span></li>\n<li><span data-sheets-userformat='{\"2\":4482,\"4\":{\"1\":2,\"2\":16773836},\"10\":1,\"11\":4,\"15\":\"\\\"Courier New\\\"\"}' data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;\u2022 @free_lesson_count themed courses\\n\\n\u2022 @free_activity_count lessons\\n\\n\u2022 @free_song_count songs\\n\\n\u2022 Learn @free_vocab_total_count words &amp; phrases\\n\\nUpgrade to Unlimited\\nThe first 30 days are free. You won't be charged until the trial is over. Cancel anytime within the free trial period and pay nothing!&quot;}\">155 words &amp; phrases</span></li>\n</ul>\n</td>\n</tr>\n</tbody>\n</table>\n<p class=\"wysiwyg-text-align-left\">\u00a0</p>\n<p class=\"wysiwyg-text-align-left\"><span data-sheets-userformat='{\"2\":4482,\"4\":{\"1\":2,\"2\":16773836},\"10\":1,\"11\":4,\"15\":\"\\\"Courier New\\\"\"}' data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;\u2022 @free_lesson_count themed courses\\n\\n\u2022 @free_activity_count lessons\\n\\n\u2022 @free_song_count songs\\n\\n\u2022 Learn @free_vocab_total_count words &amp; phrases\\n\\nUpgrade to Unlimited\\nThe first 30 days are free. You won't be charged until the trial is over. Cancel anytime within the free trial period and pay nothing!&quot;}\">The<strong> Limited</strong> version is free and has limited access. Available themes are: <em>'Colours' </em>and <em>'Animals'</em><em>.</em><br></span><span data-sheets-userformat='{\"2\":4482,\"4\":{\"1\":2,\"2\":16773836},\"10\":1,\"11\":4,\"15\":\"\\\"Courier New\\\"\"}' data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;\u2022 @free_lesson_count themed courses\\n\\n\u2022 @free_activity_count lessons\\n\\n\u2022 @free_song_count songs\\n\\n\u2022 Learn @free_vocab_total_count words &amp; phrases\\n\\nUpgrade to Unlimited\\nThe first 30 days are free. You won't be charged until the trial is over. Cancel anytime within the free trial period and pay nothing!&quot;}\"><br>The <strong>Unlimited</strong> version can be accessed by purchasing a monthly or annual subscription. You will have complete access to all available content.\u00a0</span></p>",
-    "id": 360051872473,
-    "title": "Learn German explained"
+    "body":  "<p><strong>Restart Your Device:</strong></p>\n<ul>\n<li>Sometimes, a simple restart can fix sound issues. Turn off your device completely and then turn it back on.</li>\n</ul>\n</li>\n</ol>\n<p>If you\u2019ve tried all these steps and still can\u2019t hear anything, please <a href=\"https://help.studycat.com/hc/en-us/requests/new\" target=\"_blank\" rel=\"noopener noreferrer\">contact our support team</a>\u00a0for further assistance.</p>",
+    "title": "Xoxo",
+    "id": 5
   }
 
     # Initialize translator
     translator = ArticleTranslator()
 
-    # Translate article
-    translated_article = translator.translate_article(article_to_translate, target_language='no')
+   # Translate article
+    translated_article = translator.translate_article(article_to_translate, target_language='es')
 
     if translated_article:
         # Output the translated article JSON

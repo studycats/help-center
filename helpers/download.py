@@ -51,6 +51,13 @@ class ZendeskDownloader:
         except requests.exceptions.RequestException as e:
             print(f"Error fetching articles: {e}")
 
+        # Excluding the "Learn X explained" articles, these have special formatting and must be manually changed
+        article_ids.remove(360051111134)
+        article_ids.remove(360050856654)              
+        article_ids.remove(4411938668441) 
+        article_ids.remove(360051872473)
+        article_ids.remove(360051110994)    
+
         return article_ids
 
     def list_articles(self):
@@ -148,4 +155,6 @@ if __name__ == "__main__":
 
     # Step 2: Download articles from Zendesk
     handoff_articles = downloader.download_articles(article_ids)
+
+
     

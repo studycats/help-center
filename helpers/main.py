@@ -24,12 +24,11 @@ def translate_articles_for_languages(subdomain, languages, email, api_token, tim
     # list of all article IDs to download
 
     # OPTION 1: If you want to download all articles, uncomment code below, and comment out OPTION 2:
-    # article_ids = downloader.list_all_articles()
+    article_ids = downloader.list_all_articles()
 
     # OPTION 2: If you want to download articles written/updated after a certain time, uncomment code below, 
     # and comment out OPTION 1:
-    article_ids = downloader.list_articles()
-
+    # article_ids = downloader.list_articles()
 
     # Step 2: Download articles from Zendesk
     handoff_articles = downloader.download_articles(article_ids)
@@ -68,6 +67,7 @@ def upload_articles_for_all(email_address, api_token, subdomain, headers, auth, 
 if __name__ == "__main__":
 
     # Define languages to translate into (code: name)
+    # Uncomment each language to run
     languages = {
         # 'de': 'Deutsch',
         # 'es': 'Español',
@@ -76,7 +76,7 @@ if __name__ == "__main__":
         # 'it': 'Italiano',
         # 'ja': '日本語',
         # 'ko': '한국어',
-        'no': 'Norsk',
+        # 'no': 'Norsk',
         # 'sv': 'svenska',
         # 'zh-cn': '简体中文',
         # 'zh-tw': '繁體中文',
@@ -97,10 +97,10 @@ if __name__ == "__main__":
 
     # If choosing to download articles updated after a specific time, change this to the specified time
     # You can find the time in the right format here: https://www.epochconverter.com/
-    time = 1719205200
+    time = 1719972000
     
     # Translate articles for each language
     translate_articles_for_languages(subdomain, languages, email_address,  api_token, time)
 
     # # #Uploads the articles to the helpdesk
-    # upload_articles_for_all(email_address, api_token, subdomain, headers, auth, languages)
+    upload_articles_for_all(email_address, api_token, subdomain, headers, auth, languages)
