@@ -13,7 +13,6 @@ class ArticleUploader:
     def translation_exists(self, article_id, locale):
         url = f'https://{self.zendesk_subdomain}.zendesk.com/api/v2/help_center/articles/{article_id}/translations/{locale}.json'
         response = requests.get(url, headers=self.headers, auth=self.auth)
-        print("CHECKING:", response.content)
         return response.status_code == 200
 
     def add_translations(self, article_id, locale, data):
@@ -26,11 +25,6 @@ class ArticleUploader:
             # Use POST to create a new translation
             create_url = f'https://{self.zendesk_subdomain}.zendesk.com/api/v2/help_center/articles/{article_id}/translations.json'
             response = requests.post(create_url, json=data, headers=self.headers, auth=self.auth)
-
-        # Print response for debugging
-        print(response.status_code)
-        print(response.reason)
-        print(response.text)
 
     def trans_upload(self, file_name):
         try:

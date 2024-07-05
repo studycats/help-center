@@ -122,7 +122,6 @@ class ArticleTranslator:
             translated_article = self.translate_article(article, target_language)
             if translated_article:
                 translated_articles.append(translated_article)
-        print("translated: ", translated_articles)
         return translated_articles
     
     def save_to_json(self, translated_articles, output_file, language_code):

@@ -3,6 +3,8 @@ from download import ZendeskDownloader
 from upload import ArticleUploader
 import os
 from dotenv import load_dotenv
+import sys
+import arrow
 
 # Load environment variables from .env file
 load_dotenv()
@@ -20,17 +22,16 @@ def translate_articles_for_languages(subdomain, languages, email, api_token, tim
     downloader = ZendeskDownloader(subdomain, email, api_token, time)
     article_translator = ArticleTranslator()
 
-     # Step 1: Choose if you want to download ALL articles, or just articles after a specified time, to get the 
+    # Step 1: Choosing if you want to download ALL articles, or just articles after a specified time, to get the 
     # list of all article IDs to download
-
-    # OPTION 1: If you want to download all articles, uncomment code below, and comment out OPTION 2:
-    article_ids = downloader.list_all_articles()
-
-    # OPTION 2: If you want to download articles written/updated after a certain time, uncomment code below, 
-    # and comment out OPTION 1:
-    # article_ids = downloader.list_articles()
-
-    # Step 2: Download articles from Zendesk
+    if(time == 0):
+        # OPTION 1: If you want to download all articles
+        article_ids = downloader.list_all_articles()
+    else:
+        # OPTION 2: If you want to download articles written/updated after a certain time,
+        article_ids = downloader.list_articles()
+    
+    # Step 2: Downloading articles from Zendesk
     handoff_articles = downloader.download_articles(article_ids)
     
     #Iterating through dictionary
@@ -49,7 +50,7 @@ def translate_articles_for_languages(subdomain, languages, email, api_token, tim
 
         print(f"Translated articles for {lang_name} saved to '{output_file}'")
 
-def upload_articles_for_all(email_address, api_token, subdomain, headers, auth, target_language_list):
+def upload_articles(email_address, api_token, subdomain, headers, auth, target_language_list):
     """Uploads the translated articles for all specified target languages to the helpdesk
 
     Args:
@@ -66,22 +67,6 @@ def upload_articles_for_all(email_address, api_token, subdomain, headers, auth, 
 
 if __name__ == "__main__":
 
-    # Define languages to translate into (code: name)
-    # Uncomment each language to run
-    languages = {
-        # 'de': 'Deutsch',
-        # 'es': 'Español',
-        # 'fi': 'Suomi',
-        # 'fr': 'Français',
-        # 'it': 'Italiano',
-        # 'ja': '日本語',
-        # 'ko': '한국어',
-        # 'no': 'Norsk',
-        # 'sv': 'svenska',
-        # 'zh-cn': '简体中文',
-        # 'zh-tw': '繁體中文',
-    }
-
     subdomain = 'studycat'
      # Define your email and API token
     email_address = os.getenv("ZENDESK_EMAIL_ADDRESS")
@@ -95,12 +80,83 @@ if __name__ == "__main__":
     # Combine email and API token for basic authentication
     auth = (f'{email_address}/token', api_token)
 
-    # If choosing to download articles updated after a specific time, change this to the specified time
-    # You can find the time in the right format here: https://www.epochconverter.com/
-    time = 1719972000
-    
-    # Translate articles for each language
-    translate_articles_for_languages(subdomain, languages, email_address,  api_token, time)
+    while True:
+        # Define languages to translate into (code: name)
+        # Uncomment each language to run
+        languages = {
+            'de': 'German',
+            'es': 'Spanish',
+            'fi': 'Finnish',
+            'fr': 'French',
+            'it': 'Italian',
+            'ja': 'Japanese',
+            'ko': 'Korean',
+            'no': 'Norweigan',
+            'sv': 'Swedish',
+            'zh-cn': 'Chinese (Simplified)',
+            'zh-tw': 'Chinese (Traditional)',
+        }
 
-    # # #Uploads the articles to the helpdesk
-    upload_articles_for_all(email_address, api_token, subdomain, headers, auth, languages)
+        # Display available languages
+        print("Available languages for translation:")
+        for code, name in languages.items():
+            print(f"{code}: {name}")
+            
+        # Prompt user for language code
+        language_code = input("Enter the language code for translation: ").strip()
+
+        if language_code not in languages:
+            print(f"Language code {language_code} is not supported.")
+            sys.exit(1)
+
+        chosen_languages = {language_code: languages[language_code]}
+        language_name = str(languages[language_code])
+        print("Chosen language: ", language_name)
+
+    
+        # Prompt user for download option
+        print("Choose download option:")
+        print("1: Download all articles")
+        print("2: Download articles written/updated after a specific date and time")
+        download_option = input("Enter your choice (1 or 2): ").strip()
+
+
+        if download_option == "1":
+            time = 0
+        elif download_option == "2":
+            # Prompt user for date and time
+            print("Please enter the date and time in Taiwan's timezone (CST).")
+            date_str = input("Enter the date (YYYY-MM-DD): ").strip()
+            time_str = input("Enter the time (HH:MM): ").strip()
+
+            # Combine date and time into a single string
+            datetime_str = f"{date_str} {time_str}"
+
+            # Convert the combined string to epoch time
+            try:
+                time = arrow.get(datetime_str, 'YYYY-MM-DD HH:mm', tzinfo='Asia/Taipei').timestamp()
+                time = int(time)
+                # print(f"Converted date and time to epoch time: {time}")
+            except arrow.parser.ParserError:
+                print("Invalid date or time format. Please use YYYY-MM-DD for date and HH:MM for time.")
+                sys.exit(1)
+        else:
+            print("Invalid choice. Please enter 1 or 2.")
+            sys.exit(1)
+
+        # Translate articles for each language
+        translate_articles_for_languages(subdomain, chosen_languages, email_address,  api_token, time)
+
+        # #Uploads the articles to the helpdesk
+        upload_articles(email_address, api_token, subdomain, headers, auth, chosen_languages)
+
+        print("-----------------------------------------------------------------")
+        print("Translations for ", language_name, " were successfully uploaded.")
+        print("-----------------------------------------------------------------")
+
+
+        # Ask if the user wants to translate and upload for another language
+        another_language = input("Would you like to translate and upload articles for another language? (yes/no): ").strip().lower()
+        if another_language != 'yes':
+            print("Thank you, bye! 😊")
+            break
