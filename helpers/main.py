@@ -93,6 +93,12 @@ if __name__ == "__main__":
             'ko': 'Korean',
             'no': 'Norweigan',
             'sv': 'Swedish',
+            'da': 'Danish',
+            'ru': 'Russian',
+            'pt-PT': 'Portugese',
+            'id': 'Indonesian',
+            'ms': 'Malay',
+            'vi': 'Vietnamese',
             'zh-cn': 'Chinese (Simplified)',
             'zh-tw': 'Chinese (Traditional)',
         }

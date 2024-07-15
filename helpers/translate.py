@@ -76,6 +76,10 @@ class ArticleTranslator:
             # If the element is a NavigableString (i.e., actual text), translate it
             if element.name is None:
                 try:
+                    # Skip translation for elements within <span class="no-translate">
+                    if element.parent and element.parent.name == 'span' and 'no-translate' in element.parent.get('class', []):
+                        return " " + element  # Return the original text if within no-translate span
+                
                     translated_text = self.translate_text(element.strip(), target_language)
                     return translated_text
                 except Exception as e:
@@ -133,8 +137,8 @@ class ArticleTranslator:
 if __name__ == "__main__": 
     
     article_to_translate = {
-    "body":  "<p><strong>Restart Your Device:</strong></p>\n<ul>\n<li>Sometimes, a simple restart can fix sound issues. Turn off your device completely and then turn it back on.</li>\n</ul>\n</li>\n</ol>\n<p>If you\u2019ve tried all these steps and still can\u2019t hear anything, please <a href=\"https://help.studycat.com/hc/en-us/requests/new\" target=\"_blank\" rel=\"noopener noreferrer\">contact our support team</a>\u00a0for further assistance.</p>",
-    "title": "Xoxo",
+    "body":  "hi",
+    "title": "My name is malin",
     "id": 5
   }
 

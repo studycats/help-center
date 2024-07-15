@@ -129,8 +129,9 @@ class ZendeskDownloader:
                     'body': article['body'],
                     'id': article['id']
                 }
+                if article['draft'] == False:
                 # Adding the article content to the list
-                handoff_articles.append(article_content)
+                    handoff_articles.append(article_content)
             else:
                 # Log an error message if the API request failed
                 print(f"Failed to download article {article_id}: {response.status_code}")
