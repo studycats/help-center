@@ -105,27 +105,29 @@ if __name__ == "__main__":
 
         # Display available languages
         print("Available languages for translation:")
+        print("Or type 'all' to translate into all languages")
         for code, name in languages.items():
             print(f"{code}: {name}")
             
         # Prompt user for language code
         language_code = input("Enter the language code for translation: ").strip()
 
-        if language_code not in languages:
+        if language_code in languages:
+            chosen_languages = {language_code: languages[language_code]}
+            language_name = str(languages[language_code])
+            print("Chosen language: ", language_name)
+        elif language_code == 'all':
+            chosen_languages = languages
+            print("Chosen all languages")
+        else:
             print(f"Language code {language_code} is not supported.")
             sys.exit(1)
 
-        chosen_languages = {language_code: languages[language_code]}
-        language_name = str(languages[language_code])
-        print("Chosen language: ", language_name)
-
-    
         # Prompt user for download option
         print("Choose download option:")
         print("1: Download all articles")
         print("2: Download articles written/updated after a specific date and time")
         download_option = input("Enter your choice (1 or 2): ").strip()
-
 
         if download_option == "1":
             time = 0
