@@ -52,11 +52,11 @@ class ZendeskDownloader:
             print(f"Error fetching articles: {e}")
 
         # Excluding the "Learn X explained" articles, these have special formatting and must be manually changed
-        article_ids.remove(360051111134)
-        article_ids.remove(360050856654)              
-        article_ids.remove(4411938668441) 
-        article_ids.remove(360051872473)
-        article_ids.remove(360051110994)    
+        excluded_ids = [360051111134, 360050856654, 4411938668441, 360051872473, 360051110994]
+
+        for id in excluded_ids:
+            if id in article_ids:
+                article_ids.remove(id)
 
         return article_ids
 
