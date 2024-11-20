@@ -84,6 +84,7 @@ if __name__ == "__main__":
         # Define languages to translate into (code: name)
         # Uncomment each language to run
         languages = {
+            'da': 'Danish',
             'de': 'German',
             'es': 'Spanish',
             'fi': 'Finnish',
