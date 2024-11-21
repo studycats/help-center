@@ -1,5 +1,7 @@
-import json
-import requests
+import os, json, requests
+from dotenv import load_dotenv
+
+load_dotenv()
 
 class ArticleUploader:
     def __init__(self, email_address, api_token, zendesk_subdomain, headers, auth):
@@ -56,8 +58,8 @@ class ArticleUploader:
 
 if __name__ == "__main__":
     # Define your Zendesk credentials and subdomain
-    email_address = 'integrations@study.cat'
-    api_token = 'VvmZEY1KyID4YjDKKzZ4WDzChGkh1UdsNIIOgatm'
+    email_address = os.getenv('ZENDESK_EMAIL_ADDReSS')
+    api_token = os.getenv('ZENDESK_API_TOKEN')
     zendesk_subdomain = 'studycat'
     headers = {
             'Content-Type': 'application/json',
