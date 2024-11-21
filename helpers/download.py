@@ -29,6 +29,8 @@ class ZendeskDownloader:
         self.end_time = end_time
         self.start_time = self.end_time
         self.auth = f'{self.user_email}/token', self.api_token  # Authentication tuple for the API
+        self.sections = []
+        self.categories = []
 
     def list_all_articles(self):
         """
@@ -38,13 +40,15 @@ class ZendeskDownloader:
             [int]: List of all existing article iDs
         """
         
-        url = f'https://{self.subdomain}.zendesk.com/api/v2/help_center/articles.json?per_page=100'
+        url = f'https://{self.subdomain}.zendesk.com/api/v2/help_center/articles.json?per_page=100&include=sections,section,categories'
         article_ids = []
 
         try:
             response = requests.get(url)
             response.raise_for_status()  # Raise an exception for HTTP errors
             data = response.json()
+            self.sections = data['sections']
+            self.categories = data['categories']
             for article in data['articles']:
                 article_ids.append(article['id'])
 
@@ -97,6 +101,13 @@ class ZendeskDownloader:
         print(f'- use the following end time value in the next export: {self.end_time}')
         return article_ids
 
+    # works for sections and categories
+    def get_field_by_id(self, grouping, group_id, field):
+        for group in grouping:
+            if group['id'] == group_id:
+                return group[field]
+        return None
+
     def download_articles(self, article_ids):
         """
         Downloads the content of articles based on their IDs and saves them to a JSON file.
@@ -116,12 +127,22 @@ class ZendeskDownloader:
             if response.status_code == 200:
                 # Parsing the JSON response to get the article details
                 article = response.json()['article']
+
+                section_id = article['section_id']
+                section_name = self.get_field_by_id(self.sections, section_id, 'name')
+
+                category_id = self.get_field_by_id(self.sections, section_id, 'category_id')
+                category_name = self.get_field_by_id(self.categories, category_id, 'name')
+
                 # Creating a dictionary with the article's title, body, and ID
                 article_content = {
                     'title': article['title'],
                     'body': article['body'],
                     'id': article['id'],
-                    'section_id': article['section_id']
+                    'section_id': section_id,
+                    'section_name': section_name,
+                    'category_id': category_id,
+                    'category_name': category_name
                 }
                 if article['draft'] == False:
                 # Adding the article content to the list
