@@ -11,11 +11,15 @@ for article in articles:
         # remove punctuation and turn spaces into dashes
         title = ''.join(c for c in title if c.isalnum() or c.isspace())
         title = title.strip().replace(' ', '-')
-        title = '-'.join([title, str(article['id'])])
 
         markdown = markdownify(article['body'], heading_style="ATX")
 
         with open(f'markdown/{title}.md', 'w') as f:
-            f.write(markdown)
+                f.write('---\n')
+                f.write(f'title: {article["title"]}\n')
+                f.write(f'id: {article["id"]}\n')
+                f.write(f'section_id: {article["section_id"]}\n')
+                f.write('---\n')
+                f.write(markdown)
 
 print('HTML to Markdown conversion complete.')
