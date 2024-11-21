@@ -2,6 +2,9 @@
 title: About us
 id: 34524077664921
 section_id: 34474295635353
+section_name: Studycat insights
+category_id: 34474268327961
+category_name: About Studycat
 ---
 Studycat makes language learning fun, accessible, and effective for children. Founded in 2000 by a language teacher, an artist, and a game designer, Studycat has grown into a global community, engaging millions of children with interactive games, catchy songs, and relatable stories. Their five language apps feature over 1200 words and phrases and 500\+ activities, turning education into an entertaining adventure.
 

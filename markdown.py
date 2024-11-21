@@ -19,6 +19,9 @@ for article in articles:
                 f.write(f'title: {article["title"]}\n')
                 f.write(f'id: {article["id"]}\n')
                 f.write(f'section_id: {article["section_id"]}\n')
+                f.write(f'section_name: {article["section_name"]}\n')
+                f.write(f'category_id: {article["category_id"]}\n')
+                f.write(f'category_name: {article["category_name"]}\n')
                 f.write('---\n')
                 f.write(markdown)
 

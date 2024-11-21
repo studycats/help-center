@@ -2,6 +2,9 @@
 title: Changing user language
 id: 34476207843609
 section_id: 34476121676953
+section_name: Changing user languages
+category_id: 360004259813
+category_name: FAQs
 ---
 ## Learn English \- Studycat
 

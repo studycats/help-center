@@ -2,6 +2,9 @@
 title: A game isn't working
 id: 360051280934
 section_id: 360009280854
+section_name: Troubleshooting
+category_id: 4413953755545
+category_name: Technical Support 
 ---
 ### In the first instance, please could you try the following?
 

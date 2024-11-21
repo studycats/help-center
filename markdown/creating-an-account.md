@@ -2,6 +2,9 @@
 title: Creating an account
 id: 34477068697497
 section_id: 4411930872345
+section_name: Account
+category_id: 4411938944409
+category_name: Accounts, subscriptions & payments
 ---
 There are two ways to create an account on each app. You can either create one during the initial getting started process when you first download the app, or you can create one later on after using the app first. These instructions are for creating an account once you can access the main screen.
 

@@ -2,6 +2,9 @@
 title: Falling leaves
 id: 34823554600985
 section_id: 34783027542809
+section_name: Tapping games
+category_id: 34781881763353
+category_name: Gameplay
 ---
 ![Leaf Matching Game Image](https://help.studycat.com/hc/article_attachments/34975872015385)
 

@@ -2,6 +2,9 @@
 title: Are Studycat Apps safe for kids?
 id: 34779667898009
 section_id: 34474295635353
+section_name: Studycat insights
+category_id: 34474268327961
+category_name: About Studycat
 ---
 At Studycat, your child’s safety and privacy are our top priorities. Here’s how we ensure a secure and supportive learning environment:
 

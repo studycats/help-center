@@ -2,6 +2,9 @@
 title: Refund a purchase from Apple App Store
 id: 360052042773
 section_id: 31660363747609
+section_name: Refunds 
+category_id: 4411938944409
+category_name: Accounts, subscriptions & payments
 ---
 If you purchased your free trial or subscription from within your Studycat app on an iOS device, you purchased through Apple. 
 

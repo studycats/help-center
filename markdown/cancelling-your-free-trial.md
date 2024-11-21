@@ -2,6 +2,9 @@
 title: Cancelling your free trial
 id: 360051871173
 section_id: 4411933150873
+section_name: Subscriptions
+category_id: 4411938944409
+category_name: Accounts, subscriptions & payments
 ---
 ## This depends on where you started the free trial.
 

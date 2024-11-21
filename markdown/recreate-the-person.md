@@ -2,6 +2,9 @@
 title: Recreate the person
 id: 34824992225305
 section_id: 34782811792793
+section_name: Memory games
+category_id: 34781881763353
+category_name: Gameplay
 ---
 ![Face Memory Game Image](https://help.studycat.com/hc/article_attachments/34824961331481)
 

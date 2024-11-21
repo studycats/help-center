@@ -2,6 +2,9 @@
 title: Optimal Study Time for Children
 id: 34572715795993
 section_id: 34474340377113
+section_name: Tips for parents
+category_id: 34474268327961
+category_name: About Studycat
 ---
 Determining the right amount of time for your child to spend on language learning can be crucial for their development and interest in the new language. With Studycat, a balanced approach is key to making the learning process effective and enjoyable.
 

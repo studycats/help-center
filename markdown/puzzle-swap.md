@@ -2,6 +2,9 @@
 title: Puzzle swap
 id: 34916580564761
 section_id: 34783122694681
+section_name: Dragging games
+category_id: 34781881763353
+category_name: Gameplay
 ---
 ![Puzzle Swap Image](https://help.studycat.com/hc/article_attachments/34916594979097)
 

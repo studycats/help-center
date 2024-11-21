@@ -2,6 +2,9 @@
 title: Suitable ages for Studycat
 id: 34568231183769
 section_id: 34474295635353
+section_name: Studycat insights
+category_id: 34474268327961
+category_name: About Studycat
 ---
 Studycat is specifically designed to cater to young language learners between the ages of 3 and 8\. This critical age range is ideal for language acquisition, and Studycat leverages this window of opportunity to make learning a new language both fun and effective.
 

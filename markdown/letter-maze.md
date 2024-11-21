@@ -2,6 +2,9 @@
 title: Letter maze
 id: 34917832646041
 section_id: 34782099211161
+section_name: Other games
+category_id: 34781881763353
+category_name: Gameplay
 ---
 ![Letter Maze Image](https://help.studycat.com/hc/article_attachments/34917832623897)
 

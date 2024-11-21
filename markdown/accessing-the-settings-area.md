@@ -2,6 +2,9 @@
 title: Accessing the settings area
 id: 34518228622105
 section_id: 4411930872345
+section_name: Account
+category_id: 4411938944409
+category_name: Accounts, subscriptions & payments
 ---
  
 

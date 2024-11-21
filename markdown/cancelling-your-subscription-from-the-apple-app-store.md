@@ -2,6 +2,9 @@
 title: Cancelling your subscription from the Apple App Store
 id: 4413871088665
 section_id: 4411933150873
+section_name: Subscriptions
+category_id: 4411938944409
+category_name: Accounts, subscriptions & payments
 ---
 If you purchased your free trial or subscription from within your Studycat app on an iOS device, your account is managed through your Apple ID.
 

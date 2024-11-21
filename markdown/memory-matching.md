@@ -2,6 +2,9 @@
 title: Memory matching
 id: 34783227558681
 section_id: 34782811792793
+section_name: Memory games
+category_id: 34781881763353
+category_name: Gameplay
 ---
  
 
