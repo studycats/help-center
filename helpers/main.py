@@ -49,6 +49,8 @@ def translate_articles_for_languages(subdomain, languages, email, api_token, tim
         article_translator.save_to_json(translated_articles, output_file, target_language)
 
         print(f"Translated articles for {lang_name} saved to '{output_file}'")
+    else:
+        print('No languages specified for translation')
 
 def upload_articles(email_address, api_token, subdomain, headers, auth, target_language_list):
     """Uploads the translated articles for all specified target languages to the helpdesk
@@ -105,7 +107,9 @@ if __name__ == "__main__":
 
         # Display available languages
         print("Available languages for translation:")
-        print("Or type 'all' to translate into all languages")
+        print("Type 'all' to translate into all languages")
+        print("Or 'none' to only download English articles")
+
         for code, name in languages.items():
             print(f"{code}: {name}")
             
@@ -116,9 +120,14 @@ if __name__ == "__main__":
             chosen_languages = {language_code: languages[language_code]}
             language_name = str(languages[language_code])
             print("Chosen language: ", language_name)
-        elif language_code == 'all':
+        elif language_code.lower() == 'all':
             chosen_languages = languages
+            language_name = 'all languages'
             print("Chosen all languages")
+        elif language_code.lower() == 'none':
+            chosen_languages = {}
+            language_name = 'no languages'
+            print('Downloading English artiles only')
         else:
             print(f"Language code {language_code} is not supported.")
             sys.exit(1)
@@ -156,10 +165,10 @@ if __name__ == "__main__":
         translate_articles_for_languages(subdomain, chosen_languages, email_address,  api_token, time)
 
         # #Uploads the articles to the helpdesk
-        upload_articles(email_address, api_token, subdomain, headers, auth, chosen_languages)
+        # upload_articles(email_address, api_token, subdomain, headers, auth, chosen_languages)
 
         print("-----------------------------------------------------------------")
-        print("Translations for ", language_name, " were successfully uploaded.")
+        print("Translations for", language_name, "were successfully uploaded.")
         print("-----------------------------------------------------------------")
 
 
