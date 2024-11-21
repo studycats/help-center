@@ -120,7 +120,8 @@ class ZendeskDownloader:
                 article_content = {
                     'title': article['title'],
                     'body': article['body'],
-                    'id': article['id']
+                    'id': article['id'],
+                    'section_id': article['section_id']
                 }
                 if article['draft'] == False:
                 # Adding the article content to the list
