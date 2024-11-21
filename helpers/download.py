@@ -38,7 +38,7 @@ class ZendeskDownloader:
             [int]: List of all existing article iDs
         """
         
-        url = f'https://{self.subdomain}.zendesk.com/api/v2/help_center/articles.json'
+        url = f'https://{self.subdomain}.zendesk.com/api/v2/help_center/articles.json?per_page=100'
         article_ids = []
 
         try:
