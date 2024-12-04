@@ -3,7 +3,7 @@ from markdownify import markdownify
 
 os.makedirs('markdown', exist_ok=True)
 
-with open('handoff_articles.json') as json_data:
+with open(os.path.join('..', 'handoff_articles.json')) as json_data:
         articles = json.load(json_data)
 
 for article in articles:
@@ -14,7 +14,7 @@ for article in articles:
 
         markdown = markdownify(article['body'], heading_style="ATX")
 
-        with open(f'markdown/{title}.md', 'w') as f:
+        with open(os.path.join('..', 'markdown', f'{title}.md'), 'w') as f:
                 f.write('---\n')
                 f.write(f'title: {article["title"]}\n')
                 f.write(f'id: {article["id"]}\n')
