@@ -1,8 +1,8 @@
 ---
 title: Studycat English: Welcome pack download
 id: 40379484128665
-category_name: faq
-section_name: whats_new
+category: faq
+section: whats_new
 ---
 The Studycat English **[Welcome Pack](https://res.cloudinary.com/dam8jh3m8/image/upload/v1731059311/docs/studycat-English-welcome-pack-en.pdf)** is designed to help you and your child get the most out of the app. It includes everything you need to explore new features and enhance your child’s language\-learning experience:
 

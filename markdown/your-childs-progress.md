@@ -1,8 +1,8 @@
 ---
 title: Your child's progress
 id: 40392093954585
-category_name: faq
-section_name: whats_new
+category: faq
+section: whats_new
 ---
 The new **Progress Panel** makes it easy to track your child’s learning journey at a glance. It shows how much your child has completed and what’s next. Celebrate their progress as they move through their learning adventure!
 

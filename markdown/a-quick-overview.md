@@ -1,8 +1,8 @@
 ---
 title: A quick overview
 id: 40179219204633
-category_name: faq
-section_name: whats_new
+category: faq
+section: whats_new
 ---
 We've turbocharged Learn English with exciting new features and content based on
 

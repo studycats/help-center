@@ -1,8 +1,8 @@
 ---
 title: New games!
 id: 40396868059161
-category_name: faq
-section_name: whats_new
+category: faq
+section: whats_new
 ---
 Our fresh games offer interactive challenges in spelling, vocabulary, and more, keeping kids motivated as they learn in fun, memorable ways.  
   

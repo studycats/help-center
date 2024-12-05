@@ -1,8 +1,8 @@
 ---
 title: Studycat Adventure
 id: 40395054430233
-category_name: faq
-section_name: whats_new
+category: faq
+section: whats_new
 ---
 Studycat Adventure is now organized into short, topic\-based lessons using *spaced repetition* to help reinforce learning over time. Each topic includes 3–6 lessons, with each lesson consisting of 3–6 games. These topics are spaced throughout the learning path to ensure your child retains what they've learned.  
   
