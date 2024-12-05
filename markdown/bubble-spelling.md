@@ -1,10 +1,8 @@
 ---
 title: Bubble spelling
 id: 34786793522073
-section_id: 34782844096025
-section_name: Writing games
-category_id: 34781881763353
-category_name: Gameplay
+category: gameplay
+section: writing
 ---
 ![C831EFDB-65E2-4E87-BD3C-2EE7DE11A478.png](https://help.studycat.com/hc/article_attachments/34786813307289)
 

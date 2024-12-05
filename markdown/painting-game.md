@@ -1,10 +1,8 @@
 ---
 title: Painting Game
 id: 34823177528857
-section_id: 34783122694681
-section_name: Dragging games
-category_id: 34781881763353
-category_name: Gameplay
+category: gameplay
+section: dragging
 ---
 ![Painting Challenge Image](https://help.studycat.com/hc/article_attachments/34823177517721)
 

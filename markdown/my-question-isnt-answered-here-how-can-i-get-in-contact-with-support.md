@@ -1,10 +1,8 @@
 ---
 title: My question isn't answered here, how can I get in contact with support?
 id: 360052341133
-section_id: 4414105775385
-section_name: Submit a Request
-category_id: 4414112826009
-category_name: Contact us
+category: contact
+section: submit
 ---
 No problem! 
 

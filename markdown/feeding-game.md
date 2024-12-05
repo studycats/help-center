@@ -1,10 +1,8 @@
 ---
 title: Feeding game
 id: 34827003999897
-section_id: 34783122694681
-section_name: Dragging games
-category_id: 34781881763353
-category_name: Gameplay
+category: gameplay
+section: dragging
 ---
 ![[Game Title] Image](https://help.studycat.com/hc/article_attachments/34827003977625)
 

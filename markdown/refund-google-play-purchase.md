@@ -1,10 +1,8 @@
 ---
 title: Refund (Google Play purchase)
 id: 360052042993
-section_id: 31660363747609
-section_name: Refunds 
-category_id: 4411938944409
-category_name: Accounts, subscriptions & payments
+category: account
+section: refunds
 ---
 **Your refund request**
 

@@ -1,10 +1,8 @@
 ---
 title: Game Timer & Lives
 id: 27187476326297
-section_id: 27187473851673
-section_name: Game Timers and Lives
-category_id: 360004259813
-category_name: FAQs
+category: faq
+section: timers
 ---
 ## Learn English \- Studycat
 

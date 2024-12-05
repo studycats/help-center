@@ -1,10 +1,8 @@
 ---
 title: Touch
 id: 34782105747225
-section_id: 34783027542809
-section_name: Tapping games
-category_id: 34781881763353
-category_name: Gameplay
+category: gameplay
+section: tapping
 ---
 ![IMG_7810.PNG](https://help.studycat.com/hc/article_attachments/34782105723161)
 

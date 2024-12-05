@@ -1,10 +1,8 @@
 ---
 title: Using your app on multiple devices
 id: 36399191409561
-section_id: 31662028802201
-section_name: Multiple Devices 
-category_id: 4411938944409
-category_name: Accounts, subscriptions & payments
+category: account
+section: multiple 
 ---
 If you purchase on an Apple device, you can access your purchase on an Android device. And vice versa. To do this, you must Sign in with Studycat. 
 

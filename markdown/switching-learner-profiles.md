@@ -1,10 +1,8 @@
 ---
 title: Switching learner profiles
 id: 32449196012185
-section_id: 34772107858329
-section_name: Game updates
-category_id: 360004259813
-category_name: FAQs
+category: faq
+section: updates
 ---
 ### 
 

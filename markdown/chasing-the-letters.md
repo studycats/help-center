@@ -1,10 +1,8 @@
 ---
 title: Chasing the letters
 id: 34824459457433
-section_id: 34782844096025
-section_name: Writing games
-category_id: 34781881763353
-category_name: Gameplay
+category: gameplay
+section: writing
 ---
 ![Spelling Adventure Game GIF](https://help.studycat.com/hc/article_attachments/34964422592281)
 

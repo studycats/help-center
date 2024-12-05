@@ -1,10 +1,8 @@
 ---
 title: Changing profile picture, nickname or age
 id: 34473186755097
-section_id: 4411930872345
-section_name: Account
-category_id: 4411938944409
-category_name: Accounts, subscriptions & payments
+category: account
+section: account
 ---
 ## Studycat English
 

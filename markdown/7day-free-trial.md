@@ -1,10 +1,8 @@
 ---
 title: 7-day free trial
 id: 360050856954
-section_id: 4411964000409
-section_name: How to purchase
-category_id: 360004259813
-category_name: FAQs
+category: faq
+section: purchase
 ---
 # Free trial explained
 

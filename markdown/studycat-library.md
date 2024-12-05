@@ -1,10 +1,8 @@
 ---
 title: Studycat Library
 id: 38812096351513
-section_id: 12717496109209
-section_name: Studycat Stories
-category_id: 360004259813
-category_name: FAQs
+category: faq
+section: stories
 ---
 **How to use the Studycat library**
 

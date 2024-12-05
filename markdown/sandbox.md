@@ -1,10 +1,8 @@
 ---
 title: Sandbox
 id: 34873210430361
-section_id: 34782099211161
-section_name: Other games
-category_id: 34781881763353
-category_name: Gameplay
+category: gameplay
+section: other
 ---
 ![Language Sandbox Image](https://help.studycat.com/hc/article_attachments/34873193987353)
 

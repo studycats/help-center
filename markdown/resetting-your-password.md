@@ -1,10 +1,8 @@
 ---
 title: Resetting your password
 id: 34467074030617
-section_id: 4411930872345
-section_name: Account
-category_id: 4411938944409
-category_name: Accounts, subscriptions & payments
+category: account
+section: account
 ---
  
 

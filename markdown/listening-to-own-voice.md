@@ -1,10 +1,8 @@
 ---
 title: Listening to own voice
 id: 34787998460569
-section_id: 34782978955673
-section_name: Speaking games
-category_id: 34781881763353
-category_name: Gameplay
+category: gameplay
+section: speaking
 ---
 # Speaking Game
 

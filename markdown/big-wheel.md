@@ -1,10 +1,8 @@
 ---
 title: Big Wheel
 id: 34825529506841
-section_id: 34783122694681
-section_name: Dragging games
-category_id: 34781881763353
-category_name: Gameplay
+category: gameplay
+section: dragging
 ---
 ![RPReplay_Final1720684176.gif](https://help.studycat.com/hc/article_attachments/34931476777625)
 
