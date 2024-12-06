@@ -6,8 +6,7 @@ import configparser
 translator = GoogleTranslator()
 
 # List of target languages
-# languages = ['da', 'de', 'es', 'fi', 'fr', 'id', 'it', 'ja', 'ko', 'ms', 'no', 'pt', 'ru', 'sv', 'vi', 'zh-CN', 'zh-TW']
-languages = ['zh-CN', 'zh-TW']
+languages = ['da', 'de', 'es', 'fi', 'fr', 'id', 'it', 'ja', 'ko', 'ms', 'no', 'pt', 'ru', 'sv', 'vi', 'zh-CN', 'zh-TW']
 phrases = ['Learn English', 'Learn Spanish', 'Learn German', 'Learn Chinese', 'Learn French', 'Studycat']
 replacements = ['[ENGL]','[ES]','[DTC]','[CH]', '[FRR]', '[STDCT]']
 
