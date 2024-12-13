@@ -1,27 +1,50 @@
-import os, re
-from deep_translator import GoogleTranslator
+import os, re, anthropic
+from dotenv import load_dotenv
+load_dotenv()
 
-# languages = ['da', 'de', 'es', 'fi', 'fr', 'id', 'it', 'ja', 'ko', 'ms', 'no', 'pt', 'ru', 'sv', 'vi', 'zh-CN', 'zh-TW']
-languages = ['zh-TW']
+api_key = os.getenv('ANTHROPIC_API_KEY')
+client = anthropic.Anthropic(api_key=api_key)
+prompt = open('helpers/prompt.txt', 'r').read()
+proofread = open('helpers/proofread.txt', 'r').read()
+
+languages = {
+    'da': 'Danish',
+    'de': 'German',
+    'en': 'English',
+    'es': 'Spanish',
+    'fi': 'Finnish', 
+    'fr': 'French',
+    'id': 'Indonesian',
+    'it': 'Italian',
+    'ja': 'Japanese',
+    'ko': 'Korean',
+    'ms': 'Malay',
+    'no': 'Norwegian',
+    'pt': 'Portuguese',
+    'ru': 'Russian',
+    'sv': 'Swedish',
+    'vi': 'Vietnamese',
+    'zh-CN': 'Simplified Chinese',
+    'zh-TW': 'Traditional Chinese'
+}
+
 phrases = ['Learn English', 'Learn Spanish', 'Learn German', 'Learn Chinese', 'Learn French', 'Studycat']
 replacements = ['[ENGL]','[ES]','[DTC]','[CH]', '[FRR]', '[STDCT]']
 
 def substitution(text, list_originals, list_replacements):
     for i in range(len(list_originals)):
-        replace = re.compile(re.escape(list_originals[i]), re.IGNORECASE)
+        replace = re.compile(re.escape(list_originals[i]))
         text = replace.sub(list_replacements[i], str(text))
     return text
 
 def translate_markdown(text, target_language):
     if not text.strip():
         return text
-        
-    translator = GoogleTranslator(source='auto', target=target_language)
-    
+
     # Store code blocks and their positions
     code_blocks = []
     pattern = r'```[\s\S]*?```|`[^`]+`'
-    
+
     for match in re.finditer(pattern, text):
         code_blocks.append(match.group())
 
@@ -32,17 +55,30 @@ def translate_markdown(text, target_language):
     # Substitute special phrases
     text = substitution(text, phrases, replacements)
 
-    # Translate the text
-    translated = translator.translate(text)
+    text = prompt.replace('[language]', languages[target_language]).replace('[markdown]', text)
+
+    text = client.messages.create(
+        model="claude-3-5-sonnet-latest",
+        max_tokens=1000,
+        messages=[{"role": "user", "content": text}]
+    ).content[0].text
+
+    text = proofread.replace('[language]', languages[target_language]).replace('[markdown]', text)
+
+    text = client.messages.create(
+        model="claude-3-5-sonnet-latest",
+        max_tokens=1000,
+        messages=[{"role": "user", "content": text}]
+    ).content[0].text
 
     # Restore special phrases
-    translated = substitution(translated, replacements, phrases)
+    text = substitution(text, replacements, phrases)
 
     # Restore code blocks
     for i, block in enumerate(code_blocks):
-        translated = translated.replace(f'[CODE_BLOCK_{i}]', block)
+        text = text.replace(f'[CODE_BLOCK_{i}]', block)
 
-    return translated
+    return text
 
 for language in languages:
     # Create language-specific directory if it doesn't exist
@@ -50,14 +86,14 @@ for language in languages:
     if not os.path.exists(target_dir):
         os.makedirs(target_dir)
 
-    # Loop through files in markdown/en directory
-    en_dir = os.path.join('markdown', 'en')
+    # Loop through files in markdown/source directory
+    source_dir = os.path.join('markdown', 'source')
 
     # Check if directory exists
-    if os.path.exists(en_dir):
-        for filename in os.listdir(en_dir):
-            if filename.endswith('.md'):
-                file_path = os.path.join(en_dir, filename)
+    if os.path.exists(source_dir):
+        for filename in os.listdir(source_dir):
+            if filename.endswith('.md') and not os.path.exists(os.path.join('markdown', language, filename)):
+                file_path = os.path.join(source_dir, filename)
                 print(f"Processing {filename} for language {language}")
 
                 try:
