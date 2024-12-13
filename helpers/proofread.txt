@@ -1,0 +1,7 @@
+Please proofread and update this final version for [language]. Is it correct and idiomatic? 
+Can you see any problems? Don't go overboard, just make minor tweaks when appropriate.
+The translated file should be in the same format as the original file.
+Don't say anything extra like "Here is the localised [language] markdown file:" or anything like that. Just give me the markdown file.
+
+Markdown file:
+[markdown]

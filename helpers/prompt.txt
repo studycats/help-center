@@ -1,0 +1,36 @@
+Our company have an iPhone/Android app "Learn English - Studycat" (We also have the same kind of app for Spanish, French, German, and Chinese) that is for teaching English to children aged 3+ using fun cartoons, stories, songs, and interactive games. We want to translate our website's help center's articles into many langauges. We would like to maintain the brand voice as much as possible through the translation, but it is also very important that the language, phrases, and idioms are suitably adapted to the relevant culture. It is of utmost importance that the translation is written in a way that is idiomatic to the target culture. For context, our brand voice is expressive, playful, and worldly–striking a good balance between being playful and communicating our love of fun to children and our soundness and trustworthiness to parents. Parents are reading this articles when they want to solve problems or issues. They won't want to read too much fluff. However, as these are help center articles, the tone should still be informative and helpful. Only use adjectives and adverbs when necessary. Try to use simple language.
+
+Here is an example of of Studycat brand voice translated from English to French, please pay attention to brand voice and how it's been transferred between languagees:
+
+English - 
+From the award-winning creators of Studycat for Schools, comes Learn English! The #1 way for kids to learn English!
+From preschool and beyond, Learn English by Studycat inspires children’s innate love of learning with interactive games and activities.
+Our bite-sized lessons will keep your child motivated while they discover a new language and build bilingual skills for a lifetime!
+WHY STUDYCAT?
+	•	Learn English, in English. All our activities focus on virtual language immersion, which means your child will only be hearing English. This might be confusing at first, but trust us, it’s the best way to learn.
+	•	Everyday Language. Our lessons teach words and expressions that kids can apply in their everyday lives, so they can get a head start developing their bilingual abilities.
+	•	Get Talking Fast. With our interactive speaking challenges, kids will be encouraged to speak entire words and phrases on their own! The earlier kids start their language-learning journey, the more likely they are to reach proficiency quickly.
+	•	Vocal Variety. Our characters’ voices use different tones, expressions, and accents so that kids can pick up on the subtleties of pronunciation from different speakers.
+	•	Designed by Experts. All our activities are designed by language and early-education experts. Thoughtfully developed lessons will build your child’s confidence with every step.
+	•	Learner Profiles. Create up to four personalized profiles for different family members, allowing tailored learning paths and individual progress tracking.
+	•	Safe for Kids & Ad-Free. Parents can rest easy knowing that there are no pesky ads to distract children from their learning. All content is appropriate for ages 3 and up.
+	•	Offline Learning. On a plane, at a restaurant, or in a park? No problem! Learn English by Studycat is available for both online and offline use.
+
+French -
+Les créateurs primés de Studycat pour les Écoles présentent Cours d’Anglais par Studycat ! La meilleure façon pour les enfants d’apprendre l’English !
+De la maternelle et au-delà, Cours d’Anglais par Studycat stimule le goût naturel des enfants pour l’apprentissage grâce à des jeux et des activités interactifs.
+Nos leçons courtes et ciblées, et une multitude de nouveaux contenus garderont votre enfant motivé pendant qu’il développe un véritable intérêt pour l’anglais et des compétences bilingues pour la vie !
+POURQUOI CHOISIR STUDYCAT ?
+	•	Apprenez l’anglais, en anglais. Toutes nos activités se basent sur une immersion linguistique virtuelle : votre enfant n’entendra que de l’anglais, pas de français ! Cela peut sembler déroutant au début, mais croyez-nous, c’est la meilleure façon d’apprendre.
+	•	Langage du quotidien. Nos leçons enseignent des mots et des expressions que les enfants peuvent utiliser dans leur vie de tous les jours, leur donnant ainsi une longueur d’avance dans le développement de leurs capacités bilingues.
+	•	Exprimez-vous rapidement. Grâce à nos défis de conversation interactifs, les enfants seront encouragés à prononcer des mots et des phrases entières par eux-mêmes dès le départ ! Plus tôt les enfants commencent leur voyage d’apprentissage des langues, plus ils ont de chances de maîtriser rapidement la nouvelle langue.
+	•	Diversité vocale. Nos personnages s’expriment avec des tons, des expressions et des accents variés, permettant aux enfants de saisir les nuances de prononciation propres à différents locuteurs.
+	•	Conçue par des experts. Toutes nos activités sont élaborées par des spécialistes en langues et en éducation précoce. Des leçons soigneusement élaborées renforceront la confiance de votre enfant à chaque étape.
+	•	Profils d’apprenants. Créez jusqu’à quatre profils personnalisés pour les différents membres de la famille, pour des parcours d’apprentissage sur mesure et un suivi des progrès individuels.
+	•	Sans publicité et adapté aux enfants. Les parents peuvent être tranquilles : il n’y a pas de publicités gênantes qui distrairaient les enfants de leur apprentissage. Tout le contenu est adapté aux enfants à partir de 3 ans.
+	•	Apprentissage hors ligne. Dans un avion, au restaurant ou au parc ? Pas de problème ! Cours d’Anglais par Studycat est disponible à la fois en ligne et hors ligne.
+
+Now please localise the markdown file to [language] as a code artifact. Please pay special attention to the format of the strings including punctuation and escape characters as these are all important. Please use quotation marks which are commonly used in the target language (for example guillemets when translating into French). Try extra hard to do a good job. The translated file should be in the same format as the original file. Don't say anything extra like "Here is the localised Danish markdown file:" or anything like that. Just give me the markdown file.
+
+Markdown file:
+[markdown]
