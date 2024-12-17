@@ -111,7 +111,3 @@ Now that you know what you’re doing, why not tap more of those buttons and eli
 
 
 Have fun!
-
-
- 
-

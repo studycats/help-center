@@ -169,13 +169,3 @@ If you purchased or redeemed a purchase from studycat.com, you'll need to sign i
 
 
 6\. After signing in, your free trial or subscription content will be available to you when you return to the main menu.
-
-
- 
-
-
- 
-
-
- 
-

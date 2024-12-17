@@ -11,4 +11,3 @@ section: troubleshooting
 
 
 ### If that does not solve the issue, please [Submit a Request.](https://help.studycat.com/hc/en-gb/requests/new)
-

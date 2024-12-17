@@ -103,4 +103,3 @@ The game can have different difficulty levels based on the complexity of the wor
 
 
 Are you ready to test your spelling skills in the Spelling Adventure game? Tap start and see how well you can spell the words!
-

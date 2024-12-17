@@ -13,4 +13,3 @@ Look for the logo below in the bottom left hand corner of the screen. 
 
   
 ![](https://help.studycat.com/hc/article_attachments/40392062985497)
-

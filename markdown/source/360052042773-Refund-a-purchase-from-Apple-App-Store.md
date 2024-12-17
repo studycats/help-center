@@ -64,4 +64,3 @@ Apple do not share your personal or purchase details with Studycat. Apple will o
 
 
 Full details are available here:<https://support.apple.com/HT204088>
-

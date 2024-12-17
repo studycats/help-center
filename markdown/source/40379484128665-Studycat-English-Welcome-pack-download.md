@@ -21,4 +21,3 @@ This pack is your go\-to guide for making learning fun, engaging, and rewarding!
 
 
 ![](https://help.studycat.com/hc/article_attachments/40379484098969)
-

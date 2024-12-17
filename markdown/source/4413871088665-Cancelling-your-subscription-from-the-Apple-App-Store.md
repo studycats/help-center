@@ -49,4 +49,3 @@ You can also switch between subscription types from this screen. To do so, simpl
 
 
 If you don’t see ‘Cancel Free Trial’ or ‘Cancel Subscription’, the subscription is already canceled and won't renew.
-

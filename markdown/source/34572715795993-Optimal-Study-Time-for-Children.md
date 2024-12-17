@@ -25,4 +25,3 @@ The key is to monitor your child’s enthusiasm and response. If they show a kee
 
 
 By beginning with short, frequent sessions and adjusting as needed, parents can ensure that language learning with Studycat remains a fun, effective, and stress\-free experience.
-

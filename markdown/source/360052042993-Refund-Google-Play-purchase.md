@@ -23,4 +23,3 @@ If your payment was processed **more than 48 hours ago**, please forward the fol
 
 
 Once we have received the above, we will arrange your refund for you and the item will show on your account within 3\-5 days.
-

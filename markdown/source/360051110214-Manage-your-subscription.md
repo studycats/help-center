@@ -63,4 +63,3 @@ If you purchased from our website, you can manage your subscriptions your accoun
 
 
 Alternatively, contact us [here](https://help.studycat.com/hc/en-us/requests/new)
-

@@ -10,7 +10,3 @@ We also have a [YouTube channel](https://www.youtube.com/@learnwithstudycat) whi
 
 
 We have a blog as well, where you can find expert insights, articles about children's language learning, and our latest news, which can be found [here](https://studycat.com/blog/).
-
-
- 
-

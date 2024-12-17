@@ -14,10 +14,3 @@ Studycat's language learning apps are designed for Android and iOS touchscreen d
 
 * Android tablet or smartphone, running Android 6\.0 or above
 * Apple iOS 11 or better
-
-
- 
-
-
- 
-

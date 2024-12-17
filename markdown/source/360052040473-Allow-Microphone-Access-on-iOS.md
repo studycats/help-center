@@ -36,4 +36,3 @@ If you continue to experience problems with microphone access:
 
 
 **Note:** Microphone access is essential for many learning activities. Without it, some speaking and pronunciation features may not work properly.
-

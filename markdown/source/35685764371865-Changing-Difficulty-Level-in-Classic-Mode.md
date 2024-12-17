@@ -43,4 +43,3 @@ Other ways to increase difficulty are to introduce game timers and lives, read t
 
 
 Now that you know how to adjust the difficulty level, go ahead and customize your classic mode experience. Enjoy using the app!
-

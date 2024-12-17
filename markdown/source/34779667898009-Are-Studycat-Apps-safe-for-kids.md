@@ -28,4 +28,3 @@ All of our language learning activities are designed by language and early\-educ
 
 
 By choosing Studycat, you can be confident that your child is learning in a safe, secure, and supportive environment.
-

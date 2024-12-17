@@ -109,7 +109,3 @@ It is not possible to change cat icon, however you can still change your age and
 
 
 ***![Screenshot 2024-07-01 at 13.38.29.png](https://help.studycat.com/hc/article_attachments/34473149816729)***
-
-
- 
-

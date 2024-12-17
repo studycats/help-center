@@ -91,4 +91,3 @@ Successfully identifying all objects associated with the words spoken.
 
 
 Get ready to enhance your listening and memory skills with the Studycat Listening Game! Start by ensuring a quiet environment and clear pronunciation. Have fun!
-

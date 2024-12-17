@@ -23,4 +23,3 @@ Each medal in the panel represents a lesson your child needs to complete, with e
 
 
 ![](https://help.studycat.com/hc/article_attachments/40392758904601)
-

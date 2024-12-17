@@ -25,4 +25,3 @@ Please include a detailed description as well as any screenshots that will help 
 
 
  ![bulb1.png](https://help.studycat.com/hc/article_attachments/31662880176025)
-

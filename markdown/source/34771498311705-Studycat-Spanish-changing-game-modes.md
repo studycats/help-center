@@ -26,4 +26,3 @@ section: updates
 
 
 ![IMG_2671.PNG](https://help.studycat.com/hc/article_attachments/34771498307353)
-

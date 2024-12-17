@@ -25,4 +25,3 @@ Follow the steps below:
   
 IMPORTANT  
 When signing in to your Studycat account, please ensure that you select the same method that you used when creating your account. For example, if you created your account using 'Sign in with Google', please use the same method within the app.
-
