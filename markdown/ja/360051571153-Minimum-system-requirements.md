@@ -1,13 +1,5 @@
 ---
-タイトル: 最小システム要件
-カテゴリ: サポート
-セクション: 要件
+title: Minimum system requirements
+category: support 
+section: requirements
 ---
-Studycat の言語学習アプリは、Android および iOS タッチスクリーン デバイス用に設計されています。
-
- 
-
-**最小システム要件は次のとおりです**:
-
-* Android 6\.0 以上を実行している Android タブレットまたはスマートフォン
-* Apple iOS 11 以上

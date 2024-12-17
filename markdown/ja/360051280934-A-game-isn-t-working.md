@@ -1,11 +1,5 @@
 ---
-タイトル: ゲームが動作しません
-カテゴリ: サポート
-セクション: トラブルシューティング
+title: A game isn't working
+category: support 
+section: troubleshooting
 ---
-### まず、次のことをお試しください。
-
-1. ヘルプセンターの**[ゲームプレイ ページ](https://help.Studycat.com/hc/en-us/categories/34781881763353-Gameplay)**をご覧ください。
-2. アプリ ストアから最新バージョンをダウンロードしてください。
-
-### それでも問題が解決しない場合は、[リクエストを送信](https://help.Studycat.com/hc/en-gb/requests/new)してください。

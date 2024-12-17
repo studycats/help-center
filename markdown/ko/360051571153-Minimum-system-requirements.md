@@ -1,13 +1,5 @@
 ---
-제목: 최소 시스템 요구 사항
-카테고리: 지원
-섹션: 요구 사항
+title: Minimum system requirements
+category: support 
+section: requirements
 ---
-Studycat의 언어 학습 앱은 Android 및 iOS 터치스크린 기기에 맞게 설계되었습니다.
-
- 
-
-**최소 시스템 요구 사항은 다음과 같습니다.**:
-
-* Android 6\.0 이상을 실행하는 Android 태블릿 또는 스마트폰
-* Apple iOS 11 이상

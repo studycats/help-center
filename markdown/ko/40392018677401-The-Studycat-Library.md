@@ -1,12 +1,5 @@
 ---
-제목: Studycat 라이브러리
-분류: FAQ
-섹션: whats_new
+title: The Studycat Library
+category: faq
+section: whats_new
 ---
-Studycat 라이브러리는 흥미로운 노래와 스토리를 통해 자녀가 맥락 속에서 영어를 경험할 수 있는 기회를 더 많이 제공합니다. 각 스토리는 Studycat와 친구들을 살아 움직이게 하여 앱에서 배운 어휘를 강화합니다. 생동감 있는 애니메이션과 중독성 있는 노래로 아이들은 자연스럽게 사용되는 단어를 듣고 새로운 어휘를 더 쉽게 이해하고 기억할 수 있습니다. 
-
-**참고**: 좋아하는 Studycat 노래가 이제 라이브러리에 있어 더 쉽게 접근할 수 있습니다.
-
-화면 왼쪽 하단 모서리에서 아래 로고를 찾으세요.
-
-![](https://help.Studycat.com/hc/article_attachments/40392062985497)

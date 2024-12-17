@@ -1,20 +1,5 @@
 ---
-タイトル: 無料トライアルのキャンセル
-カテゴリ: アカウント
-セクション: サブスクリプション
+title: Cancelling your free trial
+category: account
+section: subscriptions
 ---
-## 無料トライアルを開始した場所によって異なります。
-
-以下の関連する手順をご覧ください。
-
-***Apple App Store***
-
-サブスクリプションとお支払いは、Apple ID アカウントを通じて処理されます。
-
-サブスクリプションを表示、変更、またはキャンセルするには、Apple ID アカウントにサインインしてください。手順はこちらでご覧いただけます:<https://support.apple.com/HT202039>
-
-***Google Play***
-
-サブスクリプションとお支払いは、Google ID アカウントを通じて処理されます。
-
-サブスクリプションを表示、変更、またはキャンセルするには、Google ID アカウントにサインインしてください。手順はこちらでご覧いただけます:<https://support.google.com/googleplay/answer/7018481>

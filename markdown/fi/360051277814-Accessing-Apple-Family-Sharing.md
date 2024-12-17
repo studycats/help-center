@@ -1,15 +1,5 @@
 ---
-otsikko: Apple Family Sharingin käyttäminen
-luokka: tili
-osasto: perhe
+title: Accessing Apple Family Sharing
+category: account
+section: family
 ---
-Voit jakaa tilauksesi Apple Family Sharingin kanssa.
-
-
- 
-
-
-Lue lisää Apple Family Sharingista täältä:
-
-
-[https://www.apple.com/family\-sharing/](https://support.apple.com/HT203046)
