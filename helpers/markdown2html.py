@@ -20,6 +20,11 @@ for lang in os.listdir('markdown'):
 
         with open(input_path, 'r', encoding='utf-8') as input_file:
             text = input_file.read()
+
+        if text.startswith('---'):
+            _, remaining = text.split('---', 2)[1:]
+            text = remaining.strip()
+
         html = markdown(text)
 
         with open(output_path, 'w', encoding='utf-8') as output_file:
