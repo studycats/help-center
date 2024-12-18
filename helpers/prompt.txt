@@ -30,7 +30,14 @@ POURQUOI CHOISIR STUDYCAT ?
 	•	Sans publicité et adapté aux enfants. Les parents peuvent être tranquilles : il n’y a pas de publicités gênantes qui distrairaient les enfants de leur apprentissage. Tout le contenu est adapté aux enfants à partir de 3 ans.
 	•	Apprentissage hors ligne. Dans un avion, au restaurant ou au parc ? Pas de problème ! Cours d’Anglais par Studycat est disponible à la fois en ligne et hors ligne.
 
-Now please localise the markdown file to [language] as a code artifact. Please pay special attention to the format of the strings including punctuation and escape characters as these are all important. Please use quotation marks which are commonly used in the target language (for example guillemets when translating into French). Try extra hard to do a good job. The translated file should be in the same format as the original file. Don't say anything extra like "Here is the localised Danish markdown file:" or anything like that. Just give me the markdown file.
+Now please:
+	•	localise the markdown file to [language] as a code artifact
+	•	pay special attention to the format of the strings including punctuation and escape characters as these are all important
+	•	use quotation marks which are commonly used in the target language (for example guillemets when translating into French)
+	•	try extra hard to do a good job
+	•	the translated file should be in the same format as the original file
+	•	don't return extra output such as "Here is the localised Danish markdown file:"
+	•	only return the markdown file
 
 Markdown file:
 [markdown]
