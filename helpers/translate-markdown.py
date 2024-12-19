@@ -104,6 +104,10 @@ for language in languages:
                     # Translate content
                     translated_content = translate_markdown(content, language)
 
+                    # Remove content before first '---'
+                    if '---' in translated_content:
+                        translated_content = '---' + translated_content.split('---', 1)[1]
+
                     # Write translated content
                     with open(os.path.join(target_dir, filename), 'w', encoding='utf-8') as target_file:
                         target_file.write(translated_content)
