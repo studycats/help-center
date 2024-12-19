@@ -183,21 +183,68 @@ def create_sections(sections, current, categories):
     return section_ids
 
 def create_articles(sections):
+    # First create English articles and store their IDs
+    article_ids = {}
+    folder_path = os.path.join('markdown', 'en')
+    if os.path.isdir(folder_path):  # Fixed typo in isdir
+        for file_name in os.listdir(folder_path):
+            if not file_name.endswith('.md'):
+                continue
+            
+            # Get section ID
+            file_path = os.path.join('markdown', 'en', file_name)
+            with open(file_path, 'r', encoding='utf-8') as f:
+                for line in f:
+                    if line.startswith('section: '):
+                        section = line[9:].strip().replace('"', '')
+                        break
+            section_id = sections[section]
+
+            # Get title
+            with open(file_path, 'r', encoding='utf-8') as f:
+                for line in f:
+                    if line.startswith('title: '):
+                        title = line[7:].strip()
+
+            # Get HTML content
+            html_path = os.path.join('html', 'en', file_name.replace('.md', '.html'))
+            with open(html_path, 'r', encoding='utf-8') as f:
+                content = f.read()
+
+            article_url = f"{url}/sections/{section_id}/articles"
+
+            data = {
+                "article": {
+                    "title": title,
+                    "body": content,
+                    "locale": 'en-us',
+                    "user_segment_id": None,
+                    "permission_group_id": 1739073,
+                    "draft": True
+                }
+            }
+            response = requests.post(
+                article_url,
+                auth=(f"{ZENDESK_EMAIL_ADDRESS}/token", ZENDESK_API_TOKEN),
+                headers=headers,
+                json=data
+            )
+            
+            # Store article ID using filename as key
+            article_ids[file_name] = response.json()['article']['id']
+            print(f'Created English article: {title}')
+
+    # Create translations for other languages
     for lang in os.listdir('markdown'):
+        if lang == 'en':
+            continue
         folder_path = os.path.join('markdown', lang)
         if os.path.isdir(folder_path):
             for file_name in os.listdir(folder_path):
                 if not file_name.endswith('.md'):
                     continue
-                    
-                en_file_path = os.path.join('markdown', 'en', file_name)
-                with open(en_file_path, 'r', encoding='utf-8') as f:
-                    for line in f:
-                        if line.startswith('section: '):
-                            section = line[9:].strip().replace('"', '')
-                            break
-                section_id = sections[section]
-
+                
+                # Get title and content for translation
                 file_path = os.path.join(folder_path, file_name)
                 with open(file_path, 'r', encoding='utf-8') as f:
                     for line in f:
@@ -208,25 +255,26 @@ def create_articles(sections):
                 with open(html_path, 'r', encoding='utf-8') as f:
                     content = f.read()
 
-                article_url = f"{url}/sections/{section_id}/articles"
-
-                data = {
-                    "article": {
-                        "title": title,
-                        "body": content,
-                        "locale": lang,
-                        "user_segment_id": None,
-                        "permission_group_id": 1739073,
-                        "draft": True
+                # Create translation for the corresponding English article
+                if file_name in article_ids:
+                    article_id = article_ids[file_name]
+                    translation_url = f"{url}/articles/{article_id}/translations"
+                    translation_data = {
+                        "translation": {
+                            "title": title,
+                            "body": content,
+                            "locale": lang
+                        }
                     }
-                }
-                requests.post(
-                    article_url,
-                    auth=(f"{ZENDESK_EMAIL_ADDRESS}/token", ZENDESK_API_TOKEN),
-                    headers=headers,
-                    json=data
-                )
-                print(f'Created article {title} for {lang}')
+                    requests.post(
+                        translation_url,
+                        auth=(f"{ZENDESK_EMAIL_ADDRESS}/token", ZENDESK_API_TOKEN),
+                        headers=headers,
+                        json=translation_data
+                    )
+                    print(f'Added {lang} translation for article: {title}')
+
+    return article_ids
 
 current_categories = get_categories()
 current_sections = get_sections()
