@@ -23,8 +23,8 @@ for language in languages:
     sections_config = configparser.ConfigParser()
     
     # Read original INI files
-    categories_config.read(os.path.join('categories', 'categories.ini'))
-    sections_config.read(os.path.join('sections', 'sections.ini'))
+    categories_config.read(os.path.join('categories', 'categories_en.ini'))
+    sections_config.read(os.path.join('sections', 'sections_en.ini'))
     
     # Translate categories
     for section in categories_config.sections():
