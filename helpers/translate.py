@@ -1,12 +1,10 @@
 import json
 from bs4 import BeautifulSoup
-from googletrans import Translator
+from deep_translator import GoogleTranslator
 import re
 
 class ArticleTranslator:
     def __init__(self):
-        self.translator = Translator()
-        
         self.phrases = ['Learn English', 'Learn Spanish', 'Learn German', 'Learn Chinese', 'Learn French', 'Studycat']
         self.replacements = ['[ENGL]','[ES]','[DTC]','[CH]', '[FRR]', '[STDCT]']
 
@@ -45,11 +43,12 @@ class ArticleTranslator:
             # Substitute phrases with placeholders
             text = self.substitution(text, self.phrases, self.replacements)
 
-            translated = self.translator.translate(text, dest=target_language)
-            translated_text = translated.text
+            # Create translator instance for this specific translation
+            translator = GoogleTranslator(source='auto', target=target_language)
+            translated_text = translator.translate(text)
 
             # Substitute placeholders back with original phrases
-            translated_text = self.substitution(translated.text, self.replacements, self.phrases)
+            translated_text = self.substitution(translated_text, self.replacements, self.phrases)
             translated_text = translated_text.replace(".", ". ")
             translated_text = translated_text.replace("!", "! ")
             translated_text = translated_text.replace("?", "? ")

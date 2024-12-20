@@ -263,7 +263,8 @@ def create_articles(sections):
                         "translation": {
                             "title": title,
                             "body": content,
-                            "locale": lang
+                            "locale": lang,
+                            "draft": True
                         }
                     }
                     requests.post(
