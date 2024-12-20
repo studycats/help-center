@@ -15,7 +15,7 @@ for article in articles:
 
         markdown = markdownify(article['body'], heading_style="ATX")
 
-        with open(os.path.join('markdown', f'{title}.md'), 'w') as f:
+        with open(os.path.join('markdown', 'en', f'{title}.md'), 'w') as f:
                 f.write('---\n')
                 f.write(f'title: {article["title"]}\n')
                 f.write(f'category: {article["category_name"]}\n')
