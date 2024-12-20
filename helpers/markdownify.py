@@ -18,11 +18,8 @@ for article in articles:
         with open(os.path.join('markdown', f'{title}.md'), 'w') as f:
                 f.write('---\n')
                 f.write(f'title: {article["title"]}\n')
-                f.write(f'id: {article["id"]}\n')
-                f.write(f'section_id: {article["section_id"]}\n')
-                f.write(f'section_name: {article["section_name"]}\n')
-                f.write(f'category_id: {article["category_id"]}\n')
-                f.write(f'category_name: {article["category_name"]}\n')
+                f.write(f'category: {article["category_name"]}\n')
+                f.write(f'section: {article["section_name"]}\n')
                 f.write('---\n')
                 f.write(markdown)
 
