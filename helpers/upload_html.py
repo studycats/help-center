@@ -1,4 +1,4 @@
-import os, json, requests, configparser
+import os, requests, configparser
 from dotenv import load_dotenv
 
 load_dotenv()

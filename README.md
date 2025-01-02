@@ -11,14 +11,6 @@ Recently updated: 04/07/2024
 
 - **Purpose**: Gathers all the articles from the help center and downloads them as JSON files.
 
-### `ArticleTranslator`
-
-- **Purpose**: Translates articles using the Google Translate API while preserving HTML structure.
-
-### `ArticleUploader`
-
-- **Purpose**: Manages uploading of translated articles back to Zendesk.
-
 ### `Main`
 
 - **Purpose**: Combines the downloading, translating, and uploading process into one. Running this script completes all the tasks above.

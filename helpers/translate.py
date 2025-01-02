@@ -1,7 +1,6 @@
-import json
+import json, re
 from bs4 import BeautifulSoup
 from deep_translator import GoogleTranslator
-import re
 
 class ArticleTranslator:
     def __init__(self):

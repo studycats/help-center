@@ -1,6 +1,5 @@
-import os, re
+import os, re, configparser
 from deep_translator import GoogleTranslator
-import configparser
 
 # Initialize translator
 translator = GoogleTranslator()

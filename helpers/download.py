@@ -1,7 +1,4 @@
-import json
-import requests
-import os
-import arrow
+import json, requests, os, arrow
 
 class ZendeskDownloader:
     """
@@ -13,17 +10,15 @@ class ZendeskDownloader:
         api_token (str): The API token for authentication.
         end_time (int): The Unix timestamp to filter articles edited after this time.
     """
-    def __init__(self, subdomain, user_email, api_token, end_time):
+    def __init__(self, user_email, api_token, end_time):
         """
         Initializes the ZendeskDownloader with the given subdomain, user email, API token, and end time.
 
         Args:
-            subdomain (str): The Zendesk subdomain.
             user_email (str): The user's email address.
             api_token (str): The API token for authentication.
             end_time (int): The Unix timestamp to filter articles edited after this time.
         """
-        self.subdomain = subdomain
         self.user_email = user_email
         self.api_token = api_token
         self.end_time = end_time
@@ -40,7 +35,7 @@ class ZendeskDownloader:
             [int]: List of all existing article iDs
         """
         
-        url = f'https://{self.subdomain}.zendesk.com/api/v2/help_center/articles.json?per_page=100&include=sections,section,categories'
+        url = f'https://studycat.zendesk.com/api/v2/help_center/articles.json?per_page=100&include=sections,section,categories'
         article_ids = []
 
         try:
@@ -65,7 +60,7 @@ class ZendeskDownloader:
             list: A list of article IDs that have been edited after the specified end_time.
         """
         # Base URL for the Zendesk API endpoint to retrieve incremental articles
-        url = f'https://{self.subdomain}.zendesk.com/api/v2/help_center/incremental/articles.json'
+        url = f'https://studycat.zendesk.com/api/v2/help_center/incremental/articles.json'
         article_ids = []
 
         while url:
@@ -118,10 +113,10 @@ class ZendeskDownloader:
         Returns:
             list: A list of dictionaries containing article content.
         """
-        handoff_articles = []
+        articles = []
         for article_id in article_ids:
             # URL for retrieving individual article details
-            url = f'https://{self.subdomain}.zendesk.com/api/v2/help_center/articles/{article_id}.json'
+            url = f'https://studycat.zendesk.com/api/v2/help_center/articles/{article_id}.json'
             # Making the API request to get the article details
             response = requests.get(url, auth=self.auth)
             if response.status_code == 200:
@@ -146,31 +141,14 @@ class ZendeskDownloader:
                 }
                 if article['draft'] == False:
                 # Adding the article content to the list
-                    handoff_articles.append(article_content)
+                    articles.append(article_content)
             else:
                 # Log an error message if the API request failed
                 print(f"Failed to download article {article_id}: {response.status_code}")
+        print('about to save downloads)')
 
         # Saving the downloaded articles to a JSON file
-        with open('handoff_articles.json', mode='w', encoding='utf-8') as f:
-            json.dump(handoff_articles, f, sort_keys=True, indent=2)
+        with open('articles_en.json', mode='w', encoding='utf-8') as f:
+            json.dump(articles, f, sort_keys=True, indent=2)
 
-        return handoff_articles
-    
-if __name__ == "__main__":
-    """Main class for the downloader, run this to download all articles"""
-
-    # Defining our Zendesk subdomain
-    subdomain = 'studycat'
-
-    # Initialize ZendeskDownloader instance
-    downloader = ZendeskDownloader(subdomain, os.getenv("ZENDESK_EMAIL_ADDRESS"), os.getenv("ZENDESK_API_TOKEN"), 1719197940)
-
-    # Step 1: Get the list of article IDs
-    article_ids = downloader.list_all_articles()
-
-    # Step 2: Download articles from Zendesk
-    handoff_articles = downloader.download_articles(article_ids)
-
-
-    
+        return articles
