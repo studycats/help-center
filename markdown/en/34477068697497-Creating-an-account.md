@@ -1,30 +1,22 @@
 ---
 title: Creating an account
-category: account
-section: account
+category: Accounts, subscriptions & payments
+section: Account
 ---
-There are two ways to create an account on each app. You can either create one during the initial setup when you first download the app, or you can create one later after trying out the app. Here's how to create an account from the main screen.
+There are two ways to create an account on each app. You can either create one during the initial getting started process when you first download the app, or you can create one later on after using the app first. These instructions are for creating an account once you can access the main screen.
 
+**Studycat English and Spanish**
 
-**Studycat English and Spanish Apps**
+1. Navigate to the Settings area
 
+2. Next, click on the sign in/create an account button
 
-1\. Go to Settings
+3. Now follow the on screen instructions. If you have any problems, don't hesitate to contact support!
 
+**Studycat French, German and Chinese**
 
-2\. Tap "Sign in/Create Account"
+1. Navigate to the parents section
 
+2. Choose sign in
 
-3\. Follow the on-screen instructions. If you need help, our support team is here for you!
-
-
-**Studycat French, German and Chinese Apps**
-
-
-1\. Go to Parents Section
-
-
-2\. Tap "Sign in"
-
-
-3\. Follow the on-screen instructions. If you need help, our support team is here for you!
+3. Now follow the on screen instructions. If you have any problems, don't hesitate to contact support

@@ -1,33 +1,36 @@
 ---
-title: Chasing the Letters
-category: gameplay
-section: writing
+title: Chasing the letters
+category: Gameplay
+section: Writing games
 ---
 ![Spelling Adventure Game GIF](https://help.studycat.com/hc/article_attachments/34964422592281)
 
-Welcome! In this game, you'll guide your character to collect letters and spell out the words announced by the game.
+Welcome! In this game you have to guide your character to collect letters and spell out the words announced by the game.
 
-## Objective
+Objective
+---------
 
 Guide your character to collect the correct letters in order to spell the words announced by the game.
 
-## Controls
+Controls
+--------
 
-Tap and hold anywhere on the screen to guide your character to collect the letters.
+Tap and hold on the screen to guide your character to collect the letters.
 
-## Gameplay Mechanics
+Gameplay Mechanics
+------------------
 
 ### Start the Game
 
-A character will appear on the screen, ready for an adventure.
+A little character will appear on the screen, ready for an adventure.
 
 ### Listen for the Word
 
-The game will announce a word for you to spell.
+The game will read out a word for you to spell.
 
 ### Check the Bottom Corner
 
-If you forget the word, its spelling is shown in the bottom corner of the screen.
+If you forget the word, you can see its spelling in the bottom corner of the screen.
 
 ### Lead the Character
 
@@ -47,26 +50,30 @@ Collect the letters in the correct order to spell the word.
 
 ### Next Word
 
-Once you spell the word correctly, the game will announce a new word.
+Once you spell the word correctly, the game will read out a new word.
 
 ### Repeat
 
 Keep guiding your character to spell out each word.
 
-## Gameplay Loop
+Gameplay Loop
+-------------
 
-Listen for the word, guide your character to collect the letters, and spell out the word. Repeat this process to continue playing.
+Listen for the word, guide your character to collect the letters, and spell out the word. Repeat the process to continue the game.
 
-## Victory
+Victory
+-------
 
 ![Victory Image](https://help.studycat.com/hc/article_attachments/34964428232601)
 
-Achieve a high score by correctly spelling the announced words.
+Achieve a high score by accurately spelling the words announced by the game.
 
-## Difficulty Levels
+Difficulty Levels
+-----------------
 
-The game features different difficulty levels based on word complexity and letter speed. As you progress, the difficulty increases.
+The game can have different difficulty levels based on the complexity of the words and the speed of the flying letters. As you advance, the difficulty increases.
 
-## Let's Play!
+Let’s play!
+-----------
 
-Ready to test your spelling skills in the Spelling Adventure game? Tap start and begin your spelling journey!
+Are you ready to test your spelling skills in the Spelling Adventure game? Tap start and see how well you can spell the words!

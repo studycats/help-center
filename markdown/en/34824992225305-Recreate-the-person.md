@@ -1,69 +1,75 @@
 ---
-title: Face Memory Game
-category: gameplay
-section: memory
+title: Recreate the person
+category: Gameplay
+section: Memory games
 ---
 ![Face Memory Game Image](https://help.studycat.com/hc/article_attachments/34824961331481)
 
-Welcome to Face Memory! In this game, you'll observe a person's face, memorize their features, and then reconstruct their appearance by selecting the correct facial elements.
+Welcome to the Face Memory game! Your objective is to memorize a person's face and then recreate it by selecting the correct facial features from a set of options.
 
-## Goal
+Objective
+---------
 
-Memorize a person's appearance and reconstruct their face by selecting the correct features.
+Memorize the features of a person's face and then accurately recreate the face from memory.
 
-## How to Play
+Controls
+--------
 
-Simply tap the screen to select facial features and reconstruct the person's face.
+Use your finger to tap and select facial features from the provided options to recreate the person's face.
 
-## Game Steps
+Gameplay Mechanics
+------------------
 
-### Starting Out
+### Start the Game
 
-You'll be shown a person's face to memorize.
+A person's face will be shown for you to memorize.
 
-### Look and Remember
+### Memorize the Features
 
-Study their features carefully - nose, mouth, skin tone, and more. You'll have a limited time to memorize everything.
+Take a good look at the person's facial features like nose, mouth, skin color, etc. You have a set amount of time to memorize them.
 
-### Time to Rebuild
+### Start Recreating
 
-When time's up, you'll begin selecting features.
+Once the time is up, you'll begin to pick out the features you remember.
 
-### Choose Features
+### Select Features
 
-Select the correct nose, mouth, skin tone, and other features from the available options.
+Choose the correct nose, mouth, skin color, and other facial features from the options provided.
 
 ![IMG_2690.PNG](https://help.studycat.com/hc/article_attachments/34824961340697)
 
-### Finish the Face
+### Complete the Face
 
-Continue selecting features until you've recreated the original face.
+Keep selecting until you think you’ve recreated the person's face as closely as possible.
 
 ![IMG_2692.PNG](https://help.studycat.com/hc/article_attachments/34824961345177)
 
-### See How You Did
+### Review Your Creation
 
-The original face will be shown again for comparison.
+At the end, you'll be shown the original person.
 
 ![IMG_2694.PNG](https://help.studycat.com/hc/article_attachments/34824961349017)
 
-### Your Score
+### Get Your Score
 
-The game calculates how closely your recreation matches the original.
+The game will tell you how close you were to the original face.
 
-## Winning
+Victory
+-------
 
-Achieve a high score by matching the faces as accurately as possible.
+Achieve a high score by accurately recreating the faces as closely as possible.
 
-## Difficulty Levels
+Ranks/Difficulty Levels
+-----------------------
 
-The game increases in difficulty as you progress, featuring more complex faces and shorter memorization times.
+The game can have different difficulty levels based on the complexity of the faces and the time given to memorize them. As you advance, the difficulty increases.
 
-| **Level 1** | Simple faces with basic features |
+| **Rank 1** | Simple faces with basic features. |
 | --- | --- |
-| **Level 2** | More detailed faces and features |
-| **Level 3** | Full body views, not just faces |
+| **Rank 2** | More complex faces and features. |
+| **Rank 3** | Looking at the whole body, not just the face.IMG_2726.PNG |
 
-## Ready to Start?
+Let’s play!
+-----------
 
-Time to test your memory! Tap start and see how well you can remember faces!
+Are you ready to test your memory skills in the face memory game? Tap start and see how well you can recreate the faces!

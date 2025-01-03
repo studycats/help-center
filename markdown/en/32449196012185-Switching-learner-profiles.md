@@ -1,39 +1,29 @@
 ---
 title: Switching learner profiles
-category: faq
-section: updates
+category: FAQs
+section: Game updates
 ---
 ### 
 
-
-**How to Switch and Create Profiles for Up to 4 Learners**  
+**How to switch and create profiles for up to 4 learners**  
 Here's how you can switch between profiles and add new ones:
-
-
 
 ![](https://help.studycat.com/hc/article_attachments/32456628954137)
 
-
-
-**Creating New Profiles**
-
+**Creating new profiles**
 
 * Tap the cat icon in the top left corner of the screen
-* Tap the "Switch" icon (the square with two blue cat heads)
+* Tap the "Switch" icon: Look for the square with two blue cat heads
 * Select "+"
-* Choose a cat, enter name and age
+* Pick a cat, enter name and age
 
-
-**Switching Profiles**
-
+**Switching profiles**
 
 * Tap the cat icon
 * Tap the "Switch" icon
-* Select the profile you want to switch to from the list
+* Pick the profile (cat) you want to switch to from the list
 
+**Managing profiles**
 
-**Managing Profiles**
-
-
-* Editing: To edit a profile, tap the "Profiles" icon, select the profile, and choose "Edit"
-* Deleting: Profiles cannot be deleted at this time
+* Editing: To edit a profile, go to "Profiles" icon, select the profile, and choose "Edit."
+* Deleting: you can not delete profiles currently.
