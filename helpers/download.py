@@ -1,5 +1,5 @@
 # Downloads articles from Zendesk Help Center incrementally based on their edited time.
-import json, requests, arrow, os
+import json, requests, os
 from dotenv import load_dotenv
 
 load_dotenv
