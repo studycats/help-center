@@ -1,21 +1,12 @@
-import os, sys, arrow
-
-from download import ZendeskDownloader
-from dotenv import load_dotenv
-
-# Load environment variables from .env file
-load_dotenv()
-
-email_address = os.getenv("ZENDESK_EMAIL_ADDRESS")
-api_token = os.getenv("ZENDESK_API_TOKEN")
+import sys, arrow
+from download import download_articles
 
 # Headers
 headers = {
     'Content-Type': 'application/json',
     'Accept': 'application/json'
 }
-# Combine email and API token for basic authentication
-auth = (f'{email_address}/token', api_token)
+
 
 print('Downloading English articles')
 
@@ -48,17 +39,4 @@ else:
     print("Invalid choice. Please enter 1 or 2.")
     sys.exit(1)
 
-#Creating instances of the downloader and translators
-downloader = ZendeskDownloader(email_address, api_token, time)
-
-# Step 1: Choosing if you want to download ALL articles, or just articles after a specified time, to get the 
-# list of all article IDs to download
-if(time == 0):
-    # OPTION 1: If you want to download all articles
-    article_ids = downloader.list_all_articles()
-else:
-    # OPTION 2: If you want to download articles written/updated after a certain time,
-    article_ids = downloader.list_articles()
-
-# Step 2: Downloading articles from Zendesk
-downloader.download_articles(article_ids)
+download_articles(time)
