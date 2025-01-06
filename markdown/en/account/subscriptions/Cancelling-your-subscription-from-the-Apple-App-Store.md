@@ -1,6 +1,6 @@
 ---
 id: 4413871088665
-title: Cancelling your subscription from the Apple App Store
+title: Cancelling your subscription
 category: Accounts, subscriptions & payments
 section: Subscriptions
 ---
