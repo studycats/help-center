@@ -11,4 +11,3 @@ Studycat makes language learning fun, accessible, and effective for children. Fo
 With 15 million app store downloads and users in 125 countries, Studycat has received numerous awards for its innovative approach. The diverse team of educators, artists, and tech enthusiasts ensures a culturally rich learning experience, continuing to revolutionize language learning for children worldwide.
 
 If you're interested, you can read more here: [About Studycat.](https://studycat.com/about/)
-[EOF]

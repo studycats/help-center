@@ -11,4 +11,3 @@ Studycat is specifically designed to cater to young language learners between th
 * **Offline Learning Capability**: Studycat can be used anywhere, even without an internet connection, making it perfect for on-the-go learning. Whether in a car, at a park, or on a plane, children can continue their language learning journey without interruption.
 
 Studycat’s thoughtful design and expert-approved content make it the ideal choice for children ages 3 to 8. By providing a safe, engaging, and effective learning environment, Studycat ensures that young learners develop a strong foundation in the language while having fun.
-[EOF]

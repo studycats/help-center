@@ -85,4 +85,3 @@ All games have three ranks, and the difficulty increases with each one.
 Alright, it’s time to take off the floaties and throw you in the deep end.
 
 You know what you’ve got to do. Just keep swimming, just keep swimming!
-[EOF]

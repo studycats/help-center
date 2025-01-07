@@ -33,4 +33,3 @@ Let’s Get Started!
 ------------------
 
 Now that you know how to adjust the difficulty level, go ahead and customize your classic mode experience. Enjoy using the app!
-[EOF]

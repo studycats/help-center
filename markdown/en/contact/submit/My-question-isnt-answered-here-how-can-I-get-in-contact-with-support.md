@@ -13,4 +13,3 @@ Please include a detailed description as well as any screenshots that will help 
 [Contact us](https://help.studycat.com/hc/en-gb/requests/new)
 
  ![bulb1.png](https://help.studycat.com/hc/article_attachments/31662880176025)
-[EOF]

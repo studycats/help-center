@@ -38,4 +38,3 @@ If you purchased from our website, you can manage your subscriptions your accoun
 * Go to 'My Subscriptions' to view, change or cancel your subscription.
 
 Alternatively, contact us [here](https://help.studycat.com/hc/en-us/requests/new)
-[EOF]

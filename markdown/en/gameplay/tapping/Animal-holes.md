@@ -64,4 +64,3 @@ Let’s play!
 -----------
 
 Get ready to sharpen your counting skills with the Animal Counting Game! Click swiftly and accurately to succeed. Have fun!
-[EOF]

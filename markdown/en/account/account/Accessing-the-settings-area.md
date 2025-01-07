@@ -29,4 +29,3 @@ section: Account
 2. Pass through the age verification screen by typing the numbers on the screen in order
 
 ***![Screenshot 2024-06-28 at 2.53.59 pm.jpeg](https://help.studycat.com/hc/article_attachments/34518215421977)***
-[EOF]

@@ -28,4 +28,3 @@ Each lesson helps your child learn or review key topic words, building their voc
 
   
 ![](https://help.studycat.com/hc/article_attachments/40396294306841)
-[EOF]

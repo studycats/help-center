@@ -67,4 +67,3 @@ section: Account
 8. Finally, create a new password
 
 ![IMG_7667.PNG](https://help.studycat.com/hc/article_attachments/34469053229337)
-[EOF]

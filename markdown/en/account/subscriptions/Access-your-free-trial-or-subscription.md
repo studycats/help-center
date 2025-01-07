@@ -91,4 +91,3 @@ How to sign in with your Studycat account
 ***IMPORTANT:**Please ensure that you select the same sign in method that you used when creating your Studycat account.*
 
 6. After signing in, your free trial or subscription content will be available to you when you return to the main menu.
-[EOF]

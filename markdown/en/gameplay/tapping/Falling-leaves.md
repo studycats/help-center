@@ -86,4 +86,3 @@ Let’s play!
 -----------
 
 Are you ready to test your skills in the leaf matching game? Tap start and show us how quickly you can match the leaves!
-[EOF]

@@ -19,4 +19,3 @@ While starting with 15-minute sessions, it's important to remain flexible and ad
 The key is to monitor your child’s enthusiasm and response. If they show a keen interest, extending learning time can be beneficial. Conversely, if they seem fatigued, it’s perfectly fine to stick with shorter sessions.
 
 By beginning with short, frequent sessions and adjusting as needed, parents can ensure that language learning with Studycat remains a fun, effective, and stress-free experience.
-[EOF]

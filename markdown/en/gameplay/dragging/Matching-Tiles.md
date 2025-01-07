@@ -59,4 +59,3 @@ Let’s play!
 -----------
 
 Are you ready to test your matching skills in the Grid Matching game? Tap start and see how many pairs you can form!
-[EOF]

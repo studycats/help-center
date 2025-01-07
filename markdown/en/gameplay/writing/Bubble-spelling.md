@@ -29,4 +29,3 @@ Let’s play!
 -----------
 
 Now get ready to practice your spelling!
-[EOF]

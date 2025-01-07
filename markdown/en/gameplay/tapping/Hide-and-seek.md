@@ -40,4 +40,3 @@ Once you have found the hidden item being announced, tap on it to reveal it and 
 Let’s play!
 
 Dive into the game and start finding hidden objects. Have fun and challenge yourself as you progress through the levels.
-[EOF]

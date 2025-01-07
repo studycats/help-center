@@ -16,4 +16,3 @@ If your payment was processed **more than 48 hours ago**, please forward the fol
 2. Reason for Refund: A brief explanation of why you require a refund.
 
 Once we have received the above, we will arrange your refund for you and the item will show on your account within 3-5 days.
-[EOF]

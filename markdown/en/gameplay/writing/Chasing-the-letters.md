@@ -78,4 +78,3 @@ Let’s play!
 -----------
 
 Are you ready to test your spelling skills in the Spelling Adventure game? Tap start and see how well you can spell the words!
-[EOF]

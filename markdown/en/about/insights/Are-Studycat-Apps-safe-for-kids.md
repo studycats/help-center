@@ -21,4 +21,3 @@ Our apps are completely ad-free, providing a focused and secure learning experie
 All of our language learning activities are designed by language and early-education experts. This guarantees that the content is developmentally appropriate, engaging, and safe for young learners. Our team ensures that the materials are not only effective but also fun and suitable for children.
 
 By choosing Studycat, you can be confident that your child is learning in a safe, secure, and supportive environment.
-[EOF]

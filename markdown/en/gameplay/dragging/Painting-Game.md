@@ -42,4 +42,3 @@ Continue listening and painting each object with the specified color
 Let’s play!
 
 Dive into the challenge and showcase your painting skills!
-[EOF]

@@ -32,4 +32,3 @@ Let’s play!
 -----------
 
 Get ready to start learning new words!
-[EOF]

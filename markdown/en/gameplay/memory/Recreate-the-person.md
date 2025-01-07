@@ -74,4 +74,3 @@ Let’s play!
 -----------
 
 Are you ready to test your memory skills in the face memory game? Tap start and see how well you can recreate the faces!
-[EOF]
