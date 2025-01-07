@@ -99,6 +99,8 @@ for language in languages:
                     with open(file_path, 'r', encoding='utf-8') as source_file:
                         content = source_file.read()
 
+                    content += '\n[EOF]'
+
                     # Translate content
                     translated_content = translate_markdown(content, language)
 
