@@ -14,11 +14,11 @@ How does the free trial work?
 
 When signing up for the 7-day free trial you will get access to all language learning activities within our apps. 
 
-* The first 7 days are free.
-* No payment will be applied for during the free trial period.
-* Cancel anytime within the free trial period and pay nothing!
+- The first 7 days are free.
+- No payment will be applied for during the free trial period.
+- Cancel anytime within the free trial period and pay nothing!
 
-### How to view, edit or cancel your free trial
+## How to view, edit or cancel your free trial
 
 This depends on where you purchased your free trial. Please see the relevant instructions below.
 

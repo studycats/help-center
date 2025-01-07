@@ -4,7 +4,7 @@ title: Refund (Google Play purchase)
 category: Accounts, subscriptions & payments
 section: Refunds 
 ---
-**Your refund request**
+## Your refund request
 
 All payments are processed by Google Play. If your payment was processed **within the last 48 hours**, please request a refund from Google Play here:
 
