@@ -1,7 +1,7 @@
 import os, json, configparser
 from markdownify import markdownify
 
-folderpath = os.path.join('markdown', 'source')
+folderpath = os.path.join('markdown', 'en')
 os.makedirs('markdown', exist_ok=True)
 os.makedirs(folderpath, exist_ok=True)
 
@@ -51,8 +51,8 @@ for article in articles:
         f.write('---\n')
         f.write(f'id: {article["id"]}\n')
         f.write(f'title: {article["title"]}\n')
-        f.write(f'category: {article["category_name"]}\n')
-        f.write(f'section: {article["section_name"]}\n')
+        f.write(f'category: {category}\n')
+        f.write(f'section: {section}\n')
         f.write('---\n')
         f.write(markdown)
 
