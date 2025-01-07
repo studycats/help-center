@@ -88,8 +88,7 @@ for language in languages:
     target_dir = os.path.join('markdown', language)
     os.makedirs(target_dir, exist_ok=True)
 
-    # Loop through files in markdown/source directory
-    source_dir = os.path.join('markdown', 'source')
+    source_dir = os.path.join('markdown', 'en')
 
     # Check if directory exists
     if os.path.exists(source_dir):
