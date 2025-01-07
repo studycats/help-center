@@ -1,8 +1,8 @@
 ---
 id: 40392093954585
 title: Your child's progress
-category: FAQs
-section: Studycat English: What's New!
+category: faq
+section: whats_new
 ---
 The new **Progress Panel** makes it easy to track your child’s learning journey at a glance. It shows how much your child has completed and what’s next. Celebrate their progress as they move through their learning adventure!
 

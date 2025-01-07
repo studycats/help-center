@@ -1,8 +1,8 @@
 ---
 id: 360051280934
 title: A game isn't working
-category: Technical Support 
-section: Troubleshooting
+category: support
+section: troubleshooting
 ---
 ### In the first instance, please could you try the following?
 

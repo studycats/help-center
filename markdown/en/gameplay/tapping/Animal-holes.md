@@ -1,8 +1,8 @@
 ---
 id: 34785364516889
 title: Animal holes
-category: Gameplay
-section: Tapping games
+category: gameplay
+section: tapping
 ---
 ![Animal Counting Game Image](https://help.studycat.com/hc/article_attachments/34829163309209)
 

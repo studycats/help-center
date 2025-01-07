@@ -1,8 +1,8 @@
 ---
 id: 34785118834073
 title: Silhouette
-category: Gameplay
-section: Tapping games
+category: gameplay
+section: tapping
 ---
 ![Animal Silhouette Game Image](https://help.studycat.com/hc/article_attachments/34915780007577)
 

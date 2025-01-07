@@ -1,8 +1,8 @@
 ---
 id: 34783227558681
 title: Memory matching
-category: Gameplay
-section: Memory games
+category: gameplay
+section: memory
 ---
 ![Memory matching game image](https://help.studycat.com/hc/article_attachments/34783202572569)
 

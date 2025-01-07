@@ -1,8 +1,8 @@
 ---
 id: 34518228622105
 title: Accessing the settings area
-category: Accounts, subscriptions & payments
-section: Account
+category: account
+section: account
 ---
 ### For Learn Spanish
 

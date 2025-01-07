@@ -1,8 +1,8 @@
 ---
 id: 40396868059161
 title: New games!
-category: FAQs
-section: Studycat English: What's New!
+category: faq
+section: whats_new
 ---
 Our fresh games offer interactive challenges in spelling, vocabulary, and more, keeping kids motivated as they learn in fun, memorable ways.  
   

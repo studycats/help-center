@@ -1,8 +1,8 @@
 ---
 id: 360051871173
 title: Cancelling your free trial
-category: Accounts, subscriptions & payments
-section: Subscriptions
+category: account
+section: subscriptions
 ---
 This depends on where you started the free trial.
 -------------------------------------------------

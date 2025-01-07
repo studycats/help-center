@@ -1,8 +1,8 @@
 ---
 id: 32449196012185
 title: Switching learner profiles
-category: FAQs
-section: Game updates
+category: faq
+section: updates
 ---
 
 ## Studycat English and Studycat Spanish

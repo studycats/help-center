@@ -1,8 +1,8 @@
 ---
 id: 34564328549401
 title: Maximizing your learning with Studycat
-category: About Studycat
-section: Tips for parents
+category: about
+section: tips
 ---
 To enhance your child's learning experience with Studycat, we have additional resources such as printable worksheets, activities and more, which can be found on our website [here](https://studycat.com/learn/).
 

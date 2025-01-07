@@ -1,8 +1,8 @@
 ---
 id: 34783745822105
 title: Hide and seek
-category: Gameplay
-section: Tapping games
+category: gameplay
+section: tapping
 ---
 ![B96DCD60-7AC4-45D4-81B2-78A51092B862_1_201_a.gif](https://help.studycat.com/hc/article_attachments/34930712507545)
 

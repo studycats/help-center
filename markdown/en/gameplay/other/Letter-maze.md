@@ -1,8 +1,8 @@
 ---
 id: 34917832646041
 title: Letter maze
-category: Gameplay
-section: Other games
+category: gameplay
+section: other
 ---
 ![Letter Maze Image](https://help.studycat.com/hc/article_attachments/34917832623897)
 

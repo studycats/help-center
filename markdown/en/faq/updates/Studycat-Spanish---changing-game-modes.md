@@ -1,8 +1,8 @@
 ---
 id: 34771498311705
 title: Studycat Spanish - changing game modes
-category: FAQs
-section: Game updates
+category: faq
+section: updates
 ---
 ### **How to change game modes:**
 

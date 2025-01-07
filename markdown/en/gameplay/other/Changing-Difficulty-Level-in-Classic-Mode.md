@@ -1,8 +1,8 @@
 ---
 id: 35685764371865
 title: Changing Difficulty Level in Classic Mode
-category: Gameplay
-section: Other games
+category: gameplay
+section: other
 ---
 Please note that this feature is not available in the structured learning mode, within Fun Spanish or Fun English. Difficulty is automatically increased.
 

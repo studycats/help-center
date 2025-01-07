@@ -1,8 +1,8 @@
 ---
 id: 34916165073049
 title: Fish Eater
-category: Gameplay
-section: Other games
+category: gameplay
+section: other
 ---
 ![Untitled.png](https://help.studycat.com/hc/article_attachments/34916165069849)
 

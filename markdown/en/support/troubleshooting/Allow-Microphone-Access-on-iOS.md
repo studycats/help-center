@@ -1,8 +1,8 @@
 ---
 id: 360052040473
 title: Allow Microphone Access on iOS
-category: Technical Support 
-section: Troubleshooting
+category: support
+section: troubleshooting
 ---
 ## Why does Studycat need microphone access?
 

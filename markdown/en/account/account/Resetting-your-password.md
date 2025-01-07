@@ -1,8 +1,8 @@
 ---
 id: 34467074030617
 title: Resetting your password
-category: Accounts, subscriptions & payments
-section: Account
+category: account
+section: account
 ---
 ## Studycat English and Spanish
 

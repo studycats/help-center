@@ -1,8 +1,8 @@
 ---
 id: 34826687212825
 title: Vending Machine
-category: Gameplay
-section: Tapping games
+category: gameplay
+section: tapping
 ---
 ![IMG_2705.PNG](https://help.studycat.com/hc/article_attachments/34826687209753)
 

@@ -1,8 +1,8 @@
 ---
 id: 34824992225305
 title: Recreate the person
-category: Gameplay
-section: Memory games
+category: gameplay
+section: memory
 ---
 ![Face Memory Game Image](https://help.studycat.com/hc/article_attachments/34824961331481)
 

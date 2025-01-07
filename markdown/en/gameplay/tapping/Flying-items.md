@@ -1,8 +1,8 @@
 ---
 id: 34826193085721
 title: Flying items
-category: Gameplay
-section: Tapping games
+category: gameplay
+section: tapping
 ---
 ![WhatsApp GIF 2024-07-12 at 12.25.11.gif](https://help.studycat.com/hc/article_attachments/34966795074969)
 

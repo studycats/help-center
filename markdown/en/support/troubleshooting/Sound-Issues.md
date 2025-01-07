@@ -1,8 +1,8 @@
 ---
 id: 34526667919257
 title: Sound Issues
-category: Technical Support 
-section: Troubleshooting
+category: support
+section: troubleshooting
 ---
 If you're experiencing issues with hearing anything in the Studycat app, try the following troubleshooting steps:
 

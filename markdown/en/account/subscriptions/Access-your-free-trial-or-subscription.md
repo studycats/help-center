@@ -1,8 +1,8 @@
 ---
 id: 360051281554
 title: Access your free trial or subscription
-category: Accounts, subscriptions & payments
-section: Subscriptions
+category: account
+section: subscriptions
 ---
 The process of accessing your free trial or subscription depends on where you made your initial purchase.
 

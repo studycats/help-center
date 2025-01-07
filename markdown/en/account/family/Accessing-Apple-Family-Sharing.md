@@ -1,8 +1,8 @@
 ---
 id: 360051277814
 title: Accessing Apple Family Sharing
-category: Accounts, subscriptions & payments
-section: Family Sharing & Profiles
+category: account
+section: family
 ---
 You can share your subscription with Apple Family Sharing.
 

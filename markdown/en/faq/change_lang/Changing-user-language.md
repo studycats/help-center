@@ -1,8 +1,8 @@
 ---
 id: 34476207843609
 title: Changing user language
-category: FAQs
-section: Changing user languages
+category: faq
+section: change_lang
 ---
 Learn English - Studycat
 ------------------------

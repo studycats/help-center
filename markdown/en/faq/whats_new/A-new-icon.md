@@ -1,8 +1,8 @@
 ---
 id: 40378210072217
 title: A new icon
-category: FAQs
-section: Studycat English: What's New!
+category: faq
+section: whats_new
 ---
 Our new app icon, with **Studycat** running, highlights the adventure of learning and moving forward.  
   

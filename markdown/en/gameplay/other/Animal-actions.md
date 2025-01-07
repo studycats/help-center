@@ -1,8 +1,8 @@
 ---
 id: 34882155519385
 title: Animal actions
-category: Gameplay
-section: Other games
+category: gameplay
+section: other
 ---
 ![Animal Actions Image](https://help.studycat.com/hc/article_attachments/34882188453017)
 

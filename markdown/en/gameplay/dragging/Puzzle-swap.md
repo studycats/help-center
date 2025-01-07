@@ -1,8 +1,8 @@
 ---
 id: 34916580564761
 title: Puzzle swap
-category: Gameplay
-section: Dragging games
+category: gameplay
+section: dragging
 ---
 ![Puzzle Swap Image](https://help.studycat.com/hc/article_attachments/34916594979097)
 

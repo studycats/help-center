@@ -1,8 +1,8 @@
 ---
 id: 34822495323801
 title: Card Flip
-category: Gameplay
-section: Writing games
+category: gameplay
+section: writing
 ---
 ![WhatsApp GIF 2024-07-12 at 12.51.09.gif](https://help.studycat.com/hc/article_attachments/34968069193497)
 

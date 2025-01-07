@@ -1,8 +1,8 @@
 ---
 id: 34786029152409
 title: Matching Tiles
-category: Gameplay
-section: Dragging games
+category: gameplay
+section: dragging
 ---
 ![Grid Matching Game GIF](https://help.studycat.com/hc/article_attachments/34965697809049)
 

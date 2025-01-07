@@ -1,8 +1,8 @@
 ---
 id: 360051571153
 title: Minimum system requirements
-category: Technical Support 
-section: System Requirements 
+category: support
+section: requirements
 ---
 Studycat's language learning apps are designed for Android and iOS touchscreen devices.
 

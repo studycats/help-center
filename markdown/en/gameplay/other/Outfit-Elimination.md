@@ -1,8 +1,8 @@
 ---
 id: 34921324129817
 title: Outfit Elimination
-category: Gameplay
-section: Other games
+category: gameplay
+section: other
 ---
 ![Untitled-4.png](https://help.studycat.com/hc/article_attachments/34921324100889)
 

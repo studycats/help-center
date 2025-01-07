@@ -1,8 +1,8 @@
 ---
 id: 360050856954
 title: 7-day free trial
-category: FAQs
-section: How to purchase
+category: faq
+section: purchase
 ---
 Free trial explained
 ====================

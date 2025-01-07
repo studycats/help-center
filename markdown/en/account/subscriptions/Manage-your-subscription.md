@@ -1,8 +1,8 @@
 ---
 id: 360051110214
 title: Manage your subscription
-category: Accounts, subscriptions & payments
-section: Subscriptions
+category: account
+section: subscriptions
 ---
 How to manage your subscription
 -------------------------------

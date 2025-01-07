@@ -1,8 +1,8 @@
 ---
 id: 40179219204633
 title: A quick overview
-category: FAQs
-section: Studycat English: What's New!
+category: faq
+section: whats_new
 ---
 We've turbocharged Learn English with exciting new features and content based on
 

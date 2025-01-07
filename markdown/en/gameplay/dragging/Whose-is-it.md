@@ -1,8 +1,8 @@
 ---
 id: 34931591533081
 title: Whose is it?
-category: Gameplay
-section: Dragging games
+category: gameplay
+section: dragging
 ---
 ![IMG_2023.PNG](https://help.studycat.com/hc/article_attachments/34966103260825)
 
