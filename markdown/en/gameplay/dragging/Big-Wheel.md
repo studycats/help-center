@@ -8,18 +8,15 @@ section: Dragging games
 
 Welcome to the Turning Wheel game! Your objective is to drag items onto a turning wheel and then tap the correct items as they are announced.
 
-Objective
----------
+## Objective
 
 Drag items onto the wheel and then correctly identify and tap the items as they are announced.
 
-Controls
---------
+## Controls
 
 Use your finger to drag items onto the wheel and tap the correct items as they are announced.
 
-Gameplay Mechanics
-------------------
+## Gameplay Mechanics
 
 ### Start the Game
 
@@ -51,23 +48,19 @@ Find the corresponding item on the turning wheel and tap it.
 
 Continue listening and tapping the correct items until all the items are gone.
 
-Growing/Advancing
------------------
+## Growing/Advancing
 
 As you progress, more items will be added, and the wheel will turn faster, increasing the challenge.
 
-Gameplay Loop
--------------
+## Gameplay Loop
 
 Drag items onto the wheel, listen for the item being announced, and tap the correct item. Repeat the process to continue the game.
 
-Victory
--------
+## Victory
 
 Achieve a high score by accurately tapping the correct items on the wheel as they are announced.
 
-Ranks/Difficulty Levels
------------------------
+## Ranks/Difficulty Levels
 
 The game can have different difficulty levels based on the number of items and the speed of the wheel. As you advance, the difficulty increases.
 
@@ -75,7 +68,6 @@ The game can have different difficulty levels based on the number of items and t
 | --- | --- |
 | **Rank 2** | More items and faster wheel speed. |
 
-Let’s play!
------------
+## Let's play!
 
 Are you ready to test your skills in the Turning Wheel game? Tap start and see how well you can match the items!
