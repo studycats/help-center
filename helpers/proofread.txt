@@ -3,9 +3,9 @@ Can you see any problems? Don't go overboard, just make minor tweaks when approp
 The translated file should be in the same format as the original file.
 
 Now please:
-	•	don't return extra output such as "Here is the localised Danish markdown file:"
-	•	don't return proofread points
-	•	only return the markdown file
+ - don't return extra output such as "Here is the localised Danish markdown file:"
+ - don't return proofread points
+ - only return the markdown file, in full
 
 Markdown file:
 [markdown]
