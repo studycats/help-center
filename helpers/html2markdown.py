@@ -29,5 +29,6 @@ for article in articles:
                 f.write(f'section: {article["section_name"]}\n')
                 f.write('---\n')
                 f.write(markdown)
+                f.write('\n[EOF]')
 
 print('HTML to Markdown conversion complete.')
