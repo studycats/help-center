@@ -11,7 +11,6 @@ proofread = open('helpers/proofread.txt', 'r').read()
 languages = {
     'da': 'Danish',
     'de': 'German',
-    'en': 'English',
     'es': 'Spanish',
     'fi': 'Finnish', 
     'fr': 'French',
@@ -38,13 +37,19 @@ def substitution(text, list_originals, list_replacements):
         text = replace.sub(list_replacements[i], str(text))
     return text
 
-def call_claude(prompt, text, language):
+def call_claude(prompt, text, language, action):
     text = prompt.replace('[language]', language).replace('[markdown]', text)
+    text += '\n[EOF]'
 
     return client.messages.create(
         model="claude-3-5-sonnet-latest",
         max_tokens=1000,
-        messages=[{"role": "user", "content": text}]
+        system="You are a translator and proofreader, you only return the given Markdown in it's complete form.",
+        messages=[
+            {"role": "user", "content": text},
+            {"role": "assistant", "content": f"Here is the {action} Markdown in full:" }
+        ],
+        stop_sequences=['[EOF]']
     ).content[0].text
 
 def translate_markdown(text, target_language):
@@ -65,9 +70,9 @@ def translate_markdown(text, target_language):
     # Substitute special phrases
     text = substitution(text, phrases, replacements)
 
-    text = call_claude(prompt, text, languages[target_language])
+    text = call_claude(prompt, text, languages[target_language], 'translated')
 
-    text = call_claude(proofread, text, languages[target_language])
+    text = call_claude(proofread, text, languages[target_language], 'proofread')
 
     # Restore special phrases
     text = substitution(text, replacements, phrases)
@@ -81,37 +86,43 @@ def translate_markdown(text, target_language):
 for language in languages:
     # Create language-specific directory if it doesn't exist
     target_dir = os.path.join('markdown', language)
-    if not os.path.exists(target_dir):
-        os.makedirs(target_dir)
+    os.makedirs(target_dir, exist_ok=True)
 
     # Loop through files in markdown/source directory
     source_dir = os.path.join('markdown', 'source')
 
     # Check if directory exists
     if os.path.exists(source_dir):
-        for filename in os.listdir(source_dir):
-            if filename.endswith('.md') and not os.path.exists(os.path.join('markdown', language, filename)):
-                file_path = os.path.join(source_dir, filename)
-                print(f"Processing {filename} for language {language}")
+        for category in os.listdir(source_dir):
+            source_category_folder = os.path.join(source_dir, category)
+            target_category_folder = os.path.join(target_dir, category)
+            os.makedirs(target_category_folder, exist_ok=True)
 
-                try:
-                    # Read source file
-                    with open(file_path, 'r', encoding='utf-8') as source_file:
-                        content = source_file.read()
+            for section in os.listdir(source_category_folder):
+                source_section_folder = os.path.join(source_category_folder, section)
+                target_section_folder = os.path.join(target_category_folder, section)
+                os.makedirs(target_section_folder, exist_ok=True)
 
-                    content += '\n[EOF]'
+                for filename in os.listdir(source_section_folder):
+                    if filename.endswith('.md') and not os.path.exists(os.path.join(target_section_folder, filename)):
+                        file_path = os.path.join(source_section_folder, filename)
+                        print(f"Processing {filename} for language {language}")
 
-                    # Translate content
-                    translated_content = translate_markdown(content, language)
+                        try:
+                            # Read source file
+                            with open(file_path, 'r', encoding='utf-8') as source_file:
+                                content = source_file.read()
 
-                    # Remove content before first '---'
-                    if '---' in translated_content:
-                        translated_content = '---' + translated_content.split('---', 1)[1]
+                            # Translate content
+                            translated_content = translate_markdown(content, language)
 
-                    # Write translated content
-                    with open(os.path.join(target_dir, filename), 'w', encoding='utf-8') as target_file:
-                        target_file.write(translated_content)
+                            # Remove content before first '---'
+                            if '---' in translated_content:
+                                translated_content = '---' + translated_content.split('---', 1)[1]
 
-                except Exception as e:
-                    print(f"Error processing {filename}: {str(e)}")
-                    
+                            # Write translated content
+                            with open(os.path.join(target_section_folder, filename), 'w', encoding='utf-8') as target_file:
+                                target_file.write(translated_content)
+
+                        except Exception as e:
+                            print(f"Error processing {filename}: {str(e)}")
