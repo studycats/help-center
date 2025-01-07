@@ -6,20 +6,17 @@ section: Memory games
 ---
 ![Memory matching game image](https://help.studycat.com/hc/article_attachments/34783202572569)
 
-In this game, you will need to uncover pairs by remembering where each item is hidden.
+In these games, you will need to uncover pairs by remembering where each item is hidden.
 
-Objective
----------
+## Objective
 
 Uncover each set of 2 matching items until they all disappear.
 
-Controls
---------
+## Controls
 
 Tap on an object, which will then reveal the hidden item, and then tap on a second one, which will also be revealed.
 
-Gameplay Mechanics
-------------------
+## Gameplay Mechanics
 
 ### Revealing Items
 
@@ -41,22 +38,21 @@ Gameplay Mechanics
 
 5. Repeat steps 1-4 until there are no more objects on the screen.
 
-Other examples of this game
----------------------------
+### Other examples of this game
 
 ![Obstacle Image](https://help.studycat.com/hc/article_attachments/34783227488537)
+![Growing Image](https://help.studycat.com/hc/article_attachments/34783227493913) 
+![Growing Image](https://help.studycat.com/hc/article_attachments/34783202605977) 
+![Growing Image](https://help.studycat.com/hc/article_attachments/34783202616089)
 
-![Growing Image](https://help.studycat.com/hc/article_attachments/34783227493913) ![Growing Image](https://help.studycat.com/hc/article_attachments/34783202605977) ![Growing Image](https://help.studycat.com/hc/article_attachments/34783202616089)
+### Getting harder
 
-Getting harder
---------------
-
-| **Rank 1** | There are 6 items made up of 3 pairs which you need to find, and the items will shift slightly once uncovered. |
+| Level | Description |
 | --- | --- |
+| **Rank&nbsp;1** | There are 6 items made up of 3 pairs which you need to find, and the items will shift slightly once uncovered. |
 | **Rank 2** | There are more items and more pairs to find, the items will shift more when uncovered. |
-| **Rank 3** | There are even more items and even more pairs to find, the items will shift even more when uncovered, and there are bombs that will explode and shift the objects even more. Tap the bombs to stop them from exploding. F4B06275-5FB7-4427-9543-AA06CBB6BB13_4_5005_c.jpeg |
+| **Rank 3** | There are even more items and even more pairs to find, the items will shift even more when uncovered, and there are bombs that will explode and shift the objects even more. Tap the bombs to stop them from exploding. |
 
-**Let’s play!**
----------------
+## Let’s play!
 
 Now you can go and find all the pairs and test your memory!

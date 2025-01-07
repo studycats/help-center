@@ -9,13 +9,13 @@ This depends on where you started the free trial.
 
 Please see the relevant instructions below.
 
-***Apple App Store***
+## Apple App Store
 
 Your subscriptions and payments are processed through your Apple ID account.
 
 To view, change or cancel your subscriptions, please sign in to your Apple ID account. Instructions are available here:<https://support.apple.com/HT202039>
 
-***Google Play***
+## Google Play
 
 Your subscriptions and payments are processed through your Google ID account.
 

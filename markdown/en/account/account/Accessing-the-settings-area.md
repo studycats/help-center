@@ -4,7 +4,7 @@ title: Accessing the settings area
 category: Accounts, subscriptions & payments
 section: Account
 ---
-### **For Learn Spanish:**
+### For Learn Spanish
 
 1. Open your Studycat app and select the settings button
 
@@ -12,20 +12,20 @@ section: Account
 
 2. Pass through the age verification screen by typing the numbers on the screen in order
 
-### **For Learn English:**
+### For Learn English
 
-1. Select any profile![Screenshot 2024-06-28 at 4.21.10 pm.jpeg](https://help.studycat.com/hc/article_attachments/34518228607769)
+1. Select any profile![Screenshot 2024-06-28 at 4.21.10 pm.jpeg](https://help.studycat.com/hc/article_attachments/34518228607769)
 
-2. Select the cat profile at the top of the screen ![Screenshot 2024-06-28 at 4.20.00 pm.jpeg](https://help.studycat.com/hc/article_attachments/34518215417241)
+2. Select the cat profile at the top of the screen![Screenshot 2024-06-28 at 4.20.00 pm.jpeg](https://help.studycat.com/hc/article_attachments/34518215417241)
 
-3. Go to settings![Screenshot 2024-06-28 at 4.26.59 pm.jpeg](https://help.studycat.com/hc/article_attachments/34518215418265)
+3. Go to settings![Screenshot 2024-06-28 at 4.26.59 pm.jpeg](https://help.studycat.com/hc/article_attachments/34518215418265)
 
 4. Pass through the age verification screen by typing the numbers on the screen in order
 
-### **For all other apps**
+### For all other apps
 
-1. Open your Studycat app and select the parents section![Screenshot 2024-06-28 at 3.57.17 pm.jpeg](https://help.studycat.com/hc/article_attachments/34518228611353)
+1. Open your Studycat app and select the parents section![Screenshot 2024-06-28 at 3.57.17 pm.jpeg](https://help.studycat.com/hc/article_attachments/34518228611353)
 
 2. Pass through the age verification screen by typing the numbers on the screen in order
 
-***![Screenshot 2024-06-28 at 2.53.59 pm.jpeg](https://help.studycat.com/hc/article_attachments/34518215421977)***
+![Screenshot 2024-06-28 at 2.53.59 pm.jpeg](https://help.studycat.com/hc/article_attachments/34518215421977)

@@ -8,18 +8,18 @@ Studycat Adventure is now organized into short, topic-based lessons using *space
   
 ![](https://help.studycat.com/hc/article_attachments/40395054421145)  
 
-**Studycat Lessons**
+## Studycat Lessons
 
-Studycat lessons are carefully curated & scaffolded to optimize language acquisition. Each lesson consists of 3-6 interactive games focusing on vocabulary, grammar, literacy, speaking & building confidence. These shorter bite-sized lessons help your child stay focused and motivated.   
+Studycat lessons are carefully curated & scaffolded to optimize language acquisition. Each lesson consists of 3-6 interactive games focusing on vocabulary, grammar, literacy, speaking & building confidence. These shorter bite-sized lessons help your child stay focused and motivated.   
   
-We recommend doing 3-4 of these lessons in each session.   
+We recommend doing 3-4 of these lessons in each session.   
   
-**Lessons are divided into:**
+## Lessons are divided into:
 
-* **Input**/review games
-* **Practice** games
-* **Challenge** games
-* **Assessment** checkpoints
+- **Input/review** games
+- **Practice** games
+- **Challenge** games
+- **Assessment** checkpoints
 
   
 ![](https://help.studycat.com/hc/article_attachments/40396315316121)
