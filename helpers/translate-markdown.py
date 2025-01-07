@@ -38,6 +38,15 @@ def substitution(text, list_originals, list_replacements):
         text = replace.sub(list_replacements[i], str(text))
     return text
 
+def call_claude(prompt, text, language):
+    text = prompt.replace('[language]', language).replace('[markdown]', text)
+
+    return client.messages.create(
+        model="claude-3-5-sonnet-latest",
+        max_tokens=1000,
+        messages=[{"role": "user", "content": text}]
+    ).content[0].text
+
 def translate_markdown(text, target_language):
     if not text.strip():
         return text
@@ -56,21 +65,9 @@ def translate_markdown(text, target_language):
     # Substitute special phrases
     text = substitution(text, phrases, replacements)
 
-    text = prompt.replace('[language]', languages[target_language]).replace('[markdown]', text)
+    text = call_claude(prompt, text, languages[target_language])
 
-    text = client.messages.create(
-        model="claude-3-5-sonnet-latest",
-        max_tokens=1000,
-        messages=[{"role": "user", "content": text}]
-    ).content[0].text
-
-    text = proofread.replace('[language]', languages[target_language]).replace('[markdown]', text)
-
-    text = client.messages.create(
-        model="claude-3-5-sonnet-latest",
-        max_tokens=1000,
-        messages=[{"role": "user", "content": text}]
-    ).content[0].text
+    text = call_claude(proofread, text, languages[target_language])
 
     # Restore special phrases
     text = substitution(text, replacements, phrases)
