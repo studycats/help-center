@@ -55,3 +55,4 @@ It is not possible to change cat icon, however you can still change your age and
 5. Enter your new nickname or age and remember to 'save changes'.
 
 ***![Screenshot 2024-07-01 at 13.38.29.png](https://help.studycat.com/hc/article_attachments/34473149816729)***
+[EOF]

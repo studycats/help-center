@@ -65,3 +65,4 @@ Let’s Play!
 -----------
 
 Are you ready to embark on this exciting adventure and improve your letter recognition skills? Dive into Letter Maze and experience the thrill of learning letters while navigating through fun mazes. Tap, move, and find the letters!
+[EOF]

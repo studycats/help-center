@@ -60,3 +60,4 @@ Let’s play!
 -----------
 
 Are you ready to test your skills in the animal silhouette game? Tap start and show us how quickly you can identify the animals!
+[EOF]

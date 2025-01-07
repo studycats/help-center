@@ -57,3 +57,4 @@ For other Studycat apps
 ![Screenshot 2024-07-01 at 14.37.50.png](https://help.studycat.com/hc/article_attachments/34476207831705)
 
 6. The app should now be in the language you selected![Screenshot 2024-07-01 at 14.39.22.png](https://help.studycat.com/hc/article_attachments/34476197982617)
+[EOF]

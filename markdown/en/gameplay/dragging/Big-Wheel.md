@@ -71,3 +71,4 @@ The game can have different difficulty levels based on the number of items and t
 ## Let's play!
 
 Are you ready to test your skills in the Turning Wheel game? Tap start and see how well you can match the items!
+[EOF]

@@ -45,3 +45,4 @@ Games in medium or hard difficulty often have limited lives or limited time. If 
 3. Toggle Lives or Timer on or off
 
 ![](https://help.studycat.com/hc/article_attachments/27187505863193)
+[EOF]

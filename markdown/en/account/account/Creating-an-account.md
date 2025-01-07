@@ -21,3 +21,4 @@ There are two ways to create an account on each app. You can either create one d
 2. Choose sign in
 
 3. Now follow the on screen instructions. If you have any problems, don't hesitate to contact support
+[EOF]

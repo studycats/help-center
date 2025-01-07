@@ -69,3 +69,4 @@ Let’s play!
 -----------
 
 Have fun playing the 'Who's is it?' game!
+[EOF]

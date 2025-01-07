@@ -60,3 +60,4 @@ Getting harder
 ---------------
 
 Now you can go and find all the pairs and test your memory!
+[EOF]

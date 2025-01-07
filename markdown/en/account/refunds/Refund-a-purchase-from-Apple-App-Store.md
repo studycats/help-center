@@ -34,3 +34,4 @@ How to request a refund from Apple
 [Check the status of your refund request](https://support.apple.com/kb/HT210904).
 
 Full details are available here:<https://support.apple.com/HT204088>
+[EOF]

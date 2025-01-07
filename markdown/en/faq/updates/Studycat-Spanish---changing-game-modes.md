@@ -16,3 +16,4 @@ section: Game updates
 3. Select the mode you want, either basic (what was there previously) or adventure (a new and improved feature)
 
 ![IMG_2671.PNG](https://help.studycat.com/hc/article_attachments/34771498307353)
+[EOF]

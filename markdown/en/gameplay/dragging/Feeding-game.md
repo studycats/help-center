@@ -49,3 +49,4 @@ Let’s play!
 -----------
 
 Are you ready to feed the monster? Jump in and start satisfying its cravings!
+[EOF]

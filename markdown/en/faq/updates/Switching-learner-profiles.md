@@ -28,3 +28,4 @@ Here's how you can switch between profiles and add new ones:
 
 * Editing: To edit a profile, go to "Profiles" icon, select the profile, and choose "Edit."
 * Deleting: you can not delete profiles currently.
+[EOF]

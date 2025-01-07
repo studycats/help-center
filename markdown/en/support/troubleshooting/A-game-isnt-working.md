@@ -10,3 +10,4 @@ section: Troubleshooting
 2. Download the latest version from your app store.
 
 ### If that does not solve the issue, please [Submit a Request.](https://help.studycat.com/hc/en-gb/requests/new)
+[EOF]

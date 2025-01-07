@@ -62,3 +62,4 @@ Let’s Play!
 -----------
 
 Are you ready to test your puzzle-solving skills? Dive into Puzzle Swap and enjoy the challenge of arranging pieces to complete the picture. Start swapping and have fun!
+[EOF]

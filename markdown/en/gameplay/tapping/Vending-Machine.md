@@ -58,3 +58,4 @@ Let’s play!
 -----------
 
 Are you ready to test your skills in the vending machine game? Click start and show us how fast you can match items!
+[EOF]

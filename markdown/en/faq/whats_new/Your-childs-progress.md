@@ -14,3 +14,4 @@ Located in the bottom right corner of the app,
 Each medal in the panel represents a lesson your child needs to complete, with each lesson made up of 3–6 fun and engaging games. Learners earn stars after each activity and earn medals when they complete a lesson. The picture icons represent the topics.
 
 ![](https://help.studycat.com/hc/article_attachments/40392758904601)
+[EOF]

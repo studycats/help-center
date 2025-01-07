@@ -65,3 +65,4 @@ Let’s Play!
 -----------
 
 Are you ready to embark on this exciting adventure and uncover hidden words and phrases? Dive into Sandbox and experience the thrill of learning a new language. Swipe, dig, and expand your vocabulary!
+[EOF]

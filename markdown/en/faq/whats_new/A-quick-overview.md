@@ -15,3 +15,4 @@ what parents, kids, and educators asked for.
 * [**Studycat library:**](https://help.studycat.com/hc/en-us/articles/40392018677401) Discover stories and songs to enrich your child’s learning experience
 
 ......and a [**New icon**](https://help.studycat.com/hc/en-us/articles/40378210072217) with Studycat running highlighting the adventure of learning!
+[EOF]

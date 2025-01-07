@@ -20,3 +20,4 @@ To view, change or cancel your subscriptions, please sign in to your Apple ID ac
 Your subscriptions and payments are processed through your Google ID account.
 
 To view, change or cancel your subscriptions, please sign in to your Google ID account. Instructions are available here:<https://support.google.com/googleplay/answer/7018481>
+[EOF]

@@ -53,3 +53,4 @@ Let’s Play!
 -----------
 
 Are you ready to test your animal knowledge and listening skills? Dive into Animal Actions and enjoy the challenge of matching actions with the correct animals. Start clicking and have fun!
+[EOF]
