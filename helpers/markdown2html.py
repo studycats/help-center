@@ -11,23 +11,33 @@ for lang in os.listdir('markdown'):
     output_dir = os.path.join('html', lang)
     os.makedirs(output_dir, exist_ok=True)
 
-    for filename in os.listdir(input_dir):
-        if not filename.endswith('.md'):
-            continue
+    for category in os.listdir(input_dir):
+        input_category_dir = os.path.join(input_dir, category)
+        output_category_dir = os.path.join(output_dir, category)
+        os.makedirs(output_category_dir, exist_ok=True)
 
-        input_path = os.path.join(input_dir, filename)
-        output_path = os.path.join(output_dir, filename.replace('.md', '.html'))
+        for section in os.listdir(input_category_dir):
+            input_section_dir = os.path.join(input_category_dir, section)
+            output_section_dir = os.path.join(output_category_dir, section)
+            os.makedirs(output_section_dir, exist_ok=True)
 
-        with open(input_path, 'r', encoding='utf-8') as input_file:
-            text = input_file.read()
+            for filename in os.listdir(input_section_dir):
+                if not filename.endswith('.md'):
+                    continue
 
-        if text.startswith('---'):
-            _, remaining = text.split('---', 2)[1:]
-            text = remaining.strip()
+                input_path = os.path.join(input_section_dir, filename)
+                output_path = os.path.join(output_section_dir, filename.replace('.md', '.html'))
 
-        html = markdown(text)
+                with open(input_path, 'r', encoding='utf-8') as input_file:
+                    text = input_file.read()
 
-        with open(output_path, 'w', encoding='utf-8') as output_file:
-            output_file.write(html)
-        
-        print(f"Converted {input_path} to {output_path}")
+                if text.startswith('---'):
+                    _, remaining = text.split('---', 2)[1:]
+                    text = remaining.strip()
+
+                html = markdown(text)
+
+                with open(output_path, 'w', encoding='utf-8') as output_file:
+                    output_file.write(html)
+                
+                print(f"Converted {input_path} to {output_path}")
