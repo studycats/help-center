@@ -4,20 +4,13 @@ title: Manage your subscription
 category: account
 section: subscriptions
 ---
-How to manage your subscription
--------------------------------
-
-Subscription management is dependent on where you made your initial purchase.
-
-If you purchased from within your Studycat app, your subscription is managed through your App Store or Google Play account.
-
-Please see the relevant instructions below.
 
 ## Apple App Store
 
 Your subscriptions and payments are processed through your Apple ID account. Furthermore, Apple do not share any of your personal or purchase data with Studycat and will only accept account enquiries and instructions from the account holder.
 
 To view, change or cancel your subscriptions, please sign in to your Apple ID account. Instructions are available here:<https://support.apple.com/HT202039>
+
 
 ## Google Play
 
