@@ -4,10 +4,6 @@ title: 7-day free trial
 category: faq
 section: purchase
 ---
-Free trial explained
-====================
-
-All Studycat curriculums come with a 7-day free trial. 
 
 How does the free trial work?
 -----------------------------
