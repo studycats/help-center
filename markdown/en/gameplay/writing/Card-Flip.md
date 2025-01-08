@@ -50,8 +50,9 @@ The game ends when all picture and spelling pairs are correctly matched.
 Ranks/Difficulty Levels
 -----------------------
 
-| **Level 1** | Only one pair to match |
+| Level | Description |
 | --- | --- |
+| **Level 1** | Only one pair to match |
 | **Level 2** | A couple of pairs to match |
 | **Level 3** | A few pairs to match |
 

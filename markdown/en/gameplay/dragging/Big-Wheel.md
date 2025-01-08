@@ -64,8 +64,9 @@ Achieve a high score by accurately tapping the correct items on the wheel as the
 
 The game can have different difficulty levels based on the number of items and the speed of the wheel. As you advance, the difficulty increases.
 
-| **Rank 1** | Basic items and slower wheel speed. |
+| Rank | Description |
 | --- | --- |
+| **Rank 1** | Basic items and slower wheel speed. |
 | **Rank 2** | More items and faster wheel speed. |
 
 ## Let's play!

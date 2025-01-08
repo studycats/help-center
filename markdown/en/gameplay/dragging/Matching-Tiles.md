@@ -50,8 +50,9 @@ New items will appear to replace the pairs you’ve matched.
 Difficulty Levels
 -----------------
 
-| **Level 1** | 3x3 grid of items |
+| Level | Grid |
 | --- | --- |
+| **Level 1** | 3x3 grid of items |
 | **Level 2** | 4x4 grid of items |
 | **Level 2** | 4x7 grid of items |
 

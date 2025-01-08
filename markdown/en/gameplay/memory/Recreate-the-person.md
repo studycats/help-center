@@ -65,8 +65,9 @@ Ranks/Difficulty Levels
 
 The game can have different difficulty levels based on the complexity of the faces and the time given to memorize them. As you advance, the difficulty increases.
 
-| **Rank 1** | Simple faces with basic features. |
+| Rank | Description |
 | --- | --- |
+| **Rank 1** | Simple faces with basic features. |
 | **Rank 2** | More complex faces and features. |
 | **Rank 3** | Looking at the whole body, not just the face.IMG_2726.PNG |
 

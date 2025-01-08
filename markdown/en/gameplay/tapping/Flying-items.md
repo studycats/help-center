@@ -65,8 +65,9 @@ Difficulty Levels
 
 The game can have different difficulty levels based on the number of items and the speed of announcements. As you advance, the difficulty increases.
 
-| **Rank 1** | Very few items |
+| Rank | Description |
 | --- | --- |
+| **Rank 1** | Very few items |
 | **Rank 2** | Slightly more items |
 | **Rank 3** | A lot of items |
 

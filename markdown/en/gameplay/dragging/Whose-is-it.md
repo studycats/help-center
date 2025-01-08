@@ -23,12 +23,13 @@ Gameplay Mechanics
 
 ### Listening
 
-### RPReplay_Final1720678551 4.gif
+![RPReplay_Final1720678551 4.gif](https://help.studycat.com/hc/article_attachments/34966103283609)
 
 Bob will say for example:
 
-| **It's my pen** | Give the pen to Bob, the red cat |
+| Bob | Action |
 | --- | --- |
+| **It's my pen** | Give the pen to Bob, the red cat |
 | **It's your pen** | Take the pen for yourself, the purple cat |
 | **It's his pen** | Give the pen to the Tom, the blue cat |
 | **It's her pen** | Give the pen to the Ali, the pink cat |
@@ -46,10 +47,11 @@ Growing/Advancing
 
 As you progress through the game, bob will start to alter what he says
 
-| **1** | Its [pronoun] [object] |
+| Rank | Bob |
 | --- | --- |
-| **2** | Its [pronoun] |
-| **3** | [pronoun] |
+| **Rank 1** | Its [pronoun] [object] |
+| **Rank 2** | Its [pronoun] |
+| **Rank 3** | [pronoun] |
 
 For example
 

@@ -18,15 +18,9 @@ We have one simple goal: ***find the right person.*** How are we going to do tha
 
 What's the deal with these buttons? When you tap one, you will hear a statement about the person we're looking for.
 
-This statement comes in two different forms:
-| |  || | |
-| --- | --- | --- | --- | --- |
-| He/she | is not wearing | a | [color] | [clothing] |
-| He/she | is wearing | a | [color] | [clothing] |
+*Example 1*: **She is wearing a red t-shirt.**
 
-*Example 1:* **She is wearing a red t-shirt.**
-
-*Example 2:* ***He is not wearing a green hat.***
+*Example 2*: **He is not wearing a green hat.**
 
 ![Untitled-3.png](https://help.studycat.com/hc/article_attachments/34921324104985)  
 
@@ -42,8 +36,9 @@ Swipe him upwards, and POOF! He's gone. He committed the crime of wearing a gree
 
 After seeing that, I bet you'd like to try, too. It's pretty easy. All you have to do is ***place your finger on a person and swipe upwards***. Then, you'll be poofing people in no time. Eliminate everybody who is wearing a green hat!
 
-| **Rank 1** | You can make as many mistakes as you like. |
+| Rank | Description |
 | --- | --- |
+| **Rank 1** | You can make as many mistakes as you like. |
 | **Rank 2** | Three levels. More people. You will lose if you make too many mistakes. |
 | **Rank 3** | Three levels. You will lose if you make too many mistakes, AND you must finish the game before the clock runs out. |
 

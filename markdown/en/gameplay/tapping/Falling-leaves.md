@@ -77,8 +77,9 @@ Difficulty Levels
 
 The game can have different difficulty levels based on the number of leaves and the speed of announcements. As you advance, the difficulty increases.
 
-| **Level 1** | Basic colors and few stages. |
+| Level | Description |
 | --- | --- |
+| **Level 1** | Basic colors and few stages. |
 | **Level 2** | Some more choices and slightly more stages. |
 | **Level 3** | A lot of possible colours and a lot of stages. |
 
