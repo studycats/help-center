@@ -4,7 +4,7 @@ title: Accessing the settings area
 category: account
 section: account
 ---
-### For Learn Spanish
+### For Studycat Spanish
 
 1. Open your Studycat app and select the settings button
 
@@ -12,7 +12,7 @@ section: account
 
 2. Pass through the age verification screen by typing the numbers on the screen in order
 
-### For Learn English
+### For Studycat English
 
 1. Select any profile![Screenshot 2024-06-28 at 4.21.10 pm.jpeg](https://help.studycat.com/hc/article_attachments/34518228607769)
 
