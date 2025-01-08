@@ -1,6 +1,60 @@
 import os
 from markdown import markdown
+from bs4 import BeautifulSoup
 
+def style_table(html):
+    soup = BeautifulSoup(html, 'html.parser')
+    tables = soup.find_all('table')
+    
+    for table in tables:
+        # Add base table styles
+        table['style'] = "height: 125px;"
+        
+        # Find all rows
+        rows = table.find_all('tr')
+        for i, row in enumerate(rows):
+            row['style'] = f"height: {'25px' if i == 0 else '50px'};"
+            
+            # Style cells in each row
+            cells = row.find_all('td')
+            if len(cells) >= 2:  # Ensure we have at least 2 cells
+                # First column
+                cells[0]['style'] = (
+                    "width: 115.938px; "
+                    "background: #eef9ff; "
+                    "text-align: center; "
+                    "border-top: 3px solid #e1f2ff; "
+                    "border-bottom: 3px solid #e1f2ff; "
+                    "border-left: 3px solid #e1f2ff; "
+                    "border-right: none; "
+                    f"border-top-left-radius: {('10px' if i == 0 else '0')}; "
+                    f"border-bottom-left-radius: {('10px' if i == len(rows)-1 else '0')};"
+                )
+                
+                # Second column
+                cells[1]['style'] = (
+                    "width: 558.055px; "
+                    "border-top: 3px solid #e1f2ff; "
+                    "border-right: 3px solid #e1f2ff; "
+                    "border-bottom: 3px solid #e1f2ff; "
+                    "border-left: none; "
+                    f"border-top-right-radius: {('10px' if i == 0 else '0')}; "
+                    f"border-bottom-right-radius: {('10px' if i == len(rows)-1 else '0')};"
+                )
+                
+                # Wrap cell content in <p> tags if not already wrapped
+                for cell in cells:
+                    if not cell.find('p'):
+                        content = cell.string
+                        cell.string = ''
+                        new_p = soup.new_tag('p')
+                        if content:
+                            new_p.string = content
+                        cell.append(new_p)
+
+    return str(soup)
+
+# Main conversion loop
 for lang in os.listdir('markdown'):
     input_dir = os.path.join('markdown', lang)
 
@@ -35,7 +89,9 @@ for lang in os.listdir('markdown'):
                     _, remaining = text.split('---', 2)[1:]
                     text = remaining.strip()
 
-                html = markdown(text)
+                # Convert markdown to HTML
+                html = markdown(text, extensions=['tables'])
+                html = style_table(html)
 
                 with open(output_path, 'w', encoding='utf-8') as output_file:
                     output_file.write(html)
