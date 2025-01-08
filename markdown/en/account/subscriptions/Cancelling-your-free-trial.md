@@ -4,10 +4,6 @@ title: Cancelling your free trial
 category: account
 section: subscriptions
 ---
-This depends on where you started the free trial.
--------------------------------------------------
-
-Please see the relevant instructions below.
 
 ## Apple App Store
 

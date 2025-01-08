@@ -4,16 +4,15 @@ title: Studycat Library
 category: faq
 section: stories
 ---
-## How to use the Studycat library
 
-The Studycat library is a brand-new feature in the Learn Spanish app where young learners can watch fun, curriculum-based stories to reinforce their vocabulary.
+The Studycat library is available in Studycat Spanish and Studycat English. The library features fun, curriculum-based stories and songs to reinforce vocabulary and topics learnt in the app.
 
 Follow these steps to start exploring:
 
 ## Accessing the library
 
-1. Open the Learn Spanish app.
-2. From the main menu, tap on the Library option.
+1. Open the app.
+2. From the main menu, tap on the Library _play button_ icon.
 3. You will see a selection of stories featuring Studycat's characters.
 
 ![](https://help.studycat.com/hc/article_attachments/38812096342041)
@@ -21,7 +20,7 @@ Follow these steps to start exploring:
 ## Watching a story
 
 1. Choose a story by tapping on it.
-2. The video will play directly inside the app, keeping your child focused without needing to open a browser.
+2. The video will play directly inside the app
 
 ![IMG_0357.PNG](https://help.studycat.com/hc/article_attachments/38812096344217)
 

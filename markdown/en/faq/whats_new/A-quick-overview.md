@@ -4,7 +4,7 @@ title: A quick overview
 category: faq
 section: whats_new
 ---
-We've turbocharged Learn English with exciting new features and content based on
+We've turbocharged Studycat English with exciting new features and content based on
 
 what parents, kids, and educators asked for.
 
