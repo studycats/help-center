@@ -8,50 +8,69 @@ def style_table(html):
     
     for table in tables:
         # Add base table styles
-        table['style'] = "height: 125px;"
+        table['style'] = (
+            "border-collapse: separate; "  # Needed for border-radius to work
+            "border-spacing: 0; "          # Remove gaps between cells
+            "border-radius: 3px; "         # Rounded corners for the whole table
+            "overflow: hidden; "           # Ensure inner content respects rounded corners
+            # "width: 100%; "                # Full width
+        )
         
         # Find all rows
-        rows = table.find_all('tr')
+        rows = table.find_all(['tr'])
         for i, row in enumerate(rows):
-            row['style'] = f"height: {'25px' if i == 0 else '50px'};"
-            
-            # Style cells in each row
-            cells = row.find_all('td')
-            if len(cells) >= 2:  # Ensure we have at least 2 cells
-                # First column
-                cells[0]['style'] = (
-                    "width: 115.938px; "
-                    "background: #eef9ff; "
-                    "text-align: center; "
-                    "border-top: 3px solid #e1f2ff; "
-                    "border-bottom: 3px solid #e1f2ff; "
-                    "border-left: 3px solid #e1f2ff; "
-                    "border-right: none; "
-                    f"border-top-left-radius: {('10px' if i == 0 else '0')}; "
-                    f"border-bottom-left-radius: {('10px' if i == len(rows)-1 else '0')};"
+            cells = row.find_all(['td', 'th'])
+            for j, cell in enumerate(cells):
+                # Base cell styles
+                cell_style = (
+                    "border: 1.5px solid #e1f2ff; "  # Light blue border (50% thicker)
+                    "padding: 8px; "                 # Inner padding
                 )
                 
-                # Second column
-                cells[1]['style'] = (
-                    "width: 558.055px; "
-                    "border-top: 3px solid #e1f2ff; "
-                    "border-right: 3px solid #e1f2ff; "
-                    "border-bottom: 3px solid #e1f2ff; "
-                    "border-left: none; "
-                    f"border-top-right-radius: {('10px' if i == 0 else '0')}; "
-                    f"border-bottom-right-radius: {('10px' if i == len(rows)-1 else '0')};"
-                )
+                # Add background color for header row
+                if i == 0:
+                    cell_style += (
+                        "background-color: #eef9ff; "  # Light blue background
+                        "border-top-width: 3px; "      # Thicker top border
+                    )
                 
-                # Wrap cell content in <p> tags if not already wrapped
-                for cell in cells:
-                    if not cell.find('p'):
-                        content = cell.string
-                        cell.string = ''
-                        new_p = soup.new_tag('p')
-                        if content:
-                            new_p.string = content
-                        cell.append(new_p)
+                # Double the bottom border for the last row
+                if i == len(rows) - 1:
+                    cell_style += "border-bottom-width: 3px; "
+                
+                # Double the side borders for first and last cells
+                if j == 0:
+                    cell_style += "border-left-width: 3px; "
+                if j == len(cells) - 1:
+                    cell_style += "border-right-width: 3px; "
+                
+                cell['style'] = cell_style
 
+    return str(soup)
+
+def style_blockquote(html):
+    soup = BeautifulSoup(html, 'html.parser')
+    blockquotes = soup.find_all('blockquote')
+    
+    for blockquote in blockquotes:
+        blockquote['style'] = (
+            "background-color: #fff9e6; "  # light yellow background
+            "border: 3px solid #ffeb99; "  # dark yellow edge line
+            "border-radius: 10px; "  # rounded corners
+            "padding: 15px 10px; "  # add some padding for better appearance
+            "margin: 10px 5px; "  # add margin for spacing
+        )
+    
+    return str(soup)
+
+def style_image(html):
+    soup = BeautifulSoup(html, 'html.parser')
+    images = soup.find_all('img')
+    
+    for image in images:
+        # Add style for rounded corners
+        image['style'] = "border-radius: 10px;"
+    
     return str(soup)
 
 # Main conversion loop
@@ -92,6 +111,8 @@ for lang in os.listdir('markdown'):
                 # Convert markdown to HTML
                 html = markdown(text, extensions=['tables'])
                 html = style_table(html)
+                html = style_blockquote(html)
+                html = style_image(html)
 
                 with open(output_path, 'w', encoding='utf-8') as output_file:
                     output_file.write(html)
