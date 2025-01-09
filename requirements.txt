@@ -5,3 +5,4 @@ arrow
 markdownify
 deep_translator
 anthropic
+markdown
