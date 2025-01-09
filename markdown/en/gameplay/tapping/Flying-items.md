@@ -8,18 +8,15 @@ section: tapping
 
 In this game, items fly up from the bottom of the screen, and your goal is to match each item with its announced name. The challenge increases as you progress through the game, requiring swift reflexes and attention to detail.
 
-Objective
----------
+## Objective
 
 Identify and tap on the flying items as they are announced by the game.
 
-Controls
---------
+## Controls
 
 Use your finger to tap on the items as they fly up from the bottom of the screen and are announced.
 
-Gameplay Mechanics
-------------------
+## Gameplay Mechanics
 
 ### Start the Game
 
@@ -41,27 +38,23 @@ Quickly tap the correct item as it flies up from the bottom of the screen.
 
 The game will read out the name of another item. Listen carefully and tap the correct item.
 
-Growing/Advancing
------------------
+## Growing/Advancing
 
 ![Growing Image](https://help.studycat.com/hc/article_attachments/34826217331225)
 
 As you continue, more items will fly up from the bottom of the screen, increasing the challenge. Stay focused and tap the correct items.
 
-Gameplay Loop
--------------
+## Gameplay Loop
 
 Listen for the item's name, find the item, tap the item, and repeat. The challenge increases with more items being added and the speed of their appearance.
 
-Victory
--------
+## Victory
 
 ![Victory Image](https://help.studycat.com/hc/article_attachments/34917314421785)
 
 Successfully tap all the announced items to achieve victory. Your reflexes and accuracy will determine your success.
 
-Difficulty Levels
------------------
+## Difficulty Levels
 
 The game can have different difficulty levels based on the number of items and the speed of announcements. As you advance, the difficulty increases.
 
@@ -71,7 +64,6 @@ The game can have different difficulty levels based on the number of items and t
 | **Rank 2** | Slightly more items |
 | **Rank 3** | A lot of items |
 
-Let’s play!
------------
+## Let's play!
 
 Are you ready to test your skills in the flying items game? Tap start and show us how quickly you can match the items!

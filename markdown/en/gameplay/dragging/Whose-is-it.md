@@ -8,18 +8,15 @@ section: dragging
 
 Everyone's stationary has been mixed up, and you need to help sort it out!
 
-Objective
----------
+## Objective
 
 Your goal is to give each person their school bag items back. Listen to Bob, the cat opposite you, and he will tell you who the item belongs to.
 
-Controls
---------
+## Controls
 
 All you have to do is tap and hold on the item in the middle of the screen and then drag it towards the correct cat.
 
-Gameplay Mechanics
-------------------
+## Gameplay Mechanics
 
 ### Listening
 
@@ -42,8 +39,7 @@ You have to listen and decide who to give it to
 
 You have to move the object to the correct person, by dragging it either up, right, left, or down the screen.
 
-Growing/Advancing
------------------
+## Growing/Advancing
 
 As you progress through the game, bob will start to alter what he says
 
@@ -57,17 +53,14 @@ For example
 
 Its her pen -> Its her's -> her's
 
-Gameplay Loop
--------------
+## Gameplay Loop
 
 You wil have to repeatedly give the pen back a few times at each stage of the game in order to complete it.
 
-Victory
--------
+## Victory
 
-To win the game you must correctly identify all go  the schoolbag objects, and give them to the correct person.
+To win the game you must correctly identify all of the schoolbag objects and give them to the correct person.
 
-Let’s play!
------------
+## Let’s play!
 
 Have fun playing the 'Who's is it?' game!

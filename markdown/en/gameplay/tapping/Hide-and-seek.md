@@ -8,18 +8,15 @@ section: tapping
 
 Welcome to the hide and seek game! Where keen observation and careful exploration lead you to uncover concealed objects. Listen for clues, swipe to explore the area, and tap to reveal each hidden item. Enjoy the satisfaction of finding hidden treasures as you progress through the game.
 
-Objective
----------
+## Objective
 
 The primary goal of the game is to find all the hidden objects announced. Use your observation skills to uncover each item and progress to the next level.
 
-Controls
---------
+## Controls
 
 Listen to the item being announced, swipe sideways to view the whole area, and tap on the hidden item to reveal it.
 
-Gameplay Mechanics
-------------------
+## Gameplay Mechanics
 
 ### Finding Items
 
@@ -37,6 +34,6 @@ Once you have found the hidden item being announced, tap on it to reveal it and 
 
 ![F909388B-E97F-4BD9-89C1-B0FB01881CE6.png](https://help.studycat.com/hc/article_attachments/34783721841177)
 
-Let’s play!
+## Let's play!
 
 Dive into the game and start finding hidden objects. Have fun and challenge yourself as you progress through the levels.

@@ -4,16 +4,17 @@ title: Changing Difficulty Level in Classic Mode
 category: gameplay
 section: other
 ---
-Please note that this feature is not available in the structured learning mode, within Fun Spanish or Fun English. Difficulty is automatically increased.
+> This feature is not available in Studycat Spanish or Studycat English.
 
 ![IMG_4009.PNG](https://help.studycat.com/hc/article_attachments/35685764333977)
 
-In classic mode, you can adjust the difficulty level to match your preferences. This feature is available in English, French, Spanish, and German. Here’s how you can change the difficulty level using the button at the bottom left of the screen.
+## Studycat French, German and Chinese
 
-Step-by-Step Guide
-------------------
+You can adjust the difficulty level to match your preferences. Here's how you can change the difficulty level using the button at the bottom left of the screen.
 
-Follow these steps to change the difficulty level in classic mode:
+## Step-by-Step Guide
+
+Follow these steps to change the difficulty level:
 
 1. Locate the difficulty button at the bottom left of the screen.
 2. Click on the button to reveal the difficulty options.
@@ -24,12 +25,10 @@ Follow these steps to change the difficulty level in classic mode:
 
 Changing the difficulty level allows you to tailor the app experience to your skill level, making it easier or more challenging as needed.
 
-Additional Information
-----------------------
+## Additional Information
 
 Other ways to increase difficulty are to introduce game timers and lives, read this article on how to do so: [Game Timer & Lives](https://help.studycat.com/hc/en-us/articles/27187476326297)
 
-Let’s Get Started!
-------------------
+## Let's Get Started!
 
-Now that you know how to adjust the difficulty level, go ahead and customize your classic mode experience. Enjoy using the app!
+Now that you know how to adjust the difficulty level, go ahead and customize your learningexperience. Enjoy using the app!

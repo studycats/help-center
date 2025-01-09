@@ -28,4 +28,4 @@ If you're experiencing issues with hearing anything in the Studycat app, try the
    
     * Sometimes, a simple restart can fix sound issues. Turn off your device completely and then turn it back on.
 
-If you've tried all these steps and still can’t hear anything, please [contact our support team](https://help.studycat.com/hc/en-us/requests/new) for further assistance.
+If you've tried all these steps and still can’t hear anything, please [contact our support team](https://help.studycat.com/hc/en-us/requests/new) for further assistance.

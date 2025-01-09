@@ -8,8 +8,7 @@ section: writing
 
 Welcome to the Card Flip game! Your objective is to match pictures with their corresponding spellings by flipping cards.
 
-How to Play
------------
+## How to Play
 
 ### Start the Game
 
@@ -47,8 +46,7 @@ Keep flipping cards to find and match all the pictures with their correct spelli
 
 The game ends when all picture and spelling pairs are correctly matched.
 
-Ranks/Difficulty Levels
------------------------
+## Ranks/Difficulty Levels
 
 | Level | Description |
 | --- | --- |
@@ -56,7 +54,6 @@ Ranks/Difficulty Levels
 | **Level 2** | A couple of pairs to match |
 | **Level 3** | A few pairs to match |
 
-Let’s play!
------------
+## Let's play!
 
 Are you ready to test your matching skills in the Card Flip game? Tap start and see how many pairs you can find!

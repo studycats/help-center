@@ -8,16 +8,15 @@ If you purchased your free trial or subscription from within your Studycat app o
 
 Apple do not share your personal or purchase details with Studycat. Apple will only accept refund requests from you, which means that we are unable to request this on your behalf.
 
-How to request a refund from Apple
-----------------------------------
+## How to request a refund from Apple
 
 1. Sign in to [reportaproblem.apple.com](https://reportaproblem.apple.com/)
 
-2. Tap  "I'd like to," then choose "Request a refund."
+2. Tap "I'd like to" then choose "Request a refund"
 
-3. Choose the reason why you want a refund, then tap Next.
+3. Choose the reason why you want a refund, then tap _Next_.
 
-4. Choose the app, subscription, or other item, then tap Submit.
+4. Choose the app, subscription, or other item, then tap _Submit_.
 
 ​![](/attachments/token/EIRFxjZzzik6OVcPJeEE4MFaP/?name=ios14-iphone-12-pro-safari-report-a-problem.png)​
 
@@ -33,4 +32,4 @@ How to request a refund from Apple
 
 [Check the status of your refund request](https://support.apple.com/kb/HT210904).
 
-Full details are available here:<https://support.apple.com/HT204088>
+Full details are available here: <https://support.apple.com/HT204088>
