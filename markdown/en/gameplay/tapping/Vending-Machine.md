@@ -8,18 +8,15 @@ section: tapping
 
 In this game, you will see a vending machine stocked with various items. The game involves listening to the game announce an item's name and quickly locating and clicking on the corresponding item in the machine. As you progress, the challenge increases with the introduction of new items. Stay focused and test your ability to match items swiftly and accurately in this engaging activity.
 
-Objective
----------
+## Objective
 
 Locate and tap on the items announced by the game as quickly and accurately as possible.
 
-Controls
---------
+## Controls
 
 The the screen to select on the items in the vending machine as they are announced.
 
-Gameplay Mechanics
-------------------
+## Gameplay Mechanics
 
 ### Start the Game
 
@@ -39,22 +36,18 @@ Look for the item that matches the name you just heard.
 
 Click on the correct item in the vending machine.
 
-Avoiding Mistakes
------------------
+## Avoiding Mistakes
 
 Stay focused and ensure you click on the correct item as mistakes can impact your progress.
 
-Gameplay Loop
--------------
+## Gameplay Loop
 
 Listen for the item's name, find the item, tap the item, and repeat. The challenge increases with more items being added to the vending machine in following games.
 
-Victory
--------
+## Victory
 
 Successfully match all the items announced by the game to achieve victory. Your speed and accuracy will determine your success.
 
-Let’s play!
------------
+## Let's play!
 
 Are you ready to test your skills in the vending machine game? Click start and show us how fast you can match items!

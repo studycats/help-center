@@ -9,17 +9,17 @@ section: dragging
 Test your painting skills in this interactive challenge. Can you match colors and paint objects accurately?
 
 Objective
----------
+##
 
 Paint each object with the specified color to complete the challenge.
 
 Controls
---------
+##
 
 Tap the palette to select colors and drag your finger to paint the object.
 
 Gameplay Mechanics
-------------------
+##
 
 ### Selecting the colour
 

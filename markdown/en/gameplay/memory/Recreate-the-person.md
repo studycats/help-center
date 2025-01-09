@@ -8,18 +8,15 @@ section: memory
 
 Welcome to the Face Memory game! Your objective is to memorize a person's face and then recreate it by selecting the correct facial features from a set of options.
 
-Objective
----------
+## Objective
 
 Memorize the features of a person's face and then accurately recreate the face from memory.
 
-Controls
---------
+## Controls
 
 Use your finger to tap and select facial features from the provided options to recreate the person's face.
 
-Gameplay Mechanics
-------------------
+## Gameplay Mechanics
 
 ### Start the Game
 
@@ -41,7 +38,7 @@ Choose the correct nose, mouth, skin color, and other facial features from the o
 
 ### Complete the Face
 
-Keep selecting until you think you’ve recreated the person's face as closely as possible.
+Keep selecting until you think you've recreated the person's face as closely as possible.
 
 ![](https://help.studycat.com/hc/article_attachments/34824961345177)
 
@@ -55,13 +52,11 @@ At the end, you'll be shown the original person.
 
 The game will tell you how close you were to the original face.
 
-Victory
--------
+## Victory
 
 Achieve a high score by accurately recreating the faces as closely as possible.
 
-Ranks/Difficulty Levels
------------------------
+## Ranks/Difficulty Levels
 
 The game can have different difficulty levels based on the complexity of the faces and the time given to memorize them. As you advance, the difficulty increases.
 
@@ -71,7 +66,6 @@ The game can have different difficulty levels based on the complexity of the fac
 | **Rank&nbsp;2** | More complex faces and features. |
 | **Rank&nbsp;3** | Looking at the whole body, not just the face.IMG_2726.PNG |
 
-Let’s play!
------------
+## Let's play!
 
 Are you ready to test your memory skills in the face memory game? Tap start and see how well you can recreate the faces!

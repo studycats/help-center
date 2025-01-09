@@ -8,18 +8,15 @@ section: dragging
 
 Welcome to the Grid Matching game! Your objective is to find and match pairs of items on a grid by swiping them together.
 
-Objective
----------
+## Objective
 
 Find and match pairs of items on the grid by swiping them together to make them disappear.
 
-Controls
---------
+## Controls
 
 Swipe the items in any direction (up, down, left, or right) to form pairs.
 
-Gameplay Mechanics
-------------------
+## Gameplay Mechanics
 
 ### Understand the Grid
 
@@ -45,10 +42,9 @@ Keep swiping to form as many pairs as you can.
 
 ### Watch for New Items
 
-New items will appear to replace the pairs you’ve matched.
+New items will appear to replace the pairs you've matched.
 
-Difficulty Levels
------------------
+## Difficulty Levels
 
 | Level | Grid |
 | --- | --- |
@@ -56,7 +52,6 @@ Difficulty Levels
 | **Level&nbsp;2** | 4x4 grid of items |
 | **Level&nbsp;2** | 4x7 grid of items |
 
-Let’s play!
------------
+## Let's play!
 
 Are you ready to test your matching skills in the Grid Matching game? Tap start and see how many pairs you can form!

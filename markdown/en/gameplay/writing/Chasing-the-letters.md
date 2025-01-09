@@ -8,18 +8,15 @@ section: writing
 
 Welcome! In this game you have to guide your character to collect letters and spell out the words announced by the game.
 
-Objective
----------
+## Objective
 
 Guide your character to collect the correct letters in order to spell the words announced by the game.
 
-Controls
---------
+## Controls
 
 Tap and hold on the screen to guide your character to collect the letters.
 
-Gameplay Mechanics
-------------------
+## Gameplay Mechanics
 
 ### Start the Game
 
@@ -57,24 +54,20 @@ Once you spell the word correctly, the game will read out a new word.
 
 Keep guiding your character to spell out each word.
 
-Gameplay Loop
--------------
+## Gameplay Loop
 
 Listen for the word, guide your character to collect the letters, and spell out the word. Repeat the process to continue the game.
 
-Victory
--------
+## Victory
 
 ![Victory Image](https://help.studycat.com/hc/article_attachments/34964428232601)
 
 Achieve a high score by accurately spelling the words announced by the game.
 
-Difficulty Levels
------------------
+## Difficulty Levels
 
 The game can have different difficulty levels based on the complexity of the words and the speed of the flying letters. As you advance, the difficulty increases.
 
-Let’s play!
------------
+## Let's play!
 
 Are you ready to test your spelling skills in the Spelling Adventure game? Tap start and see how well you can spell the words!

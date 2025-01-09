@@ -8,18 +8,15 @@ section: tapping
 
 To learn the new word, tap each object, and it will be read out to you
 
-Objective
----------
+## Objective
 
 To learn new vocabulary
 
-Controls
---------
+## Controls
 
 Tap each object.
 
-Gameplay Mechanics
-------------------
+## Gameplay Mechanics
 
 ### Tapping the object
 
@@ -27,7 +24,6 @@ Tap the object that appears, and it will be read out to you
 
 ![](https://help.studycat.com/hc/article_attachments/34967116977049)
 
-Let’s play!
------------
+## Let's play!
 
 Get ready to start learning new words!
