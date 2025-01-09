@@ -6,19 +6,19 @@ section: account
 ---
 ## Studycat English
 
-1. Open the Studycat app and select your profile ![Screenshot 2024-06-28 at 4.21.10 pm.jpeg](https://help.studycat.com/hc/article_attachments/34473186682009)
+1. Open the Studycat app and select your profile ![](https://help.studycat.com/hc/article_attachments/34473186682009)
 
-2. Select the cat profile at the top of the screen ![Screenshot 2024-06-28 at 14.17.11.png](https://help.studycat.com/hc/article_attachments/34473186684953)
+2. Select the cat profile at the top of the screen ![](https://help.studycat.com/hc/article_attachments/34473186684953)
 
-3. Click the _Edit_ icon ![Screenshot 2024-07-01 at 13.21.54.png](https://help.studycat.com/hc/article_attachments/34473186707865)
+3. Click the _Edit_ icon ![](https://help.studycat.com/hc/article_attachments/34473186707865)
 
-4. Pass through the age verification screen ![Screenshot 2024-06-26 at 14.53.58.png](https://help.studycat.com/hc/article_attachments/34473186715801)
+4. Pass through the age verification screen ![](https://help.studycat.com/hc/article_attachments/34473186715801)
 
-5. Change nickname or age ![Screenshot 2024-07-01 at 13.24.30 copy.png](https://help.studycat.com/hc/article_attachments/34473186721561)
+5. Change nickname or age ![](https://help.studycat.com/hc/article_attachments/34473186721561)
 
-6. Select _Change cat_ ![Screenshot 2024-07-01 at 13.24.30.png](https://help.studycat.com/hc/article_attachments/34473186726041)
+6. Select _Change cat_ ![](https://help.studycat.com/hc/article_attachments/34473186726041)
 
-7. Select a cat icon ![Screenshot 2024-07-01 at 13.26.01.png](https://help.studycat.com/hc/article_attachments/34473149798937)
+7. Select a cat icon ![](https://help.studycat.com/hc/article_attachments/34473149798937)
 
 ## Studycat Spanish
 
@@ -34,12 +34,10 @@ section: account
 
 It is not possible to change cat icon, however you can still change your age and nickname.
 
-1. Open your Studycat app and navigate to ⚙️ Settings ![Screenshot 2024-06-28 at 3.57.17 pm.jpeg](https://help.studycat.com/hc/article_attachments/34473149804697)
+1. Open your Studycat app and navigate to ⚙️ Settings ![](https://help.studycat.com/hc/article_attachments/34473149804697)
 
-2. Select _My account_. If _My account_ is not available select _Sign in_ instead. If you have any trouble [this article](https://help.studycat.com/hc/en-us/articles/360051281554-Access-your-free-trial-or-subscription) may help. ![Screenshot 2024-07-01 at 13.38.12.png](https://help.studycat.com/hc/article_attachments/34473149811993)
+2. Select _My account_. If _My account_ is not available select _Sign in_ instead. If you have any trouble [this article](https://help.studycat.com/hc/en-us/articles/360051281554-Access-your-free-trial-or-subscription) may help. ![](https://help.studycat.com/hc/article_attachments/34473149811993)
 
-3. Select _Edit ![Screenshot 2024-07-01 at 13.38.21.png](https://help.studycat.com/hc/article_attachments/34473186746521)
+3. Select _Edit ![](https://help.studycat.com/hc/article_attachments/34473186746521)
 
-4. Enter your new nickname or age and remember to 'save changes'. ![Screenshot 2024-07-01 at 13.38.29.png](https://help.studycat.com/hc/article_attachments/34473149816729)
-
-⚙️
+4. Enter your new nickname or age and remember to 'save changes'. ![](https://help.studycat.com/hc/article_attachments/34473149816729)
