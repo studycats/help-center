@@ -22,7 +22,7 @@ Follow these steps to start exploring:
 1. Choose a story by tapping on it.
 2. The video will play directly inside the app
 
-![IMG_0357.PNG](https://help.studycat.com/hc/article_attachments/38812096344217)
+![](https://help.studycat.com/hc/article_attachments/38812096344217)
 
 ## Free vs. paid stories
 

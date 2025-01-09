@@ -23,7 +23,7 @@ Gameplay Mechanics
 
 ### Understand the Grid
 
-![IMG_2675.PNG](https://help.studycat.com/hc/article_attachments/34786044757657)
+![](https://help.studycat.com/hc/article_attachments/34786044757657)
 
 The game consists of a grid filled with various items.
 
@@ -52,9 +52,9 @@ Difficulty Levels
 
 | Level | Grid |
 | --- | --- |
-| **Level 1** | 3x3 grid of items |
-| **Level 2** | 4x4 grid of items |
-| **Level 2** | 4x7 grid of items |
+| **Level&nbsp;1** | 3x3 grid of items |
+| **Level&nbsp;2** | 4x4 grid of items |
+| **Level&nbsp;2** | 4x7 grid of items |
 
 Let’s play!
 -----------

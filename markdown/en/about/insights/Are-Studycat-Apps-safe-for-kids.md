@@ -10,7 +10,7 @@ At Studycat, your child’s safety and privacy are our top priorities. Here’s 
 
 Studycat proudly holds certification from the [kidSAFE Seal Program](https://www.kidsafeseal.com/certifiedproducts/studycat_fun_appseries.html), a trusted safety certification service for children’s websites and apps (learn more about the program [here](https://www.kidsafeseal.com/aboutourprogram.html).) This means we meet high standards for safety, privacy, and security, ensuring your child can learn and explore in a safe space.
 
-![Screenshot 2024-07-08 at 1.36.24 PM.png](https://help.studycat.com/hc/article_attachments/34779667893401)
+![](https://help.studycat.com/hc/article_attachments/34779667893401)
 
 ### Ad-Free Environment
 

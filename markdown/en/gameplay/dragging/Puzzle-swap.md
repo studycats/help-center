@@ -31,18 +31,18 @@ When you start the game, a puzzle will appear on the screen. Your task is to rea
 
 Drag a puzzle piece to another one to swap their places. This mechanic allows you to move pieces around the board to reconstruct the original image.
 
-![c.gif](https://help.studycat.com/hc/article_attachments/35085383360281)
+![](https://help.studycat.com/hc/article_attachments/35085383360281)
 
 ### Solving the Puzzle
 
 Keep dragging and swapping puzzle pieces until the entire puzzle is correctly assembled. This may require careful planning and strategy to ensure every piece ends up in the right place.
 
-![Screenshot 2024-07-15 at 15.34.33.png](https://help.studycat.com/hc/article_attachments/35085383392153)
+![](https://help.studycat.com/hc/article_attachments/35085383392153)
 
 Growing/Advancing
 -----------------
 
-![Screenshot 2024-07-15 at 15.38.18.png](https://help.studycat.com/hc/article_attachments/35085383395993)
+![](https://help.studycat.com/hc/article_attachments/35085383395993)
 
 As you solve each puzzle, you will advance to more complex images and larger puzzles. Each completed puzzle increases in difficulty, providing a continuous challenge to your problem-solving skills.
 

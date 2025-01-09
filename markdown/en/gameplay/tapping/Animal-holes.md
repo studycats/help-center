@@ -31,7 +31,7 @@ Animals will pop out of holes in the ground. Listen to the audio prompt to deter
 
 Click on the exact number of animals specified in the audio prompt. Act quickly before they disappear!
 
-![RPReplay_Final1720767455-2.gif](https://help.studycat.com/hc/article_attachments/34975029772825)
+![](https://help.studycat.com/hc/article_attachments/34975029772825)
 
 Avoiding Obstacles
 ------------------
@@ -56,7 +56,7 @@ Win by consistently clicking on the correct number of animals within the given t
 Ranks/Difficulty Levels
 -----------------------
 
-![IMG_2018.PNG](https://help.studycat.com/hc/article_attachments/34829163311897)
+![](https://help.studycat.com/hc/article_attachments/34829163311897)
 
 The first appearances of this game will have three holes, the second will have 5
 

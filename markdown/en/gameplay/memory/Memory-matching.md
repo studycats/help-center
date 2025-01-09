@@ -43,9 +43,9 @@ Tap one of the objects on the screen, which will reveal itself as one of the ite
 
 | Rank | Description |
 | --- | --- |
-| **Rank 1** | There are 6 items made up of 3 pairs which you need to find, and the items will shift slightly once uncovered. |
-| **Rank 2** | There are more items and more pairs to find, the items will shift more when uncovered. |
-| **Rank 3** | There are even more items and even more pairs to find, the items will shift even more when uncovered, and there are bombs that will explode and shift the objects even more. Tap the bombs to stop them from exploding. |
+| **Rank&nbsp;1** | There are 6 items made up of 3 pairs which you need to find, and the items will shift slightly once uncovered. |
+| **Rank&nbsp;2** | There are more items and more pairs to find, the items will shift more when uncovered. |
+| **Rank&nbsp;3** | There are even more items and even more pairs to find, the items will shift even more when uncovered, and there are bombs that will explode and shift the objects even more. Tap the bombs to stop them from exploding. |
 
 ![Bomb Image](https://help.studycat.com/hc/article_attachments/34783202645785)
 

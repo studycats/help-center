@@ -37,13 +37,13 @@ If you forget the word, you can see its spelling in the bottom corner of the scr
 
 Tap and hold on the screen to guide your character.
 
-![WhatsApp GIF 2024-07-12 at 11.23.14.gif](https://help.studycat.com/hc/article_attachments/34964428229401)
+![](https://help.studycat.com/hc/article_attachments/34964428229401)
 
 ### Chase the Letters
 
 Move your character to catch the flying letters that spell out the word.
 
-![IMG_2687.PNG](https://help.studycat.com/hc/article_attachments/34824459449625)
+![](https://help.studycat.com/hc/article_attachments/34824459449625)
 
 ### Spell the Word
 

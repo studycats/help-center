@@ -4,7 +4,7 @@ title: Card Flip
 category: gameplay
 section: writing
 ---
-![WhatsApp GIF 2024-07-12 at 12.51.09.gif](https://help.studycat.com/hc/article_attachments/34968069193497)
+![](https://help.studycat.com/hc/article_attachments/34968069193497)
 
 Welcome to the Card Flip game! Your objective is to match pictures with their corresponding spellings by flipping cards.
 
@@ -13,7 +13,7 @@ How to Play
 
 ### Start the Game
 
-![IMG_2676.PNG](https://help.studycat.com/hc/article_attachments/34822508065177)
+![](https://help.studycat.com/hc/article_attachments/34822508065177)
 
 You will see a set of cards face down.
 
@@ -27,13 +27,13 @@ Tap on another card to flip it and reveal either a picture or text. The card may
 
 ### Match Picture to Spelling
 
-![IMG_2677.PNG](https://help.studycat.com/hc/article_attachments/34822508072729)
+![](https://help.studycat.com/hc/article_attachments/34822508072729)
 
 Try to match the picture with its corresponding text, or match the text with the same text.
 
 ### Check Your Match
 
-![WhatsApp GIF 2024-07-12 at 12.57.56.gif](https://help.studycat.com/hc/article_attachments/34968069197081)
+![](https://help.studycat.com/hc/article_attachments/34968069197081)
 
 If the picture and the spelling match, the pair will stay revealed.
 
@@ -52,9 +52,9 @@ Ranks/Difficulty Levels
 
 | Level | Description |
 | --- | --- |
-| **Level 1** | Only one pair to match |
-| **Level 2** | A couple of pairs to match |
-| **Level 3** | A few pairs to match |
+| **Level&nbsp;1** | Only one pair to match |
+| **Level&nbsp;2** | A couple of pairs to match |
+| **Level&nbsp;3** | A few pairs to match |
 
 Let’s play!
 -----------

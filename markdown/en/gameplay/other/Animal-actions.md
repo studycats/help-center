@@ -29,7 +29,7 @@ When you start the game, five different animals and five different actions will 
 
 ### Clicking on Actions
 
-Turn up your volume and click on the actions. Each action will be read aloud. Listen carefully to understand what each action is.![c-2.gif](https://help.studycat.com/hc/article_attachments/35127586834841)
+Turn up your volume and click on the actions. Each action will be read aloud. Listen carefully to understand what each action is.![](https://help.studycat.com/hc/article_attachments/35127586834841)
 
 ### Figuring out the Animal
 

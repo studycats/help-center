@@ -4,7 +4,7 @@ title: Fish Eater
 category: gameplay
 section: other
 ---
-![Untitled.png](https://help.studycat.com/hc/article_attachments/34916165069849)
+![](https://help.studycat.com/hc/article_attachments/34916165069849)
 
 It's a fish-eat-fish world out there, and if you're going to succeed, you need to be bigger and faster than all the other fish in the sea. Let's learn how to do just that. Welcome to the ***Fish Eater*** game!
 
@@ -24,7 +24,7 @@ If you listen closely, the narrator will tell you the ***biggest*** fish you can
 
 In this example, we're told we can eat ***shrimp***. So let's ***tap the screen*** towards the nearest shrimp.
 
-![shrimp2.gif](https://help.studycat.com/hc/article_attachments/34916149686297)
+![](https://help.studycat.com/hc/article_attachments/34916149686297)
 
 Got 'em! Yum!
 
@@ -34,13 +34,13 @@ But, we can't just go swimming anywhere, willy-nilly… There are bigger fish af
 
 ## Becoming Fish Food
 
-**![fishfood.gif](https://help.studycat.com/hc/article_attachments/34918253174937)**
+**![](https://help.studycat.com/hc/article_attachments/34918253174937)**
 
 Uhh.. Yeah. Let's avoid those guys. We're not ***big enough*** to eat them yet.
 
 ## Growing
 
-![revenge.gif](https://help.studycat.com/hc/article_attachments/34918253176345)
+![](https://help.studycat.com/hc/article_attachments/34918253176345)
 
 Pick on someone your own size! Look at them trying to get away!
 
@@ -60,7 +60,7 @@ When you eat enough fish, you get bigger, and the ***progress bar*** will go up 
 
 All you have to do to win is fill up the progress bar completely.
 
-![Untitled-2.png](https://help.studycat.com/hc/article_attachments/34918234335641)
+![](https://help.studycat.com/hc/article_attachments/34918234335641)
 
 ## Ranks
 
@@ -69,8 +69,8 @@ All games have three ranks, and the difficulty increases with each one.
 | Rank | Description |
 | --- | --- |
 | **Rank&nbsp;1** | You can make as many mistakes as you like. |
-| **Rank 2** | You have to eat more fish. You will lose if you make too many mistakes. |
-| **Rank 3** | You have to eat even more fish. You will lose if you make too many mistakes. |
+| **Rank&nbsp;2** | You have to eat more fish. You will lose if you make too many mistakes. |
+| **Rank&nbsp;3** | You have to eat even more fish. You will lose if you make too many mistakes. |
 
 ## Let's play!
 

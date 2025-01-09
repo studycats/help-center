@@ -31,7 +31,7 @@ One of the key mechanics in Sandbox is digging for words represented by shadows.
 
 When a word or phrase is fully cleared of sand, you are told what it is in both your native language and the target language. This mechanic helps reinforce your learning as you associate the discovered words with their meanings.
 
-![Untitled design.gif](https://help.studycat.com/hc/article_attachments/34967533998745)
+![](https://help.studycat.com/hc/article_attachments/34967533998745)
 
 ### Finding Miscellaneous Items
 
@@ -54,7 +54,7 @@ Victory
 
 To win in Sandbox, you need to uncover all the hidden words and phrases in the sandbox before the time runs out.
 
-![Screenshot 2024-07-12 at 12.48.17.png](https://help.studycat.com/hc/article_attachments/34967564471577)
+![](https://help.studycat.com/hc/article_attachments/34967564471577)
 
 Ranks/Difficulty Levels
 -----------------------

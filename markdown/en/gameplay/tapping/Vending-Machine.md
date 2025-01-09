@@ -4,7 +4,7 @@ title: Vending Machine
 category: gameplay
 section: tapping
 ---
-![IMG_2705.PNG](https://help.studycat.com/hc/article_attachments/34826687209753)
+![](https://help.studycat.com/hc/article_attachments/34826687209753)
 
 In this game, you will see a vending machine stocked with various items. The game involves listening to the game announce an item's name and quickly locating and clicking on the corresponding item in the machine. As you progress, the challenge increases with the introduction of new items. Stay focused and test your ability to match items swiftly and accurately in this engaging activity.
 
@@ -25,7 +25,7 @@ Gameplay Mechanics
 
 You'll see a vending machine filled with different items.
 
-![IMG_2703.PNG](https://help.studycat.com/hc/article_attachments/34826690323225)
+![](https://help.studycat.com/hc/article_attachments/34826690323225)
 
 ### Listen for the Item
 

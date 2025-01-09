@@ -27,13 +27,13 @@ Pay attention to the item being announced.
 
 ### Tap the Silhouette
 
-![IMG_2672.PNG](https://help.studycat.com/hc/article_attachments/34785088097433)
+![](https://help.studycat.com/hc/article_attachments/34785088097433)
 
 Find and tap the silhouette that matches the announced item.
 
 ### Check Your Answer
 
-![IMG_2673.PNG](https://help.studycat.com/hc/article_attachments/34785088100761)
+![](https://help.studycat.com/hc/article_attachments/34785088100761)
 
 If your selection is correct, the item will be revealed.
 

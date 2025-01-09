@@ -33,7 +33,7 @@ Drag your finger over the object to paint it with the selected color. It will lo
 
 Continue dragging your finger until the object is fully painted in the specified color.
 
-![WhatsApp GIF 2024-07-12 at 12.59.52.gif](https://help.studycat.com/hc/article_attachments/34967665665945)
+![](https://help.studycat.com/hc/article_attachments/34967665665945)
 
 ### Repeat
 
