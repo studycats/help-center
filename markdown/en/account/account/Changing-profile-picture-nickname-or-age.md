@@ -34,12 +34,12 @@ section: account
 
 It is not possible to change cat icon, however you can still change your age and nickname.
 
-1. Open your Studycat app and select the parents section ![Screenshot 2024-06-28 at 3.57.17 pm.jpeg](https://help.studycat.com/hc/article_attachments/34473149804697)
+1. Open your Studycat app and navigate to ⚙️ Settings ![Screenshot 2024-06-28 at 3.57.17 pm.jpeg](https://help.studycat.com/hc/article_attachments/34473149804697)
 
-2. Pass through the age verification screen by typing the numbers on the screen in order ![Screenshot 2024-06-28 at 2.53.59 pm.jpeg](https://help.studycat.com/hc/article_attachments/34473149807641)
+2. Select _My account_. If _My account_ is not available select _Sign in_ instead. If you have any trouble [this article](https://help.studycat.com/hc/en-us/articles/360051281554-Access-your-free-trial-or-subscription) may help. ![Screenshot 2024-07-01 at 13.38.12.png](https://help.studycat.com/hc/article_attachments/34473149811993)
 
-3. Select 'My account'. If 'My account' is not available select 'Sign in' instead. If you have any trouble [this article](https://help.studycat.com/hc/en-us/articles/360051281554-Access-your-free-trial-or-subscription) may help. ![Screenshot 2024-07-01 at 13.38.12.png](https://help.studycat.com/hc/article_attachments/34473149811993)
+3. Select _Edit ![Screenshot 2024-07-01 at 13.38.21.png](https://help.studycat.com/hc/article_attachments/34473186746521)
 
-4. Select 'edit' ![Screenshot 2024-07-01 at 13.38.21.png](https://help.studycat.com/hc/article_attachments/34473186746521)
+4. Enter your new nickname or age and remember to 'save changes'. ![Screenshot 2024-07-01 at 13.38.29.png](https://help.studycat.com/hc/article_attachments/34473149816729)
 
-5. Enter your new nickname or age and remember to 'save changes'. ![Screenshot 2024-07-01 at 13.38.29.png](https://help.studycat.com/hc/article_attachments/34473149816729)
+⚙️

@@ -1,6 +1,6 @@
 ---
 id: 35685764371865
-title: Changing Difficulty Level in Classic Mode
+title: Changing Difficulty Level
 category: gameplay
 section: other
 ---

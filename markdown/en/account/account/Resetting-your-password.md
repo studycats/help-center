@@ -24,7 +24,7 @@ section: account
 
 ## Studycat French, German and Chinese
 
-1. Navigate to the parents section (see [Accessing the parents section – Help Centre | Studycat](https://help.studycat.com/hc/en-us/articles/34518228622105/preview/eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MzQ1MTgyMjg2MjIxMDUsImV4cCI6MTcyMDQxMjU1MX0.8DEe5gqzcwGhn9YtGOdFZJbwEjnL1d_JV4GHmWuDeF8))
+1. Navigate to ⚙️ Settings
 
 2. Choose sign in ![IMG_2625.PNG](https://help.studycat.com/hc/article_attachments/34482879039257)
 

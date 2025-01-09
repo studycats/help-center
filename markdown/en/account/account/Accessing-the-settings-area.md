@@ -22,6 +22,8 @@ section: account
 
 ### For all other apps
 
-1. Open your Studycat app and select the parents section ![Screenshot 2024-06-28 at 3.57.17 pm.jpeg](https://help.studycat.com/hc/article_attachments/34518228611353)
+1. Open your Studycat app and navigate to ⚙️ Settings ![Screenshot 2024-06-28 at 3.57.17 pm.jpeg](https://help.studycat.com/hc/article_attachments/34518228611353)
 
 2. Pass through the age verification screen by typing the numbers on the screen in order ![Screenshot 2024-06-28 at 2.53.59 pm.jpeg](https://help.studycat.com/hc/article_attachments/34518215421977)
+
+⚙️
