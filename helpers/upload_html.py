@@ -38,34 +38,19 @@ def read_config(folder_path, fields):
 
     return sections
 
-def get_categories():
-    category_url = f"{url}/categories"
+def get_levels(levels):
+    levels_url = f"{url}/{levels}"
 
     response = requests.get(
-        category_url,
+        levels_url,
         auth=(f"{ZENDESK_EMAIL_ADDRESS}/token", ZENDESK_API_TOKEN),
         headers=headers
     )
 
     if response.status_code == 200:
-        return response.json()['categories']
+        return response.json()[levels]
     else:
-        print(f"Error fetching categories: {response.status_code}")
-        return None
-
-def get_sections():
-    section_url = f"{url}/sections"
-
-    response = requests.get(
-        section_url,
-        auth=(f"{ZENDESK_EMAIL_ADDRESS}/token", ZENDESK_API_TOKEN),
-        headers=headers
-    )
-
-    if response.status_code == 200:
-        return response.json()['sections']
-    else:
-        print(f"Error fetching sections: {response.status_code}")
+        print(f"Error fetching {levels}: {response.status_code}")
         return None
 
 def check_name_exists(sections, name):
@@ -277,8 +262,8 @@ def create_articles(sections):
 
     return article_ids
 
-current_categories = get_categories()
-current_sections = get_sections()
+current_categories = get_levels('categories')
+current_sections = get_levels('sections')
 
 categories = read_config('categories', ['title', 'id'])
 sections = read_config('sections', ['title', 'id', 'category'])
