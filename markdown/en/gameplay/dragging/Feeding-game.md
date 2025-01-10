@@ -4,7 +4,7 @@ title: Feeding game
 category: gameplay
 section: dragging
 ---
-![[Game Title] Image](https://help.studycat.com/hc/article_attachments/34827003977625)
+![Game Title Image](https://help.studycat.com/hc/article_attachments/34827003977625)
 
 In this game the aim is to feed the monster the food that it likes. Make sure the sound is on so you can hear what it says!
 
@@ -20,19 +20,19 @@ Drag the food that the monster likes as it is falling from the sky into his mout
 
 ### Identifying what the monster likes and doesn't like
 
-![[Game Title] Image](https://help.studycat.com/hc/article_attachments/34827003977625)
+![Game Title Image](https://help.studycat.com/hc/article_attachments/34827003977625)
 
 Two icons will appear on the screen and the monster will tell you what it wants, and what it doesn't want.
 
 ### Dragging the food into the monster's mouth
 
-![WhatsApp GIF 2024-07-12 at 16.03.49.gif](https://help.studycat.com/hc/article_attachments/34976665858457)
+![](https://help.studycat.com/hc/article_attachments/34976665858457)
 
 Food will start to fall from the sky, and you have to click, hold, and drag it towards the monster's mouth.
 
 ## Avoiding Obstacles
 
-![obstacle image](https://help.studycat.com/hc/article_attachments/34826992367897)
+![Obstacle Image](https://help.studycat.com/hc/article_attachments/34826992367897)
 
 Don't feed the monster food it doesn't like, otherwise it will spit it out!
 

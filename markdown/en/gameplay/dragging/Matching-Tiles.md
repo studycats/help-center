@@ -20,7 +20,7 @@ Swipe the items in any direction (up, down, left, or right) to form pairs.
 
 ### Understand the Grid
 
-![IMG_2675.PNG](https://help.studycat.com/hc/article_attachments/34786044757657)
+![](https://help.studycat.com/hc/article_attachments/34786044757657)
 
 The game consists of a grid filled with various items.
 
@@ -48,9 +48,9 @@ New items will appear to replace the pairs you've matched.
 
 | Level | Grid |
 | --- | --- |
-| **Level 1** | 3x3 grid of items |
-| **Level 2** | 4x4 grid of items |
-| **Level 2** | 4x7 grid of items |
+| **Level&nbsp;1** | 3x3 grid of items |
+| **Level&nbsp;2** | 4x4 grid of items |
+| **Level&nbsp;2** | 4x7 grid of items |
 
 ## Let's play!
 

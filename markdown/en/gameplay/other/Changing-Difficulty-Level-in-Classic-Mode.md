@@ -6,7 +6,7 @@ section: other
 ---
 > This feature is not available in Studycat Spanish or Studycat English.
 
-![IMG_4009.PNG](https://help.studycat.com/hc/article_attachments/35685764333977)
+![](https://help.studycat.com/hc/article_attachments/35685764333977)
 
 ## Studycat French, German and Chinese
 
@@ -21,7 +21,7 @@ Follow these steps to change the difficulty level:
 3. Select the desired difficulty level from the options provided.
 4. The difficulty level will adjust according to your selection.
 
-![IMG_4010.PNG](https://help.studycat.com/hc/article_attachments/35685764338201)
+![](https://help.studycat.com/hc/article_attachments/35685764338201)
 
 Changing the difficulty level allows you to tailor the app experience to your skill level, making it easier or more challenging as needed.
 

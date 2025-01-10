@@ -4,7 +4,7 @@ title: Whose is it?
 category: gameplay
 section: dragging
 ---
-![IMG_2023.PNG](https://help.studycat.com/hc/article_attachments/34966103260825)
+![](https://help.studycat.com/hc/article_attachments/34966103260825)
 
 Everyone's stationary has been mixed up, and you need to help sort it out!
 
@@ -20,22 +20,22 @@ All you have to do is tap and hold on the item in the middle of the screen and t
 
 ### Listening
 
-![RPReplay_Final1720678551 4.gif](https://help.studycat.com/hc/article_attachments/34966103283609)
+![](https://help.studycat.com/hc/article_attachments/34966103283609)
 
 Bob will say for example:
 
 | Bob | Action |
 | --- | --- |
-| **It's my pen** | Give the pen to Bob, the red cat |
-| **It's your pen** | Take the pen for yourself, the purple cat |
-| **It's his pen** | Give the pen to the Tom, the blue cat |
-| **It's her pen** | Give the pen to the Ali, the pink cat |
+| **It's&nbsp;my&nbsp;pen** | Give the pen to Bob, the red cat |
+| **It's&nbsp;your&nbsp;pen** | Take the pen for yourself, the purple cat |
+| **It's&nbsp;his&nbsp;pen** | Give the pen to the Tom, the blue cat |
+| **It's&nbsp;her&nbsp;pen** | Give the pen to the Ali, the pink cat |
 
 You have to listen and decide who to give it to
 
 ### Moving the object
 
-![RPReplay_Final1720678551 3.gif](https://help.studycat.com/hc/article_attachments/34966668424601)
+![](https://help.studycat.com/hc/article_attachments/34966668424601)
 
 You have to move the object to the correct person, by dragging it either up, right, left, or down the screen.
 
@@ -45,9 +45,9 @@ As you progress through the game, bob will start to alter what he says
 
 | Rank | Bob |
 | --- | --- |
-| **Rank 1** | Its [pronoun] [object] |
-| **Rank 2** | Its [pronoun] |
-| **Rank 3** | [pronoun] |
+| **Rank&nbsp;1** | Its [pronoun] [object] |
+| **Rank&nbsp;2** | Its [pronoun] |
+| **Rank&nbsp;3** | [pronoun] |
 
 For example
 

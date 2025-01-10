@@ -28,7 +28,7 @@ The game will read out a color for you to find.
 
 ### Find the Matching Leaf
 
-![IMG_2683.PNG](https://help.studycat.com/hc/article_attachments/34823542330905)
+![](https://help.studycat.com/hc/article_attachments/34823542330905)
 
 Look for a leaf that matches the color you heard.
 
@@ -72,9 +72,9 @@ The game can have different difficulty levels based on the number of leaves and 
 
 | Level | Description |
 | --- | --- |
-| **Level 1** | Basic colors and few stages. |
-| **Level 2** | Some more choices and slightly more stages. |
-| **Level 3** | A lot of possible colours and a lot of stages. |
+| **Level&nbsp;1** | Basic colors and few stages. |
+| **Level&nbsp;2** | Some more choices and slightly more stages. |
+| **Level&nbsp;3** | A lot of possible colours and a lot of stages. |
 
 ## Let's play!
 

@@ -4,7 +4,7 @@ title: Big Wheel
 category: gameplay
 section: dragging
 ---
-![RPReplay_Final1720684176.gif](https://help.studycat.com/hc/article_attachments/34931476777625)
+![](https://help.studycat.com/hc/article_attachments/34931476777625)
 
 Welcome to the Turning Wheel game! Your objective is to drag items onto a turning wheel and then tap the correct items as they are announced.
 
@@ -26,13 +26,13 @@ A large turning wheel will appear on the screen.
 
 Items will appear one by one, and their names will be read out loud. Drag each item onto the wheel.
 
-![RPReplay_Final1720685947.gif](https://help.studycat.com/hc/article_attachments/34932060072217)
+![](https://help.studycat.com/hc/article_attachments/34932060072217)
 
 ### Fill the Wheel
 
 Continue dragging items until all of them are attached to the wheel.
 
-![IMG_2696.PNG](https://help.studycat.com/hc/article_attachments/34825529495577)
+![](https://help.studycat.com/hc/article_attachments/34825529495577)
 
 ### Listen for the Item
 
@@ -66,8 +66,8 @@ The game can have different difficulty levels based on the number of items and t
 
 | Rank | Description |
 | --- | --- |
-| **Rank 1** | Basic items and slower wheel speed. |
-| **Rank 2** | More items and faster wheel speed. |
+| **Rank&nbsp;1** | Basic items and slower wheel speed. |
+| **Rank&nbsp;2** | More items and faster wheel speed. |
 
 ## Let's play!
 

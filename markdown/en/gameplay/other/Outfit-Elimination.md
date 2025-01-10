@@ -4,7 +4,7 @@ title: Outfit Elimination
 category: gameplay
 section: other
 ---
-![Untitled-4.png](https://help.studycat.com/hc/article_attachments/34921324100889)
+![](https://help.studycat.com/hc/article_attachments/34921324100889)
 
 You may be asking yourself, who are all these strangely dressed dudes? Well, let me introduce you to the ***Outfit Elimination*** game! In this tutorial, we will be learning how to play. Let's get started!
 
@@ -14,7 +14,7 @@ We have one simple goal: ***find the right person.*** How are we going to do tha
 
 ## Clothing buttons
 
-**![clothingbuttons.gif](https://help.studycat.com/hc/article_attachments/34921310348441)**
+**![](https://help.studycat.com/hc/article_attachments/34921310348441)**
 
 What's the deal with these buttons? When you tap one, you will hear a statement about the person we're looking for.
 
@@ -22,11 +22,11 @@ What's the deal with these buttons? When you tap one, you will hear a statement 
 
 *Example 2*: **He is not wearing a green hat.**
 
-![Untitled-3.png](https://help.studycat.com/hc/article_attachments/34921324104985)  
+![](https://help.studycat.com/hc/article_attachments/34921324104985)  
 
 The button will turn yellow after you've tapped it, so you know which ones you've tapped already. You can tap a button at any time to listen again.
 
-![poof.gif](https://help.studycat.com/hc/article_attachments/34921324114329)
+![](https://help.studycat.com/hc/article_attachments/34921324114329)
 
 So what about our green hat guy? What do we do with him? Well, I've got some bad news for you.
 
@@ -38,9 +38,9 @@ After seeing that, I bet you'd like to try, too. It's pretty easy. All you have 
 
 | Rank | Description |
 | --- | --- |
-| **Rank 1** | You can make as many mistakes as you like. |
-| **Rank 2** | Three levels. More people. You will lose if you make too many mistakes. |
-| **Rank 3** | Three levels. You will lose if you make too many mistakes, AND you must finish the game before the clock runs out. |
+| **Rank&nbsp;1** | You can make as many mistakes as you like. |
+| **Rank&nbsp;2** | Three levels. More people. You will lose if you make too many mistakes. |
+| **Rank&nbsp;3** | Three levels. You will lose if you make too many mistakes, AND you must finish the game before the clock runs out. |
 
 ## Let's play!
 

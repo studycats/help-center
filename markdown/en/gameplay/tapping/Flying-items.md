@@ -4,7 +4,7 @@ title: Flying items
 category: gameplay
 section: tapping
 ---
-![WhatsApp GIF 2024-07-12 at 12.25.11.gif](https://help.studycat.com/hc/article_attachments/34966795074969)
+![](https://help.studycat.com/hc/article_attachments/34966795074969)
 
 In this game, items fly up from the bottom of the screen, and your goal is to match each item with its announced name. The challenge increases as you progress through the game, requiring swift reflexes and attention to detail.
 
@@ -60,9 +60,9 @@ The game can have different difficulty levels based on the number of items and t
 
 | Rank | Description |
 | --- | --- |
-| **Rank 1** | Very few items |
-| **Rank 2** | Slightly more items |
-| **Rank 3** | A lot of items |
+| **Rank&nbsp;1** | Very few items |
+| **Rank&nbsp;2** | Slightly more items |
+| **Rank&nbsp;3** | A lot of items |
 
 ## Let's play!
 

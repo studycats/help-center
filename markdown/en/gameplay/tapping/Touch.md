@@ -4,7 +4,7 @@ title: Touch
 category: gameplay
 section: tapping
 ---
-![IMG_7810.PNG](https://help.studycat.com/hc/article_attachments/34782105723161)
+![](https://help.studycat.com/hc/article_attachments/34782105723161)
 
 To learn the new word, tap each object, and it will be read out to you
 
@@ -22,7 +22,7 @@ Tap each object.
 
 Tap the object that appears, and it will be read out to you
 
-![WhatsApp GIF 2024-07-12 at 12.47.33.gif](https://help.studycat.com/hc/article_attachments/34967116977049)
+![](https://help.studycat.com/hc/article_attachments/34967116977049)
 
 ## Let's play!
 

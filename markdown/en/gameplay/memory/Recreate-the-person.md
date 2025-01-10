@@ -34,19 +34,19 @@ Once the time is up, you'll begin to pick out the features you remember.
 
 Choose the correct nose, mouth, skin color, and other facial features from the options provided.
 
-![IMG_2690.PNG](https://help.studycat.com/hc/article_attachments/34824961340697)
+![](https://help.studycat.com/hc/article_attachments/34824961340697)
 
 ### Complete the Face
 
 Keep selecting until you think you've recreated the person's face as closely as possible.
 
-![IMG_2692.PNG](https://help.studycat.com/hc/article_attachments/34824961345177)
+![](https://help.studycat.com/hc/article_attachments/34824961345177)
 
 ### Review Your Creation
 
 At the end, you'll be shown the original person.
 
-![IMG_2694.PNG](https://help.studycat.com/hc/article_attachments/34824961349017)
+![](https://help.studycat.com/hc/article_attachments/34824961349017)
 
 ### Get Your Score
 
@@ -62,9 +62,9 @@ The game can have different difficulty levels based on the complexity of the fac
 
 | Rank | Description |
 | --- | --- |
-| **Rank 1** | Simple faces with basic features. |
-| **Rank 2** | More complex faces and features. |
-| **Rank 3** | Looking at the whole body, not just the face.IMG_2726.PNG |
+| **Rank&nbsp;1** | Simple faces with basic features. |
+| **Rank&nbsp;2** | More complex faces and features. |
+| **Rank&nbsp;3** | Looking at the whole body, not just the face.IMG_2726.PNG |
 
 ## Let's play!
 

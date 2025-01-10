@@ -22,7 +22,7 @@ To play Letter Maze, use your finger to tap on the screen in the direction you w
 
 When you start the game, a maze will appear on the screen, and a letter will be said aloud. Your task is to find every instance of this letter within the maze.
 
-![Untitled design-5.gif](https://help.studycat.com/hc/article_attachments/35079949007769)
+![](https://help.studycat.com/hc/article_attachments/35079949007769)
 
 ### Moving Around the Maze
 
@@ -38,7 +38,7 @@ Move towards each instance of the letter that was announced at the beginning of 
 
 ## Avoiding Obstacles
 
-![Untitled design-3.gif](https://help.studycat.com/hc/article_attachments/35076983481369)
+![](https://help.studycat.com/hc/article_attachments/35076983481369)
 
 In Letter Maze, you'll encounter various letters, beyond the one you've been tasked with finding, that make navigation more challenging. Avoid these letters to maintain your progress and efficiently find the target letters.
 
