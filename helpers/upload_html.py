@@ -59,103 +59,61 @@ def check_name_exists(sections, name):
             return section['id']
     return False
 
-def create_categories(categories, current):
-    category_url = f"{url}/categories"
+def create_levels(levels, current, categories=None):
+    ltype = 'section' if categories else 'category'
+    level_url = f'{url}/{levels}'
 
-    category_ids = {}
-    for category in categories['en']:
-        name = f"Testing {categories['en'][category]['title']}"
+    level_ids = {}
+    for level in levels['en']:
+        name = f'Test {levels['en'][level]['title']}'
         check = check_name_exists(current, name)
         if check:
-            print(f"Category {name} already exists")
-            category_ids[category] = check
+            print(f'{ltype.capitalize()} {name} already exists')
+            level_ids[level] = check
             continue
-
+        
         data = {
-            "category": {
-                "name": name,
-                "locale": "en-us",
-            }
-        }
-
-        response = post(category_url, data).json()
-
-        category_data = response.json()
-        category_ids[category] = category_data['category']['id']
-        print(f'Created category {name}')
-    
-    for lang in categories:
-        if lang == 'en':
-            continue
-        for category in categories[lang]:
-            name = f"Testing {categories['en'][category]['title']}"
-            check = check_name_exists(current, name)
-            if check:
-                continue
-
-            translation_url = f"{category_url}/{category_ids[category]}/translations"
-            translation_data = {
-                "translation": {
-                    "title": f"Testing {categories[lang][category]['title']}",
-                    "locale": lang,
-                }
-            }
-
-            response = post(translation_url, translation_data)
-            print(f'Added {lang} translation for category {name}')
-    
-    return category_ids
-
-def create_sections(sections, current, categories):
-    section_url = f"{url}/sections"
-
-    section_ids = {}
-    for section in sections['en']:
-        name = f"Testing {sections['en'][section]['title']}"
-        check = check_name_exists(current, name)
-        if check:
-            print(f"Section {name} already exists")
-            section_ids[section] = check
-            continue
-
-        category = sections['en'][section]['category']
-        category_id = categories[category]
-
-        data = {
-            'section': {
+            ltype: {
                 'name': name,
-                'locale': 'en-us',
-                'category_id': category_id
+                'locale': 'en-us'
             }
         }
 
-        response = post(f'{url}/categories/{category_id}/sections', data)
+        if categories:
+            category = levels['en'][level]['category']
+            category_id = categories[category]
 
-        section_data = response.json()
-        section_ids[section] = section_data['section']['id']
-        print(f'Created section {name}')
+            data[ltype]['category_id'] = category_id
+            section_url = f'{url}/categories/{category_id}/sections', data
 
-    for lang in sections:
+        level_data = post(
+            section_url if 'section_url' in locals() else level_url,
+            data
+        ).json()
+
+        level_ids[level] = level_data[ltype]['id']
+        print(f'Created {ltype} {name}')
+    
+    for lang in levels:
         if lang == 'en':
             continue
-        for section in sections[lang]:
-            name = f"Testing {sections['en'][section]['title']}"
+        for level in levels[lang]:
+            name = f'Testing {levels['en'][level]['title']}'
             check = check_name_exists(current, name)
             if check:
                 continue
 
-            translation_url = f"{section_url}/{section_ids[section]}/translations"
+            translation_url = f'{level_url}/{level_ids[level]}/translations'
             translation_data = {
-                "translation": {
-                    "title": name,
-                    "locale": lang,
+                'translation': {
+                    'title': f'Testing {levels[lang][level]['title']}',
+                    'locale': lang
                 }
             }
-
-            response = post(translation_url, translation_data)
-            print(f'Added {lang} translation for section {name}')
-
-    return section_ids
+            post(translation_url, translation_data)
+            print(f'Added {lang} translation for {ltype} {name}')
+    
+    return level_ids
 
 def create_articles(sections):
     # First create English articles and store their IDs
@@ -268,7 +226,7 @@ current_sections = get_levels('sections')
 categories = read_config('categories', ['title', 'id'])
 sections = read_config('sections', ['title', 'id', 'category'])
 
-final_categories = create_categories(categories, current_categories)
-final_sections = create_sections(sections, current_sections, final_categories)
+final_categories = create_levels(categories, current_categories)
+final_sections = create_levels(sections, current_sections, final_categories)
 
 article = create_articles(final_sections)
