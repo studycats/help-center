@@ -43,7 +43,7 @@ def call_claude(prompt, text, language, action):
 
     return client.messages.create(
         model="claude-3-5-sonnet-latest",
-        max_tokens=1000,
+        max_tokens=2048,
         system="You are a translator and proofreader, you only return the given Markdown in it's complete form.",
         messages=[
             {"role": "user", "content": text},

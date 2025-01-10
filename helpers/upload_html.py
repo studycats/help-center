@@ -8,6 +8,14 @@ ZENDESK_API_TOKEN = os.getenv('ZENDESK_API_TOKEN')
 url = "https://studycat.zendesk.com/api/v2/help_center"
 headers = { 'Content-Type': 'application/json', }
 
+def post(url, data):
+    return requests.post(
+        url,
+        auth=(f'{ZENDESK_EMAIL_ADDRESS}/token', ZENDESK_API_TOKEN),
+        headers=headers,
+        json=data
+    )
+
 def read_config(folder_path, fields):
     config = configparser.ConfigParser()
 
@@ -85,12 +93,7 @@ def create_categories(categories, current):
             }
         }
 
-        response = requests.post(
-            category_url,
-            auth=(f"{ZENDESK_EMAIL_ADDRESS}/token", ZENDESK_API_TOKEN),
-            headers=headers,
-            json=data
-        )
+        response = post(category_url, data).json()
 
         category_data = response.json()
         category_ids[category] = category_data['category']['id']
@@ -112,12 +115,8 @@ def create_categories(categories, current):
                     "locale": lang,
                 }
             }
-            response = requests.post(
-                translation_url,
-                auth=(f"{ZENDESK_EMAIL_ADDRESS}/token", ZENDESK_API_TOKEN),
-                headers=headers,
-                json=translation_data
-            )
+
+            response = post(translation_url, translation_data)
             print(f'Added {lang} translation for category {name}')
     
     return category_ids
@@ -145,12 +144,7 @@ def create_sections(sections, current, categories):
             }
         }
 
-        response = requests.post(
-            f"{url}/categories/{category_id}/sections",
-            auth=(f"{ZENDESK_EMAIL_ADDRESS}/token", ZENDESK_API_TOKEN),
-            headers=headers,
-            json=data
-        )
+        response = post(f'{url}/categories/{category_id}/sections', data)
 
         section_data = response.json()
         section_ids[section] = section_data['section']['id']
@@ -172,12 +166,8 @@ def create_sections(sections, current, categories):
                     "locale": lang,
                 }
             }
-            response = requests.post(
-                translation_url,
-                auth=(f"{ZENDESK_EMAIL_ADDRESS}/token", ZENDESK_API_TOKEN),
-                headers=headers,
-                json=translation_data
-            )
+
+            response = post(translation_url, translation_data)
             print(f'Added {lang} translation for section {name}')
 
     return section_ids
@@ -232,13 +222,9 @@ def create_articles(sections):
                             "draft": True
                         }
                     }
-                    response = requests.post(
-                        article_url,
-                        auth=(f"{ZENDESK_EMAIL_ADDRESS}/token", ZENDESK_API_TOKEN),
-                        headers=headers,
-                        json=data
-                    )
-                    
+
+                    response = post(article_url, data)
+
                     # Store article ID using filename as key
                     article_ids[file_name] = response.json()['article']['id']
                     print(f'Created English article: {title}')
@@ -285,12 +271,8 @@ def create_articles(sections):
                                     "draft": True
                                 }
                             }
-                            requests.post(
-                                translation_url,
-                                auth=(f"{ZENDESK_EMAIL_ADDRESS}/token", ZENDESK_API_TOKEN),
-                                headers=headers,
-                                json=translation_data
-                            )
+
+                            post(translation_url, json=translation_data)
                             print(f'Added {lang} translation for article: {title}')
 
     return article_ids
