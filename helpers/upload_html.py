@@ -14,7 +14,7 @@ def post(url, data):
         auth=(f'{ZENDESK_EMAIL_ADDRESS}/token', ZENDESK_API_TOKEN),
         headers=headers,
         json=data
-    )
+    ).json()
 
 def read_config(folder_path, fields):
     config = configparser.ConfigParser()
@@ -38,6 +38,7 @@ def read_config(folder_path, fields):
 
     return sections
 
+# levels are either categories or sections
 def get_levels(levels):
     levels_url = f"{url}/{levels}"
 
@@ -59,59 +60,48 @@ def check_name_exists(sections, name):
             return section['id']
     return False
 
-def create_levels(levels, current, categories=None):
+# levels are either categories or sections
+def create_levels(config, current, categories=None):
     ltype = 'section' if categories else 'category'
-    level_url = f'{url}/{levels}'
+    level_url = f'{url}/{'sections' if categories else 'categories'}'
 
     level_ids = {}
-    for level in levels['en']:
-        name = f'Test {levels['en'][level]['title']}'
-        check = check_name_exists(current, name)
-        if check:
-            print(f'{ltype.capitalize()} {name} already exists')
-            level_ids[level] = check
-            continue
-        
-        data = {
-            ltype: {
-                'name': name,
-                'locale': 'en-us'
-            }
-        }
-
-        if categories:
-            category = levels['en'][level]['category']
-            category_id = categories[category]
-
-            data[ltype]['category_id'] = category_id
-            section_url = f'{url}/categories/{category_id}/sections', data
-
-        level_data = post(
-            section_url if 'section_url' in locals() else level_url,
-            data
-        ).json()
-
-        level_ids[level] = level_data[ltype]['id']
-        print(f'Created {ltype} {name}')
-    
-    for lang in levels:
-        if lang == 'en':
-            continue
-        for level in levels[lang]:
-            name = f'Testing {levels['en'][level]['title']}'
+    levels = sorted(config.keys(), key=lambda x: (x != 'en', x))
+    for lang, levels in config.items():
+        english = lang == 'en'
+        for level in levels:
+            name = f'Testing {level['title']}'
             check = check_name_exists(current, name)
             if check:
+                if english:
+                    print(f'{ltype.capitalize()} {name} already exists')
+                    level_ids[level] = check
                 continue
 
-            translation_url = f'{level_url}/{level_ids[level]}/translations'
-            translation_data = {
-                'translation': {
-                    'title': f'Testing {levels[lang][level]['title']}',
+            data = {
+                ltype if english else 'translation': {
+                    'title': name,
                     'locale': lang
                 }
             }
-            post(translation_url, translation_data)
-            print(f'Added {lang} translation for {ltype} {name}')
+
+            if english:
+                if categories:
+                    category = level['category']
+                    category_id = categories[category]
+
+                    data[ltype]['category_id'] = category_id
+                    final_url = f'{url}/categories/{category_id}/sections', data
+                final_url = level_url
+            else:
+                final_url = f'{level_url}/{level_ids[level]}/translations'
+
+            level_data = post(final_url, data)
+
+            if english:
+                level_ids[level] = level_data[ltype]['id']
+
+            print(f'Added {lang} {ltype} {name}')
     
     return level_ids
 
@@ -169,7 +159,7 @@ def create_articles(sections):
                     response = post(article_url, data)
 
                     # Store article ID using filename as key
-                    article_ids[file_name] = response.json()['article']['id']
+                    article_ids[file_name] = response['article']['id']
                     print(f'Created English article: {title}')
 
     # Create translations for other languages
