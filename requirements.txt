@@ -6,3 +6,4 @@ markdownify
 deep_translator
 anthropic
 markdown
+cloudinary
