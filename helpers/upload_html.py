@@ -8,14 +8,6 @@ ZENDESK_API_TOKEN = os.getenv('ZENDESK_API_TOKEN')
 url = "https://studycat.zendesk.com/api/v2/help_center"
 headers = { 'Content-Type': 'application/json', }
 
-def post(url, data):
-    return requests.post(
-        url,
-        auth=(f'{ZENDESK_EMAIL_ADDRESS}/token', ZENDESK_API_TOKEN),
-        headers=headers,
-        json=data
-    ).json()
-
 def read_config(folder_path, fields):
     config = configparser.ConfigParser()
 
@@ -38,20 +30,34 @@ def read_config(folder_path, fields):
 
     return sections
 
-# levels are either categories or sections
-def get_levels(levels):
-    levels_url = f"{url}/{levels}"
+def get_categories():
+    category_url = f"{url}/categories"
 
     response = requests.get(
-        levels_url,
+        category_url,
         auth=(f"{ZENDESK_EMAIL_ADDRESS}/token", ZENDESK_API_TOKEN),
         headers=headers
     )
 
     if response.status_code == 200:
-        return response.json()[levels]
+        return response.json()['categories']
     else:
-        print(f"Error fetching {levels}: {response.status_code}")
+        print(f"Error fetching categories: {response.status_code}")
+        return None
+
+def get_sections():
+    section_url = f"{url}/sections"
+
+    response = requests.get(
+        section_url,
+        auth=(f"{ZENDESK_EMAIL_ADDRESS}/token", ZENDESK_API_TOKEN),
+        headers=headers
+    )
+
+    if response.status_code == 200:
+        return response.json()['sections']
+    else:
+        print(f"Error fetching sections: {response.status_code}")
         return None
 
 def check_name_exists(sections, name):
@@ -60,135 +66,242 @@ def check_name_exists(sections, name):
             return section['id']
     return False
 
-# levels are either categories or sections
-def create_levels(config, current, categories=None):
-    ltype = 'section' if categories else 'category'
-    level_url = f'{url}/{'sections' if categories else 'categories'}'
+def create_categories(categories, current):
+    category_url = f"{url}/categories"
 
-    level_ids = {}
-    levels = sorted(config.keys(), key=lambda x: (x != 'en', x))
-    for lang, levels in config.items():
-        english = lang == 'en'
-        for level in levels:
-            name = f'Testing {level['title']}'
+    category_ids = {}
+    for category in categories['en']:
+        name = f"Testing {categories['en'][category]['title']}"
+        check = check_name_exists(current, name)
+        if check:
+            print(f"Category {name} already exists")
+            category_ids[category] = check
+            continue
+
+        data = {
+            "category": {
+                "name": name,
+                "locale": "en-us",
+            }
+        }
+
+        response = requests.post(
+            category_url,
+            auth=(f"{ZENDESK_EMAIL_ADDRESS}/token", ZENDESK_API_TOKEN),
+            headers=headers,
+            json=data
+        )
+
+        category_data = response.json()
+        category_ids[category] = category_data['category']['id']
+        print(f'Created category {name}')
+    
+    for lang in categories:
+        if lang == 'en':
+            continue
+        for category in categories[lang]:
+            name = f"Testing {categories['en'][category]['title']}"
             check = check_name_exists(current, name)
             if check:
-                if english:
-                    print(f'{ltype.capitalize()} {name} already exists')
-                    level_ids[level] = check
                 continue
 
-            data = {
-                ltype if english else 'translation': {
-                    'title': name,
-                    'locale': lang
+            translation_url = f"{category_url}/{category_ids[category]}/translations"
+            translation_data = {
+                "translation": {
+                    "title": f"Testing {categories[lang][category]['title']}",
+                    "locale": lang,
                 }
             }
-
-            if english:
-                if categories:
-                    category = level['category']
-                    category_id = categories[category]
-
-                    data[ltype]['category_id'] = category_id
-                    final_url = f'{url}/categories/{category_id}/sections', data
-                final_url = level_url
-            else:
-                final_url = f'{level_url}/{level_ids[level]}/translations'
-
-            level_data = post(final_url, data)
-
-            if english:
-                level_ids[level] = level_data[ltype]['id']
-
-            print(f'Added {lang} {ltype} {name}')
+            response = requests.post(
+                translation_url,
+                auth=(f"{ZENDESK_EMAIL_ADDRESS}/token", ZENDESK_API_TOKEN),
+                headers=headers,
+                json=translation_data
+            )
+            print(f'Added {lang} translation for category {name}')
     
-    return level_ids
+    return category_ids
+
+def create_sections(sections, current, categories):
+    section_url = f"{url}/sections"
+
+    section_ids = {}
+    for section in sections['en']:
+        name = f"Testing {sections['en'][section]['title']}"
+        check = check_name_exists(current, name)
+        if check:
+            print(f"Section {name} already exists")
+            section_ids[section] = check
+            continue
+
+        category = sections['en'][section]['category']
+        category_id = categories[category]
+
+        data = {
+            'section': {
+                'name': name,
+                'locale': 'en-us',
+                'category_id': category_id
+            }
+        }
+
+        response = requests.post(
+            f"{url}/categories/{category_id}/sections",
+            auth=(f"{ZENDESK_EMAIL_ADDRESS}/token", ZENDESK_API_TOKEN),
+            headers=headers,
+            json=data
+        )
+
+        section_data = response.json()
+        section_ids[section] = section_data['section']['id']
+        print(f'Created section {name}')
+
+    for lang in sections:
+        if lang == 'en':
+            continue
+        for section in sections[lang]:
+            name = f"Testing {sections['en'][section]['title']}"
+            check = check_name_exists(current, name)
+            if check:
+                continue
+
+            translation_url = f"{section_url}/{section_ids[section]}/translations"
+            translation_data = {
+                "translation": {
+                    "title": name,
+                    "locale": lang,
+                }
+            }
+            response = requests.post(
+                translation_url,
+                auth=(f"{ZENDESK_EMAIL_ADDRESS}/token", ZENDESK_API_TOKEN),
+                headers=headers,
+                json=translation_data
+            )
+            print(f'Added {lang} translation for section {name}')
+
+    return section_ids
 
 def create_articles(sections):
+    # First create English articles and store their IDs
     article_ids = {}
-    if os.path.isdir('markdown'):
-        languages = os.listdir('markdown')
-        languages = sorted(languages, key=lambda x: (x != 'en', x))
-        for lang in languages:
-            markdown_folder_path = os.path.join('markdown', lang)
-            html_path = os.path.join('html', lang)
+    markdown_folder_path = os.path.join('markdown', 'en')
+    html_folder_path = os.path.join('html', 'en')
+    if os.path.isdir(markdown_folder_path):
+        for category in os.listdir(markdown_folder_path):
+            markdown_category_folder = os.path.join(markdown_folder_path, category)
+            html_category_folder = os.path.join(html_folder_path, category)
 
-            if os.path.isdir(markdown_folder_path):
-                for category in os.listdir(markdown_folder_path):
-                    markdown_category_folder = os.path.join(markdown_folder_path, category)
-                    html_category_folder = os.path.join(html_path, category)
+            for section in os.listdir(markdown_category_folder):
+                markdown_section_folder = os.path.join(markdown_category_folder, section)
+                html_section_folder = os.path.join(html_category_folder, section)
 
-                    for section in os.listdir(markdown_category_folder):
-                        markdown_section_folder = os.path.join(markdown_category_folder, section)
-                        html_section_folder = os.path.join(html_category_folder, section)
+                for file_name in os.listdir(markdown_section_folder):
+                    if not file_name.endswith('.md'):
+                        continue
+                    
+                    # Get section ID
+                    markdown_file_path = os.path.join(markdown_section_folder, file_name)
+                    with open(markdown_file_path, 'r', encoding='utf-8') as f:
+                        for line in f:
+                            if line.startswith('section: '):
+                                section = line[9:].strip().replace('"', '')
+                                break
+                    section_id = sections[section]
 
-                        for file_name in os.listdir(markdown_section_folder):
-                            if not file_name.endswith('.md'):
-                                continue
+                    # Get title
+                    with open(markdown_file_path, 'r', encoding='utf-8') as f:
+                        for line in f:
+                            if line.startswith('title: '):
+                                title = line[7:].strip()
 
-                            # Get title and content for translation
-                            markdown_file_path = os.path.join(markdown_section_folder, file_name)
+                    # Get HTML content
+                    html_file_path = os.path.join(html_section_folder, file_name.replace('.md', '.html'))
+                    with open(html_file_path, 'r', encoding='utf-8') as f:
+                        content = f.read()
 
-                            with open(markdown_file_path, 'r', encoding='utf-8') as f:
-                                for line in f:
-                                    if line.startswith('title: '):
-                                        title = line[7:].strip()
-                                    elif lang == 'en' and line.startswith('section: '):
-                                        section = line[9:].strip().replace('"', '')
-                                        section_id = sections[section]
+                    article_url = f"{url}/sections/{section_id}/articles"
 
-                            html_file_path = os.path.join(html_section_folder, file_name.replace('.md', '.html'))
-                            with open(html_file_path, 'r', encoding='utf-8') as f:
-                                content = f.read()
+                    data = {
+                        "article": {
+                            "title": title,
+                            "body": content,
+                            "locale": 'en-us',
+                            "user_segment_id": None,
+                            "permission_group_id": 1739073,
+                            "draft": True
+                        }
+                    }
+                    response = requests.post(
+                        article_url,
+                        auth=(f"{ZENDESK_EMAIL_ADDRESS}/token", ZENDESK_API_TOKEN),
+                        headers=headers,
+                        json=data
+                    )
+                    
+                    # Store article ID using filename as key
+                    article_ids[file_name] = response.json()['article']['id']
+                    print(f'Created English article: {title}')
 
-                            if lang == 'en':
-                                final_url = f"{url}/sections/{section_id}/articles"
-                                ltype = 'article'
-                                data = {
-                                    ltype: {
-                                        "title": title,
-                                        "body": content,
-                                        "locale": lang,
-                                        "user_segment_id": None,
-                                        "permission_group_id": 1739073,
-                                        "draft": True
-                                    }
+    # Create translations for other languages
+    for lang in os.listdir('markdown'):
+        if lang == 'en':
+            continue
+        markdown_folder_path = os.path.join('markdown', lang)
+        html_path = os.path.join('html', lang)
+        if os.path.isdir(markdown_folder_path):
+            for category in os.listdir(markdown_folder_path):
+                markdown_category_folder = os.path.join(markdown_folder_path, category)
+                html_category_folder = os.path.join(html_path, category)
+
+                for section in os.listdir(markdown_category_folder):
+                    markdown_section_folder = os.path.join(markdown_category_folder, section)
+                    html_section_folder = os.path.join(html_category_folder, section)
+
+                    for file_name in os.listdir(markdown_section_folder):
+                        if not file_name.endswith('.md'):
+                            continue
+
+                        # Get title and content for translation
+                        file_path = os.path.join(markdown_section_folder, file_name)
+                        with open(file_path, 'r', encoding='utf-8') as f:
+                            for line in f:
+                                if line.startswith('title: '):
+                                    title = line[7:].strip()
+
+                        html_file_path = os.path.join(html_section_folder, file_name.replace('.md', '.html'))
+                        with open(html_file_path, 'r', encoding='utf-8') as f:
+                            content = f.read()
+
+                        # Create translation for the corresponding English article
+                        if file_name in article_ids:
+                            article_id = article_ids[file_name]
+                            translation_url = f"{url}/articles/{article_id}/translations"
+                            translation_data = {
+                                "translation": {
+                                    "title": title,
+                                    "body": content,
+                                    "locale": lang,
+                                    "draft": True
                                 }
-                            else:
-                                # Create translation for the corresponding English article
-                                if file_name in article_ids:
-                                    article_id = article_ids[file_name]
-                                    final_url = f"{url}/articles/{article_id}/translations"
-                                    ltype = 'translation'
-                                    data = {
-                                        ltype: {
-                                            "title": title,
-                                            "body": content,
-                                            "locale": lang,
-                                            "draft": True
-                                        }
-                                    }
-                                else:
-                                    continue
-
-                                response = post(final_url, data)
-                                if lang == 'en':
-                                    article_ids[file_name] = response['article']['id']
-
-                                print(f'Added {lang} {ltype} {title}')
-    else:
-        print('Cannot find Markdown directory, aborting')
+                            }
+                            requests.post(
+                                translation_url,
+                                auth=(f"{ZENDESK_EMAIL_ADDRESS}/token", ZENDESK_API_TOKEN),
+                                headers=headers,
+                                json=translation_data
+                            )
+                            print(f'Added {lang} translation for article: {title}')
 
     return article_ids
 
-current_categories = get_levels('categories')
-current_sections = get_levels('sections')
+current_categories = get_categories()
+current_sections = get_sections()
 
 categories = read_config('categories', ['title', 'id'])
 sections = read_config('sections', ['title', 'id', 'category'])
 
-final_categories = create_levels(categories, current_categories)
-final_sections = create_levels(sections, current_sections, final_categories)
+final_categories = create_categories(categories, current_categories)
+final_sections = create_sections(sections, current_sections, final_categories)
 
 article = create_articles(final_sections)
