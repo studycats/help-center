@@ -5,26 +5,26 @@ load_dotenv()
 
 api_key = os.getenv('ANTHROPIC_API_KEY')
 client = anthropic.Anthropic(api_key=api_key)
-prompt = open('helpers/prompt.txt', 'r').read()
-proofread = open('helpers/proofread.txt', 'r').read()
+prompt = open('prompts/prompt.txt', 'r').read()
+proofread = open('prompts/proofread.txt', 'r').read()
 
 languages = {
-    'da': 'Danish',
-    'de': 'German',
-    'es': 'Spanish',
-    'fi': 'Finnish', 
-    'fr': 'French',
-    'id': 'Indonesian',
-    'it': 'Italian',
-    'ja': 'Japanese',
-    'ko': 'Korean',
-    'ms': 'Malay',
-    'no': 'Norwegian',
-    'pt': 'Portuguese',
-    'ru': 'Russian',
-    'sv': 'Swedish',
-    'vi': 'Vietnamese',
-    'zh-CN': 'Simplified Chinese',
+    # 'da': 'Danish',
+    # 'de': 'German',
+    # 'es': 'Spanish',
+    # 'fi': 'Finnish', 
+    # 'fr': 'French',
+    # 'id': 'Indonesian',
+    # 'it': 'Italian',
+    # 'ja': 'Japanese',
+    # 'ko': 'Korean',
+    # 'ms': 'Malay',
+    # 'no': 'Norwegian',
+    # 'pt': 'Portuguese',
+    # 'ru': 'Russian',
+    # 'sv': 'Swedish',
+    # 'vi': 'Vietnamese',
+    # 'zh-CN': 'Simplified Chinese',
     'zh-TW': 'Traditional Chinese'
 }
 
