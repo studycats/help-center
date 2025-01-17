@@ -9,22 +9,22 @@ prompt = open('prompts/prompt.txt', 'r').read()
 proofread = open('prompts/proofread.txt', 'r').read()
 
 languages = {
-    # 'da': 'Danish',
-    # 'de': 'German',
-    # 'es': 'Spanish',
-    # 'fi': 'Finnish', 
-    # 'fr': 'French',
-    # 'id': 'Indonesian',
-    # 'it': 'Italian',
-    # 'ja': 'Japanese',
-    # 'ko': 'Korean',
-    # 'ms': 'Malay',
-    # 'no': 'Norwegian',
-    # 'pt': 'Portuguese',
-    # 'ru': 'Russian',
-    # 'sv': 'Swedish',
-    # 'vi': 'Vietnamese',
-    # 'zh-CN': 'Simplified Chinese',
+    'da': 'Danish',
+    'de': 'German',
+    'es': 'Spanish',
+    'fi': 'Finnish', 
+    'fr': 'French',
+    'id': 'Indonesian',
+    'it': 'Italian',
+    'ja': 'Japanese',
+    'ko': 'Korean',
+    'ms': 'Malay',
+    'no': 'Norwegian',
+    'pt': 'Portuguese',
+    'ru': 'Russian',
+    'sv': 'Swedish',
+    'vi': 'Vietnamese',
+    'zh-CN': 'Simplified Chinese',
     'zh-TW': 'Traditional Chinese'
 }
 
