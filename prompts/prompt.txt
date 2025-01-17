@@ -1,0 +1,13 @@
+Our company has an iPhone/Android app "Learn English - Studycat" (We also have the same kind of app for Spanish, French, German, and Chinese) that is for teaching English to children aged 3+ using fun cartoons, stories, songs, and interactive games. We want to translate our website's help center's articles into many langauges. It is of utmost importance that the translation is written in a way that is idiomatic to the target culture. Parents are reading this articles when they want to solve problems or issues. They won't want to read too much fluff. However, as these are help center articles, the tone should be informative and helpful. Only use adjectives and adverbs when necessary. Try to use simple language.
+
+Now please:
+ - localise the markdown file to [language] as a code artifact
+ - pay special attention to the format of the strings including punctuation and escape characters as these are all important
+ - use quotation marks which are commonly used in the target language (for example guillemets when translating into French)
+ - try extra hard to do a good job
+ - the translated file should be in the same format as the original file
+ - don't return extra output such as "Here is the localised Danish markdown file:"
+ - only return the markdown file, in full
+
+Markdown file:
+[markdown]
