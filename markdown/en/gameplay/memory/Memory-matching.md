@@ -20,13 +20,17 @@ Tap on an object, which will then reveal the hidden item, and then tap on a seco
 
 ### Revealing Items
 
-Tap one of the objects on the screen, which will reveal itself as one of the items you are learning. ![](https://help.studycat.com/hc/article_attachments/34783202572569)
+Tap one of the objects on the screen, which will reveal itself as one of the items you are learning.
+![](https://help.studycat.com/hc/article_attachments/34783202572569)
 
 ### Matching Items
 
-1. Tap another object on the screen, which will reveal another item. ![](https://help.studycat.com/hc/article_attachments/34783227455641)
+1. Tap another object on the screen, which will reveal another item.
+![](https://help.studycat.com/hc/article_attachments/34783227455641)
 
-2. If the two items match, they will disappear. ![](https://help.studycat.com/hc/article_attachments/34783202585497) ![](https://help.studycat.com/hc/article_attachments/34783202588569)
+2. If the two items match, they will disappear.
+![](https://help.studycat.com/hc/article_attachments/34783202585497)
+![](https://help.studycat.com/hc/article_attachments/34783202588569)
 
 3. If the two items are different, remember their positions as they will then be hidden again and will be shifted slightly.
 

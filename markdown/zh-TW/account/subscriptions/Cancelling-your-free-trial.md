@@ -1,0 +1,1 @@
+ https://support.google.com/googleplay/answer/7018481

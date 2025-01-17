@@ -7,12 +7,10 @@ section: troubleshooting
 ## Why does Studycat need microphone access?
 
 Studycat uses your device's microphone for speaking activities and pronunciation practice. This helps improve your child's speaking skills and pronunciation.  
-  
 
 ## How to enable microphone access
 
 If you previously denied microphone access, you'll need to:  
-  
 
 1. Go to **Settings** > **Privacy & Security** > **Microphone**
 2. Find **Studycat** in the list of apps

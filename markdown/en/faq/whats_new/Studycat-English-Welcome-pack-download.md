@@ -14,7 +14,6 @@ The Studycat English **[Welcome Pack](https://res.cloudinary.com/dam8jh3m8/image
 
 This pack is your go-to guide for making learning fun, engaging, and rewarding!
 
-  
 **[Tap here to download the Welcome pack!](https://res.cloudinary.com/dam8jh3m8/image/upload/v1731059311/docs/studycat-English-welcome-pack-en.pdf)**
 
 ![](https://help.studycat.com/hc/article_attachments/40379484098969)

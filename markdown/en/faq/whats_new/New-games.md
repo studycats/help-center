@@ -5,10 +5,10 @@ category: faq
 section: whats_new
 ---
 Our fresh games offer interactive challenges in spelling, vocabulary, and more, keeping kids motivated as they learn in fun, memorable ways.  
-  
+
 ## Flash games
 These are designed to introduce new language in a fun and easy way. Each topic now begins with a Flash game so your child knows exactly what they learning in the following games.   
-  
+
 ![](https://help.studycat.com/hc/article_attachments/40396888063769)  
 
 ## Word games
