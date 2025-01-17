@@ -1,5 +1,5 @@
 import sys, arrow
-from helpers.download import download_articles
+from api.download import download_articles
 
 # Headers
 headers = {
