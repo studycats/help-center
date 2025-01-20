@@ -51,7 +51,7 @@ def update_sections(sections, categories):
 
         section_data = response.json()
         section_ids[section] = section_data['section']['id']
-        print(f'Created section {section['title']}')
+        print(f'Updated section {section['title']}')
 
     for lang in sections:
         if lang == 'en':
@@ -70,6 +70,6 @@ def update_sections(sections, categories):
                 headers=headers,
                 json=translation_data
             )
-            print(f'Added {lang} translation for section {section['title']}')
+            print(f'Updated {lang} translation for section {section['title']}')
 
     return section_ids

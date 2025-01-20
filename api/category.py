@@ -45,7 +45,7 @@ def update_categories(categories):
 
         category_data = response.json()
         category_ids[category] = category_data['category']['id']
-        print(f'Created category {category['title']}')
+        print(f'Updated category {category['title']}')
 
     for lang in categories:
         if lang == 'en':
@@ -64,6 +64,6 @@ def update_categories(categories):
                 headers=headers,
                 json=translation_data
             )
-            print(f'Added {lang} translation for category {category['title']}')
+            print(f'Updated {lang} translation for category {category['title']}')
 
     return category_ids

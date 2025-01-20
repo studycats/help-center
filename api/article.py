@@ -46,7 +46,16 @@ def create_articles(sections):
                     with open(html_file_path, 'r', encoding='utf-8') as f:
                         content = f.read()
 
-                    article_url = f"{url}/sections/{section_id}/articles"
+                    article_id = None
+                    with open(markdown_file_path, 'r', encoding='utf-8') as f:
+                        for line in f:
+                            if line.startswith('id: '):
+                                article_id = line[4:].strip()
+
+                    if article_id:
+                        article_url = f"{url}/articles/{article_id}"
+                    else:
+                        article_url = f"{url}/sections/{section_id}/articles"
 
                     data = {
                         "article": {
@@ -55,7 +64,6 @@ def create_articles(sections):
                             "locale": 'en-us',
                             "user_segment_id": None,
                             "permission_group_id": 1739073,
-                            "draft": True
                         }
                     }
                     response = requests.post(
@@ -64,10 +72,26 @@ def create_articles(sections):
                         headers=headers,
                         json=data
                     )
-                    
-                    # Store article ID using filename as key
-                    article_ids[file_name] = response.json()['article']['id']
-                    print(f'Created English article: {title}')
+
+                    if article_id:
+                        article_ids[file_name] = article_id
+                        print(f'Updated English article: {title}')
+                    else:
+                        # Store article ID using filename as key
+                        article_id = response.json()['article']['id']
+                        article_ids[file_name] = article_id
+                        print(f'Created English article: {title}')
+
+                        # Update the markdown file with the new ID
+                        with open(markdown_file_path, 'r', encoding='utf-8') as f:
+                            content = f.readlines()
+
+                        # Insert the ID line right after the first '---'
+                        content.insert(1, f'id: {article_id}\n')
+
+                        # Write back to the file
+                        with open(markdown_file_path, 'w', encoding='utf-8') as f:
+                            f.writelines(content)
 
     # Create translations for other languages
     for lang in os.listdir('markdown'):
