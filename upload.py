@@ -1,6 +1,6 @@
 import os, configparser
-from api.category import create_categories
-from api.section import create_sections
+from api.category import update_categories
+from api.section import update_sections
 from api.article import create_articles
 
 def read_config(folder_path, fields):
@@ -28,7 +28,7 @@ def read_config(folder_path, fields):
 categories = read_config('categories', ['title', 'id'])
 sections = read_config('sections', ['title', 'id', 'category'])
 
-final_categories = create_categories(categories)
-final_sections = create_sections(sections, final_categories)
+final_categories = update_categories(categories)
+final_sections = update_sections(sections, final_categories)
 
 article = create_articles(final_sections)

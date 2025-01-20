@@ -8,6 +8,7 @@ ZENDESK_API_TOKEN = os.getenv('ZENDESK_API_TOKEN')
 url = "https://studycat.zendesk.com/api/v2/help_center"
 headers = { 'Content-Type': 'application/json', }
 
+# Get all current sections from Zendesk
 def get_sections():
     section_url = f"{url}/sections"
 
@@ -23,31 +24,19 @@ def get_sections():
         print(f"Error fetching sections: {response.status_code}")
         return None
 
-def check_name_exists(sections, name):
-    for section in sections:
-        if section['name'] == name:
-            return section['id']
-    return False
-
-def create_sections(sections, categories):
-    current = get_sections()
+def update_sections(sections, categories):
     section_url = f"{url}/sections"
 
     section_ids = {}
     for section in sections['en']:
-        name = f"Testing {sections['en'][section]['title']}"
-        check = check_name_exists(current, name)
-        if check:
-            print(f"Section {name} already exists")
-            section_ids[section] = check
-            continue
+        section_ids[section] = section['id']
 
-        category = sections['en'][section]['category']
+        category = section['category']
         category_id = categories[category]
 
         data = {
             'section': {
-                'name': name,
+                'name': section['title'],
                 'locale': 'en-us',
                 'category_id': category_id
             }
@@ -62,21 +51,16 @@ def create_sections(sections, categories):
 
         section_data = response.json()
         section_ids[section] = section_data['section']['id']
-        print(f'Created section {name}')
+        print(f'Created section {section['title']}')
 
     for lang in sections:
         if lang == 'en':
             continue
         for section in sections[lang]:
-            name = f"Testing {sections['en'][section]['title']}"
-            check = check_name_exists(current, name)
-            if check:
-                continue
-
             translation_url = f"{section_url}/{section_ids[section]}/translations"
             translation_data = {
                 "translation": {
-                    "title": name,
+                    "title": section['title'],
                     "locale": lang,
                 }
             }
@@ -86,6 +70,6 @@ def create_sections(sections, categories):
                 headers=headers,
                 json=translation_data
             )
-            print(f'Added {lang} translation for section {name}')
+            print(f'Added {lang} translation for section {section['title']}')
 
     return section_ids
