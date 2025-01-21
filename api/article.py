@@ -8,6 +8,21 @@ ZENDESK_API_TOKEN = os.getenv('ZENDESK_API_TOKEN')
 url = "https://studycat.zendesk.com/api/v2/help_center"
 headers = { 'Content-Type': 'application/json', }
 
+def get_article_translations(article_ids):
+    current_translations = {}
+    for article_id in article_ids:
+        translation_url = f"{url}/articles/{article_id}/translations"
+
+        response = requests.get(
+            translation_url,
+            auth=(f"{ZENDESK_EMAIL_ADDRESS}/token", ZENDESK_API_TOKEN),
+            headers=headers
+        ).json()
+
+        current_translations[article_ids] = [translation['locale'] for translation in response['translations']]
+
+    return current_translations
+
 def create_articles(sections):
     # First create English articles and store their IDs
     article_ids = {}
@@ -52,11 +67,6 @@ def create_articles(sections):
                             if line.startswith('id: '):
                                 article_id = line[4:].strip()
 
-                    if article_id:
-                        article_url = f"{url}/articles/{article_id}"
-                    else:
-                        article_url = f"{url}/sections/{section_id}/articles"
-
                     data = {
                         "article": {
                             "title": title,
@@ -66,20 +76,32 @@ def create_articles(sections):
                             "permission_group_id": 1739073,
                         }
                     }
-                    response = requests.post(
-                        article_url,
-                        auth=(f"{ZENDESK_EMAIL_ADDRESS}/token", ZENDESK_API_TOKEN),
-                        headers=headers,
-                        json=data
-                    )
 
                     if article_id:
-                        article_ids[file_name] = article_id
+                        article_url = f"{url}/articles/{article_id}"
+
+                        response = requests.put(
+                            article_url,
+                            auth=(f"{ZENDESK_EMAIL_ADDRESS}/token", ZENDESK_API_TOKEN),
+                            headers=headers,
+                            json=data
+                        )
+
+                        article_ids[file_name] = { 'id': article_id, 'is_new': False}
                         print(f'Updated English article: {title}')
                     else:
+                        article_url = f"{url}/sections/{section_id}/articles"
+
+                        response = requests.post(
+                            article_url,
+                            auth=(f"{ZENDESK_EMAIL_ADDRESS}/token", ZENDESK_API_TOKEN),
+                            headers=headers,
+                            json=data
+                        ).json()
+
                         # Store article ID using filename as key
-                        article_id = response.json()['article']['id']
-                        article_ids[file_name] = article_id
+                        article_id = response['article']['id']
+                        article_ids[file_name] = { 'id': article_id, 'is_new': True}
                         print(f'Created English article: {title}')
 
                         # Update the markdown file with the new ID
@@ -92,6 +114,8 @@ def create_articles(sections):
                         # Write back to the file
                         with open(markdown_file_path, 'w', encoding='utf-8') as f:
                             f.writelines(content)
+
+    current_translations = get_article_translations(article_ids)
 
     # Create translations for other languages
     for lang in os.listdir('markdown'):
@@ -123,24 +147,35 @@ def create_articles(sections):
                         with open(html_file_path, 'r', encoding='utf-8') as f:
                             content = f.read()
 
+                        translation_data = {
+                            "translation": {
+                                "title": title,
+                                "body": content,
+                                "locale": lang,
+                            }
+                        }
+
                         # Create translation for the corresponding English article
                         if file_name in article_ids:
-                            article_id = article_ids[file_name]
+                            article_id = article_ids[file_name]['id']
                             translation_url = f"{url}/articles/{article_id}/translations"
-                            translation_data = {
-                                "translation": {
-                                    "title": title,
-                                    "body": content,
-                                    "locale": lang,
-                                    "draft": True
-                                }
-                            }
-                            requests.post(
-                                translation_url,
-                                auth=(f"{ZENDESK_EMAIL_ADDRESS}/token", ZENDESK_API_TOKEN),
-                                headers=headers,
-                                json=translation_data
-                            )
-                            print(f'Added {lang} translation for article: {title}')
+
+                            if article_ids[file_name]['is_new'] and lang not in current_translations[article_id]:
+                                requests.post(
+                                    translation_url,
+                                    auth=(f"{ZENDESK_EMAIL_ADDRESS}/token", ZENDESK_API_TOKEN),
+                                    headers=headers,
+                                    json=translation_data
+                                )
+                                print(f'Added {lang} translation for article: {title}')
+                            else:
+                                update_url = f'{translation_url}/{lang}'
+                                requests.put(
+                                    update_url,
+                                    auth=(f"{ZENDESK_EMAIL_ADDRESS}/token", ZENDESK_API_TOKEN),
+                                    headers=headers,
+                                    json=translation_data
+                                )
+                                print(f'Updated {lang} translation for article: {title}')
 
     return article_ids
