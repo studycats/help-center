@@ -84,7 +84,8 @@ def update_sections(sections, categories):
             }
             print(f'Created section {section['title']}')
 
-    current_translations = get_section_translations(section_ids)
+    section_id_list = [section['id'] for section in section_ids.values()]
+    current_translations = get_section_translations(section_id_list)
 
     for lang in sections:
         if lang == 'en':

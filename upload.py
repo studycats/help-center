@@ -31,4 +31,4 @@ sections = read_config('sections', ['title', 'id', 'category'])
 final_categories = update_categories(categories)
 final_sections = update_sections(sections, final_categories)
 
-article = create_articles()
+article = create_articles(final_sections)

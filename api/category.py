@@ -79,7 +79,8 @@ def update_categories(categories):
             }
             print(f'Created category {category['title']}')
 
-    current_translations = get_category_translations(category_ids)
+    category_id_list = [category['id'] for category in category_ids.values()]
+    current_translations = get_category_translations(category_id_list)
 
     for lang in categories:
         if lang == 'en':

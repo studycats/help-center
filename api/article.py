@@ -19,7 +19,7 @@ def get_article_translations(article_ids):
             headers=headers
         ).json()
 
-        current_translations[article_ids] = [translation['locale'] for translation in response['translations']]
+        current_translations[article_id] = [translation['locale'] for translation in response['translations']]
 
     return current_translations
 
@@ -115,7 +115,8 @@ def create_articles(sections):
                         with open(markdown_file_path, 'w', encoding='utf-8') as f:
                             f.writelines(content)
 
-    current_translations = get_article_translations(article_ids)
+    article_id_list = [article['id'] for article in article_ids.values()]
+    current_translations = get_article_translations(article_id_list)
 
     # Create translations for other languages
     for lang in os.listdir('markdown'):
